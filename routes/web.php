@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-/*Route::get('/dashboard',[HomeController::calss,'index'])->name('dashboard');*/
+Route::get('/test',[ProductController::class,'test'])->name('test');
+Route::get('/testdata',[ProductController::class,'testdata'])->name('testdata');

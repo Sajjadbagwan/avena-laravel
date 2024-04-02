@@ -59,35 +59,11 @@ class ProductController extends Controller
             echo '</pre>';
             $result = $this->service->call('products', $data, 'POST');
         }
-
-            
-        die();
-
-        die();
-
-            
-
-
-
-            
-
-        
-
-        
-
-        /*echo '<pre>';
-        print_r($data);
-        echo '</pre>';
-        die();*/
-
-
-        
+   
+        die();        
         echo '<pre>';
         print_r($result);
         echo '</pre>';
-        
-
-
 
     }
 
@@ -111,6 +87,73 @@ class ProductController extends Controller
         }
 
         return $data;
+    }
+
+    function test(){
+
+        $file1 = public_path('file/Avena1.csv');
+        $file2 = public_path('file/Avena2.csv');
+        $file3 = public_path('file/Avena3.csv');
+        $file4 = public_path('file/Avena4.csv');
+        $productArr1 = $this->csvToArray($file1);
+
+        echo '<pre>';
+        print_r($productArr1);
+        echo '</pre>';
+        die();
+
+        for ($i = 0; $i < count($productArr1); $i ++)
+        {
+
+        }
+    }
+    function testdata(){
+        echo 'aaa';
+
+        $file1 = public_path('file/Avena1.csv');
+        $file2 = public_path('file/Avena2.csv');
+        $file3 = public_path('file/Avena3.csv');
+        $file4 = public_path('file/Avena4.csv');
+        $productArr1 = $this->csvToArray($file1);
+        $productsArr = array();
+        $categoryArr = array();
+        for ($i = 0; $i < count($productArr1); $i ++)
+        {
+            if($productArr1[$i]['AssociateType']=='Product'){
+                $productsArr[$productArr1[$i]['AssociateID']] = $productArr1[$i];
+            }
+            if($productArr1[$i]['AssociateType']=='Category'){
+
+            }
+        }
+
+        $productArr2 = $this->csvToArray($file2);
+        for ($i = 0; $i < count($productArr2); $i ++)
+        {
+            foreach ($productArr2[$i] as $key => $value) {
+                $productsArr[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
+            }            
+        }
+        $productArr3 = $this->csvToArray($file3);
+        for ($i = 0; $i < count($productArr3); $i ++)
+        {
+            foreach ($productArr3[$i] as $key => $value) {
+                $productsArr[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
+            }            
+        }
+
+
+        echo '<pre>';
+        print_r($productsArr);
+        echo '</pre>';
+        die();
+
+
+        echo '<pre>';
+        print_r($productsArr);
+        echo '</pre>';
+        die();
+
     }
 
 }
