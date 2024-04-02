@@ -57,6 +57,7 @@ class ProductController extends Controller
             echo '<pre>';
             print_r($data);
             echo '</pre>';
+            $result = $this->service->call('products', $data, 'POST');
         }
 
             
@@ -80,7 +81,7 @@ class ProductController extends Controller
         die();*/
 
 
-        $result = $this->service->call('products', $data, 'POST');
+        
         echo '<pre>';
         print_r($result);
         echo '</pre>';
