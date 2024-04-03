@@ -73,21 +73,55 @@ class ProductController extends Controller
             return false;
 
         $header = null;
+        $headerCount = 0;
         $data = array();
         if (($handle = fopen($filename, 'r')) !== false)
         {
             while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
             {
-                if (!$header)
+                if (!$header){
                     $header = $row;
-                else
+                }else{
+                    $headerCount = count($header);
+                    $row = array_pad($row, $headerCount,'');
                     $data[] = array_combine($header, $row);
+                }
             }
             fclose($handle);
         }
-
         return $data;
     }
+
+    function csvToArrayArr($filename = '', $delimiter = ',')
+    {
+        if (!file_exists($filename) || !is_readable($filename))
+            return false;
+
+        $header = null;
+        $headerCount = 0;
+        $data = array();
+        if (($handle = fopen($filename, 'r')) !== false)
+        {
+            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
+            {
+                if (!$header){
+                    $header = $row;
+                }else{
+                    $headerCount = count($header);
+                    $row = array_pad($row, $headerCount,'');
+                    $data[] = array_combine($header, $row);
+                }
+            }
+            fclose($handle);
+        }
+        return $data;
+    }
+
+
+
+
+
+
 
     function test(){
 
@@ -95,62 +129,102 @@ class ProductController extends Controller
         $file2 = public_path('file/Avena2.csv');
         $file3 = public_path('file/Avena3.csv');
         $file4 = public_path('file/Avena4.csv');
-        $productArr1 = $this->csvToArray($file1);
+        $csvDataArray = $this->csvToArray($file1);
 
         echo '<pre>';
-        print_r($productArr1);
+        print_r($csvDataArray);
         echo '</pre>';
         die();
 
-        for ($i = 0; $i < count($productArr1); $i ++)
+        for ($i = 0; $i < count($csvDataArray); $i ++)
         {
 
         }
     }
     function testdata(){
-        echo 'aaa';
 
         $file1 = public_path('file/Avena1.csv');
         $file2 = public_path('file/Avena2.csv');
         $file3 = public_path('file/Avena3.csv');
         $file4 = public_path('file/Avena4.csv');
-        $productArr1 = $this->csvToArray($file1);
-        $productsArr = array();
-        $categoryArr = array();
-        for ($i = 0; $i < count($productArr1); $i ++)
-        {
-            if($productArr1[$i]['AssociateType']=='Product'){
-                $productsArr[$productArr1[$i]['AssociateID']] = $productArr1[$i];
-            }
-            if($productArr1[$i]['AssociateType']=='Category'){
+        $productsArrAll = array();
+        $categoryContentArray = array();
 
+        $productsArrAll2 = array();
+        $productsArrAll3 = array();
+        $CategoryArrAll4 = array();
+        
+        $productidContentidMap = array();
+
+
+        /* Product and category sepration from product data */
+        $csvDataArray = $this->csvToArray($file1);
+        for ($i = 0; $i < count($csvDataArray); $i ++)
+        {
+            if($csvDataArray[$i]['AssociateType']=='Product'){
+                $productsArrAll[$csvDataArray[$i]['AssociateID']] = $csvDataArray[$i];
+                $productidContentidMap[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i]['AssociateID'];
+
+            }
+            if($csvDataArray[$i]['AssociateType']=='Category'){
+                $categoryContentArray[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
             }
         }
+        /* Product and category sepration from product data end */
 
+        /* catagory sepration and parent added */
+        $catagoryUrlContentId = array();
+        foreach ($categoryContentArray as $key => $value) {
+            $catagoryUrlContentId[$value['FileName']] = $value['ContentID'];
+        }
+
+        $catagoryTreeCounter = 0;
+        foreach ($categoryContentArray as $key => $value) {
+            $urlArray = array();
+            $urlArray = array_values(array_filter(explode('/', $value['FileName'])));
+            $categoryContentParent='';
+            $link = '/';
+            for ($i = 0; $i < count($urlArray)-1; $i++){
+                $link = $link.$urlArray[$i].'/';
+                $categoryContentParent = $categoryContentParent.','.$catagoryUrlContentId[$link];
+            }
+            $categoryContentArray[$value['ContentID']]['paraent_catagory_content_id'] = ltrim($categoryContentParent,',') ;;
+        }
+        /*echo '<pre>';
+        print_r($categoryContentArray);
+        echo '</pre>';*/
+        /* catagory sepration end */
+
+        /* added sheet 2 in product array */
         $productArr2 = $this->csvToArray($file2);
         for ($i = 0; $i < count($productArr2); $i ++)
         {
             foreach ($productArr2[$i] as $key => $value) {
-                $productsArr[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
+                $productsArrAll[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
+                //$productsArrAll2[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
             }            
         }
+        /* added sheet 2 in product array end */
+
+        /* added sheet 3 in product array */
         $productArr3 = $this->csvToArray($file3);
         for ($i = 0; $i < count($productArr3); $i ++)
         {
             foreach ($productArr3[$i] as $key => $value) {
-                $productsArr[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
+                $productsArrAll[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
+                //$productsArrAll3[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
             }            
         }
+        /* added sheet 3 in product array end */
 
+        $categoryArr4 = $this->csvToArray($file4);
+        for ($i = 0; $i < count($categoryArr4); $i ++)
+        {
+            $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'][] =  $categoryArr4[$i]['CategoryContentID'];
+        }
 
         echo '<pre>';
-        print_r($productsArr);
-        echo '</pre>';
-        die();
-
-
-        echo '<pre>';
-        print_r($productsArr);
+        print_r($productsArrAll);
         echo '</pre>';
         die();
 

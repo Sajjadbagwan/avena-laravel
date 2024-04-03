@@ -41,7 +41,8 @@ class ImportProduct extends Command
      */
     public function handle()
     {
-        $this->productController->index();
+        /*$this->productController->index();*/
+        $this->productController->testdata();
         return 0;
     }
 }
