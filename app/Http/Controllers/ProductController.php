@@ -153,9 +153,11 @@ class ProductController extends Controller
         $productsArrAll2 = array();
         $productsArrAll3 = array();
         $CategoryArrAll4 = array();
-        
-        $productidContentidMap = array();
 
+        $ArrayOfRedirection = array();
+        $ArrayOfCms = array();
+
+        $productidContentidMap = array();
 
         /* Product and category sepration from product data */
         $csvDataArray = $this->csvToArray($file1);
@@ -165,9 +167,12 @@ class ProductController extends Controller
                 $productsArrAll[$csvDataArray[$i]['AssociateID']] = $csvDataArray[$i];
                 $productidContentidMap[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i]['AssociateID'];
 
-            }
-            if($csvDataArray[$i]['AssociateType']=='Category'){
+            }elseif($csvDataArray[$i]['AssociateType']=='Category'){
                 $categoryContentArray[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
+            }elseif($csvDataArray[$i]['AssociateType']=='301Redirect'){
+                $ArrayOfRedirection[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
+            }else{
+                $ArrayOfCms[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
             }
         }
         /* Product and category sepration from product data end */
@@ -186,13 +191,10 @@ class ProductController extends Controller
             $link = '/';
             for ($i = 0; $i < count($urlArray)-1; $i++){
                 $link = $link.$urlArray[$i].'/';
-                $categoryContentParent = $categoryContentParent.','.$catagoryUrlContentId[$link];
+                $categoryContentParent = $categoryContentParent.'|'.$catagoryUrlContentId[$link];
             }
-            $categoryContentArray[$value['ContentID']]['paraent_catagory_content_id'] = ltrim($categoryContentParent,',') ;;
+            $categoryContentArray[$value['ContentID']]['paraent_catagory_content_id'] = ltrim($categoryContentParent,'|') ;;
         }
-        /*echo '<pre>';
-        print_r($categoryContentArray);
-        echo '</pre>';*/
         /* catagory sepration end */
 
         /* added sheet 2 in product array */
@@ -201,7 +203,6 @@ class ProductController extends Controller
         {
             foreach ($productArr2[$i] as $key => $value) {
                 $productsArrAll[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
-                //$productsArrAll2[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
             }            
         }
         /* added sheet 2 in product array end */
@@ -212,7 +213,6 @@ class ProductController extends Controller
         {
             foreach ($productArr3[$i] as $key => $value) {
                 $productsArrAll[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
-                //$productsArrAll3[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
             }            
         }
         /* added sheet 3 in product array end */
@@ -220,14 +220,57 @@ class ProductController extends Controller
         $categoryArr4 = $this->csvToArray($file4);
         for ($i = 0; $i < count($categoryArr4); $i ++)
         {
-            $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'][] =  $categoryArr4[$i]['CategoryContentID'];
+            $checkExisting = $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]];
+            if(isset($checkExisting['category_content_id']) && !empty($checkExisting['category_content_id'])){
+                $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $checkExisting['category_content_id'].'|'.$categoryArr4[$i]['CategoryContentID'];
+            }else{
+                $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $categoryArr4[$i]['CategoryContentID'];
+            }
+            
         }
 
-        echo '<pre>';
-        print_r($productsArrAll);
-        echo '</pre>';
-        die();
+        $fileName = public_path('file/redirectFile.csv');
+        $file = fopen($fileName, 'w');
+        $flag=0;
+        foreach ($ArrayOfRedirection as $line) {
+            if($flag==0){ fputcsv($file, array_keys($line)); }
+            fputcsv($file, $line);
+            $flag=1;
+        }
+        fclose($file);
+
+        $fileName = public_path('file/cmsFile.csv');
+        $file = fopen($fileName, 'w');
+        $flag=0;
+        foreach ($ArrayOfCms as $line) {
+            if($flag==0){ fputcsv($file, array_keys($line)); }
+            fputcsv($file, $line);
+            $flag=1;
+        }
+        fclose($file);
+
+        $fileName = public_path('file/categoryFile.csv');
+        $file = fopen($fileName, 'w');
+        $flag=0;
+        foreach ($categoryContentArray as $line) {
+            if($flag==0){ fputcsv($file, array_keys($line)); }
+            fputcsv($file, $line);
+            $flag=1;
+        }
+        fclose($file);
+
+        $fileName = public_path('file/productFile.csv');
+        $file = fopen($fileName, 'w');
+        $flag=0;
+        foreach ($productsArrAll as $line) {
+            if($flag==0){ fputcsv($file, array_keys($line)); }
+            fputcsv($file, $line);
+            $flag=1;
+        }
+        fclose($file);
+        echo 'done';
 
     }
 
 }
+
