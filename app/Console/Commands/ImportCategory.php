@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoriesController;
 
 class ImportProduct extends Command
 {
@@ -14,14 +14,14 @@ class ImportProduct extends Command
      *
      * @var string
      */
-    protected $signature = 'import:product';
+    protected $signature = 'import:category';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import CUstomer from magento and add or update into Myblog';
+    protected $description = 'Import categories to magento and add or update from Myblog';
 
     /**
      * Create a new command instance.
@@ -31,7 +31,7 @@ class ImportProduct extends Command
     public function __construct()
     {
         parent::__construct();
-        $this->productController = new ProductController;
+        $this->categoriesController = new CategoriesController;
     }
 
     /**
@@ -41,7 +41,7 @@ class ImportProduct extends Command
      */
     public function handle()
     {
-        $this->productController->index();
+        $this->categoriesController->syncCategory();
         return 0;
     }
 }

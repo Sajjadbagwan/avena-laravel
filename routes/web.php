@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoriesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,4 @@ Route::get('/', function () {
 });
 Route::get('/test',[ProductController::class,'test'])->name('test');
 Route::get('/testdata',[ProductController::class,'testdata'])->name('testdata');
+Route::get('/testcategory',[CategoriesController::class,'syncCategory'])->name('syncCategory');

@@ -19,7 +19,7 @@ class ProductController extends Controller
 
         for ($i = 0; $i < count($productArr); $i ++)
         {
-            $sku = $productArr[$i]['sku'];
+            $sku = $productArr[$i]['sku'].'1';
             $name = $productArr[$i]['name'];
             $attribute_set_id = $productArr[$i]['attribute_set_id'];
             $price = $productArr[$i]['price'];
@@ -60,10 +60,11 @@ class ProductController extends Controller
             $result = $this->service->call('products', $data, 'POST');
         }
    
-        die();        
+             
         echo '<pre>';
         print_r($result);
         echo '</pre>';
+        die();   
 
     }
 
