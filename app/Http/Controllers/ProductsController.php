@@ -2,12 +2,13 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\ItemController;
 
-class ProductController extends Controller
+class ProductsController extends Controller
 {
     public function __construct()
     {
-        $this->itemController = New ItemController;
+        
     }
+
     public function index()
     {
         
@@ -33,9 +34,10 @@ class ProductController extends Controller
             $extension_attributes->stock_item['is_in_stock'] = $productArr[$i]['is_in_stock'];
             $extension_attributes->stock_item['stock_id'] = $productArr[$i]['stock_id'];
 
+            $custom_attributes=array();
             $custom_attributes[] = (object)array(
                 "attribute_code" => 'category_ids',
-                "value" => $productArr[$i]['category_ids']
+                "value" => explode(",",$productArr[$i]['category_ids'])
             );
 
             $productData = (object)array(
@@ -229,6 +231,4 @@ class ProductController extends Controller
         echo 'done';
 
     }
-
 }
-

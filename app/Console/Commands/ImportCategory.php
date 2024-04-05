@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Http\Controllers\CategoriesController;
 
-class ImportProduct extends Command
+class ImportCategory extends Command
 {
     private $productController;
 

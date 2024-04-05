@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CategoriesController;
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +17,6 @@ use App\Http\Controllers\CategoriesController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/test',[ProductController::class,'test'])->name('test');
-Route::get('/testdata',[ProductController::class,'testdata'])->name('testdata');
+Route::get('/test',[ProductsController::class,'test'])->name('test');
+Route::get('/testdata',[ProductsController::class,'testdata'])->name('testdata');
 Route::get('/testcategory',[CategoriesController::class,'syncCategory'])->name('syncCategory');
