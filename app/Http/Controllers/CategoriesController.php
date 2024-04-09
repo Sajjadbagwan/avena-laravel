@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\RowDataToCsvController;
 use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
@@ -12,32 +12,28 @@ class CategoriesController extends Controller
 {
     public function __construct()
     {
-        $this->productsController = New ProductsController;
+        $this->rowDataToCsvController = New RowDataToCsvController;
     }
 
     public function syncCategory()
     {
-
         $MagentoCategories = array();
         $MagentoCategories = $this->getAllCategoryFromMagento();
 
-        /*echo '<pre>'; print_r($MagentoCategories); echo '</pre>';*/
-
         $file = public_path('file/categoryFile.csv');
-        $catCsvArr = $this->productsController->csvToArray($file);
+        $catCsvArr = $this->rowDataToCsvController->csvToArray($file);
 
         for ($i = 0; $i < count($catCsvArr); $i ++)
         {
             $category_url = $catCsvArr[$i]['FileName'];
             if (in_array($category_url, $MagentoCategories)){
+                echo "Update process for content id : ".$catCsvArr[$i]['ContentID'];;
                 echo '<br>';
-                echo "update";
-                echo '<br>';
+
                 $magento_id = array_search($category_url, $MagentoCategories);
                 $this->updateCategoryInMagento($magento_id,$catCsvArr[$i]);
             }else{
-                echo '<br>';
-                echo "INSERT";
+                echo "Insert process for content id : ".$catCsvArr[$i]['ContentID'];;
                 echo '<br>';
                 $result = $this->insertCategoryInMagento($catCsvArr[$i]);
                 if(!empty($result)){
@@ -45,7 +41,7 @@ class CategoriesController extends Controller
                 }
             }
         }
-        echo 'All category updated.';
+        echo 'All the categories has been updated.';
         die();
     }
 
@@ -112,7 +108,7 @@ class CategoriesController extends Controller
             $restUrl = 'categories/'.$magento_id;
             $result = $this->service->call($restUrl, $data, 'PUT');
         } catch (\Throwable $e) {
-            $proceesMsg = 'Failed to insert category to magento for content ID '.$csvCatData['ContentID'];
+            $proceesMsg = 'Failed to update category to magento for content ID '.$csvCatData['ContentID'];
             Log::info("Failed to insert category to magento");
             Log::info($e);
             echo $proceesMsg;
@@ -131,7 +127,7 @@ class CategoriesController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'success';
-            $logIdArr['message'] = 'Data has been inserted.';
+            $logIdArr['message'] = 'Data has been updated.';
         }else{
             $dataCatTblArr['magento_id'] = 0;
             $dataCatTblArr['content_id'] = $csvCatData['ContentID'];
@@ -219,7 +215,19 @@ class CategoriesController extends Controller
 
     public function updateCatTbl($magentoId,$dataCatTblArr){
 
-        DB::table('category')->where('magento_category_id', $magentoId)->update(['data_category_id' => $dataCatTblArr['content_id'], 'magento_parent_id' => $dataCatTblArr['magento_parent_id'],'status' => $dataCatTblArr['status'],'updated_at' => $dataCatTblArr['updated_at']]);
+        $existingData = DB::table('category')->where('magento_category_id', '=', $magentoId)->get()->last();
+        if(!empty((array)$existingData)){
+            DB::table('category')->where('magento_category_id', $magentoId)->update(['data_category_id' => $dataCatTblArr['content_id'], 'magento_parent_id' => $dataCatTblArr['magento_parent_id'],'status' => $dataCatTblArr['status'],'updated_at' => $dataCatTblArr['updated_at']]);
+        }else{
+            $values =   array('data_category_id' => $dataCatTblArr['content_id'],
+                        'magento_category_id' => $dataCatTblArr['magento_id'],
+                        'magento_parent_id' => $dataCatTblArr['magento_parent_id'],
+                        'status' => $dataCatTblArr['status'],
+                        'updated_at' => $dataCatTblArr['updated_at'],
+                        'created_at' => $dataCatTblArr['created_at']
+                    );
+            DB::table('category')->insert($values);  
+        }
         return;
     }
 

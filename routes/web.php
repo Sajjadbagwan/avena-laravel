@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\rowDataToCsvController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,6 @@ use App\Http\Controllers\CategoriesController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/test',[ProductsController::class,'test'])->name('test');
-Route::get('/testdata',[ProductsController::class,'testdata'])->name('testdata');
-Route::get('/testcategory',[CategoriesController::class,'syncCategory'])->name('syncCategory');
+Route::get('/createCsvFromData',[rowDataToCsvController::class,'createCsvFromData'])->name('createCsvFromData');
+Route::get('/synccategory',[CategoriesController::class,'syncCategory'])->name('syncCategory');
+Route::get('/syncproduct',[ProductsController::class,'syncProduct'])->name('syncProduct');

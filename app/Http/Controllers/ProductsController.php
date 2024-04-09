@@ -1,234 +1,295 @@
 <?php
 namespace App\Http\Controllers;
-use App\Http\Controllers\ItemController;
+use App\Http\Controllers\RowDataToCsvController;
+use Illuminate\Http\Request;
+use DB;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Log;
+
 
 class ProductsController extends Controller
 {
     public function __construct()
     {
-        
+        $this->rowDataToCsvController = New RowDataToCsvController;
     }
 
-    public function index()
+    public function syncProduct()
     {
-        
-        $this->service = configMagento();
+        $MagentoProducts = array();
+        /*$MagentoProducts = $this->getAllProductsFromMagento();*/
 
-        $file = public_path('file/test.csv');
+        $MagentoProducts = array('2064'=>'1565','2065'=>'1566');
 
-        $productArr = $this->csvToArray($file);
+        $file = public_path('file/productFile.csv');
+        $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
 
-        for ($i = 0; $i < count($productArr); $i ++)
+
+        for ($i = 0; $i < count($productCsvArr); $i ++)
         {
-            $sku = $productArr[$i]['sku'].'1';
-            $name = $productArr[$i]['name'];
-            $attribute_set_id = $productArr[$i]['attribute_set_id'];
-            $price = $productArr[$i]['price'];
-            $status = $productArr[$i]['status'];
-            $visibility = $productArr[$i]['visibility'];
-            $type_id = $productArr[$i]['type_id'];
+            $productSku = $productCsvArr[$i]['ContentID'];
+            if (in_array($productSku, $MagentoProducts)){
+                echo "Update process for content id : ".$productCsvArr[$i]['ContentID'];;
+                echo '<br>';
 
-            $extension_attributes = (object)array();
-            $extension_attributes->website_ids = array(1);
-            $extension_attributes->stock_item['qty'] = $productArr[$i]['qty'];
-            $extension_attributes->stock_item['is_in_stock'] = $productArr[$i]['is_in_stock'];
-            $extension_attributes->stock_item['stock_id'] = $productArr[$i]['stock_id'];
-
-            $custom_attributes=array();
-            $custom_attributes[] = (object)array(
-                "attribute_code" => 'category_ids',
-                "value" => explode(",",$productArr[$i]['category_ids'])
-            );
-
-            $productData = (object)array(
-                "sku" => $sku,
-                "name" => $name,
-                "attribute_set_id" => $attribute_set_id,
-                "price" => $price,
-                "status" => $status,
-                "visibility" => $visibility,
-                "type_id" => $type_id,
-                "extension_attributes" => $extension_attributes,
-                "custom_attributes" => $custom_attributes
-            );
-
-            $magentoData = (object)array('product' => $productData);
-            //$data = json_decode(json_encode($magentoData));
-            $data = $magentoData;
-            
-            echo '<pre>';
-            print_r($data);
-            echo '</pre>';
-            $result = $this->service->call('products', $data, 'POST');
-        }
-   
-             
-        echo '<pre>';
-        print_r($result);
-        echo '</pre>';
-        die();   
-
-    }
-
-    function csvToArray($filename = '', $delimiter = ',')
-    {
-        if (!file_exists($filename) || !is_readable($filename))
-            return false;
-
-        $header = null;
-        $headerCount = 0;
-        $data = array();
-        if (($handle = fopen($filename, 'r')) !== false)
-        {
-            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
-            {
-                if (!$header){
-                    $header = $row;
-                }else{
-                    $headerCount = count($header);
-                    $row = array_pad($row, $headerCount,'');
-                    $data[] = array_combine($header, $row);
+                $magento_id = array_search($productSku, $MagentoProducts);
+                $this->updateCategoryInMagento($magento_id,$productCsvArr[$i]);
+            }else{
+                echo "Insert process for content id : ".$productCsvArr[$i]['ContentID'];;
+                echo '<br>';
+                $result = $this->insertProductInMagento($productCsvArr[$i]);
+                if(!empty($result)){
+                    $MagentoProducts[$result['magento_id']] = $result['magento_sku'];
                 }
             }
-            fclose($handle);
         }
+        /*echo '<pre>'; print_r($MagentoProducts); echo '</pre>';*/
+        echo 'All the products has been updated.';
+        die();
+    }
+
+    function insertProductInMagento($csvCatData){
+        
+        $resultLogId = '';
+        $resultLogId = $this->generateLog($csvCatData['ContentID'],'product');
+
+        $data = $this->getProductData($csvCatData);
+
+        $result = array();
+        $this->service = configMagento();
+        $this->service->init();
+        try {
+            $result = $this->service->call('products', $data, 'POST');
+        } catch (\Throwable $e) {
+            echo 'Failed to insert category to magento for content ID '.$csvCatData['ContentID'];
+            Log::info("Failed to insert category to magento");
+            Log::info($e);
+        }
+
+        $CurrentTime = date("Y-m-d H:i:s");
+        $dataCatTblArr = array();
+        $logIdArr=array();
+        $returnArr=array();
+        $logIdArr['logId'] = $resultLogId;
+        if(isset($result->id)){
+            $dataCatTblArr['magento_id'] = $result->id;
+            $dataCatTblArr['content_id'] = $csvCatData['ContentID'];
+            $dataCatTblArr['status'] = 'success';
+            $dataCatTblArr['updated_at'] = $CurrentTime;
+            $dataCatTblArr['created_at'] = $CurrentTime;
+            
+            $logIdArr['status'] = 'success';
+            $logIdArr['message'] = 'Data has been inserted.';
+
+            $returnArr['magento_id'] = $result->id;
+            $returnArr['magento_sku'] = $csvCatData['ContentID'];
+        }else{
+            $dataCatTblArr['magento_id'] = 0;
+            $dataCatTblArr['content_id'] = $csvCatData['ContentID'];
+            $dataCatTblArr['status'] = 'failed';
+            $dataCatTblArr['updated_at'] = $CurrentTime;
+            $dataCatTblArr['created_at'] = $CurrentTime;
+            
+            $logIdArr['status'] = 'failed';
+            $logIdArr['message'] = 'Process failed';
+        }
+        $this->insertProductTbl($dataCatTblArr);
+        $this->updateGeneratedLog($logIdArr);
+        
+        return $returnArr;
+    }
+
+    function updateCategoryInMagento($magento_id,$csvCatData){
+        $resultLogId = '';
+        $resultLogId = $this->generateLog($csvCatData['ContentID'],'product');
+        $data = $this->getProductData($csvCatData);
+
+        /*echo '<pre>';
+        print_r($data);
+        die();*/
+
+        $result = array();
+        $this->service = configMagento();
+        $this->service->init();
+        try {
+            $restUrl = 'products/'.$csvCatData['ContentID'];
+            $result = $this->service->call($restUrl, $data, 'PUT');
+        } catch (\Throwable $e) {
+            $proceesMsg = 'Failed to update category to magento for content ID '.$csvCatData['ContentID'];
+            Log::info("Failed to insert category to magento");
+            Log::info($e);
+            echo $proceesMsg;
+        }
+
+        $CurrentTime = date("Y-m-d H:i:s");
+        $dataCatTblArr = array();
+        $logIdArr=array();
+        $logIdArr['logId'] = $resultLogId;
+        if(isset($result->id)){
+            $dataCatTblArr['magento_id'] = $result->id;
+            $dataCatTblArr['content_id'] = $csvCatData['ContentID'];
+            $dataCatTblArr['status'] = 'success';
+            $dataCatTblArr['updated_at'] = $CurrentTime;
+            $dataCatTblArr['created_at'] = $CurrentTime;
+            
+            $logIdArr['status'] = 'success';
+            $logIdArr['message'] = 'Data has been updated.';
+        }else{
+            $dataCatTblArr['magento_id'] = 0;
+            $dataCatTblArr['content_id'] = $csvCatData['ContentID'];
+            $dataCatTblArr['status'] = 'failed';
+            $dataCatTblArr['updated_at'] = $CurrentTime;
+            $dataCatTblArr['created_at'] = $CurrentTime;
+            
+            $logIdArr['status'] = 'failed';
+            $logIdArr['message'] = $proceesMsg;
+        }
+
+        /*echo '<pre>'; print_r($dataCatTblArr); 
+        echo $magento_id;*/
+
+        $this->updateProductTbl($magento_id,$dataCatTblArr);
+        $this->updateGeneratedLog($logIdArr);
+    }
+
+    public function getProductData($csvCatData){
+
+        $parentContentId = $csvCatData['ParentContentID'];
+        $magentoParentId = $this->findMagentoParentId($parentContentId);
+
+        $category_url = $csvCatData['FileName'];
+        $urlArr = array_filter(explode('/', $category_url));
+        $currentCatUrl = current($urlArr);
+
+        $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
+
+        $is_active='false'; if($csvCatData['Enabled']==1){ $is_active='true';}
+        $custom_attributes[] = (object)array(
+            "attribute_code" => 'url_key',
+            "value" => $currentCatUrl
+        );
+        $custom_attributes[] = (object)array(
+            "attribute_code" => 'meta_title',
+            "value" => $csvCatData['AdditionalPageTitle']
+        );
+        $custom_attributes[] = (object)array(
+            "attribute_code" => 'meta_keywords',
+            "value" => $csvCatData['MetaKeywords']
+        );
+        $custom_attributes[] = (object)array(
+            "attribute_code" => 'meta_description',
+            "value" => $csvCatData['MetaDescription']
+        );
+        if(!empty($magentoCategoryIdsArr)){
+            $custom_attributes[] = (object)array(
+                "attribute_code" => 'category_ids',
+                "value" => $magentoCategoryIdsArr
+            );
+        }
+
+        $productData = (object)array(
+            "sku" => $csvCatData['ContentID'],
+            "name" => $csvCatData['PageTitle'].' a1',
+            "price" => $csvCatData['tbl_Product_Price'],
+            "status" => 1,
+            "type_id" => "simple",
+            "attribute_set_id" => 4,
+            "custom_attributes" => $custom_attributes
+        );
+        $magentoData = (object)array('product' => $productData);
+        $data = $magentoData;
+
         return $data;
     }
 
-    function test(){
+    public function getCategoryMagentoIdfromCategoryContentId($contentid){
+        $contentIdArray = explode("|",$contentid);
+        $catMagentoIdArr = array();
+        if(!empty($contentIdArray)){
+            foreach($contentIdArray as $key => $value){
+                $existingData = DB::table('category')->where('data_category_id', '=', $value)->get()->last();
+                if(!empty($existingData)){
+                    array_push($catMagentoIdArr,$existingData->magento_category_id);
+                }
+            }
+        }
+        return $catMagentoIdArr;
+    }
 
-        $file1 = public_path('file/Avena1.csv');
+    public function generateLog($contentid, $type){
+        $CurrentTime = date("Y-m-d H:i:s");
+        $values =   array('content_id' => $contentid,
+                        'entity_type' => $type,
+                        'status' => '',
+                        'message' => 'Data being proceed',
+                        'updated_at' => $CurrentTime,
+                        'created_at' => $CurrentTime,
+                        'flag' => 1
+                    );
+        $resultLogId = DB::table('log')->insertGetId($values);
+        return $resultLogId;
+    }
+
+    public function updateGeneratedLog($logIdArr){
+        DB::table('log')->where('id', $logIdArr['logId'])->update(['status' => $logIdArr['status'],'message' => $logIdArr['message'],'flag' => 0]);
+        return;
+    }
+
+    public function insertProductTbl($dataCatTblArr){
+        $values =   array('data_product_id' => $dataCatTblArr['content_id'],
+                        'magento_product_id' => $dataCatTblArr['magento_id'],
+                        'status' => $dataCatTblArr['status'],
+                        'updated_at' => $dataCatTblArr['updated_at'],
+                        'created_at' => $dataCatTblArr['created_at']
+                    );
+        DB::table('product')->insert($values);
+        return;
+    }
+
+    public function updateProductTbl($magentoId,$dataCatTblArr){
+
+        $existingData = DB::table('product')->where('magento_product_id', '=', $magentoId)->get()->last();
+        if(!empty((array)$existingData)){
+            DB::table('product')->where('magento_product_id', $magentoId)->update(['data_product_id' => $dataCatTblArr['content_id'],'status' => $dataCatTblArr['status'],'updated_at' => $dataCatTblArr['updated_at']]);
+        }else{
+             $values =  array('data_product_id' => $dataCatTblArr['content_id'],
+                        'magento_product_id' => $dataCatTblArr['magento_id'],
+                        'status' => $dataCatTblArr['status'],
+                        'updated_at' => $dataCatTblArr['updated_at'],
+                        'created_at' => $dataCatTblArr['created_at']
+                    );
+            DB::table('product')->insert($values);   
+        }   
+        return;
+    }
+
+    public function getAllProductsFromMagento(){
+        $this->service = configMagento();
+        $this->service->init();
+        try {
+            $result = $this->service->call("products?searchCriteria");
+            $magentoData = array();
+            if(isset($result->total_count) && $result->total_count > 0) {
+                foreach ($result->items as $iKey => $itemAr) {
+                    $magentoData[$itemAr->id] = $itemAr->sku;
+                }
+            }
+            return $magentoData;
+        }catch (\Throwable $e) {
+            Log::info("Failed to retrieve categories from magento");
+            Log::info($e);
+        }
+    }
+
+    public function findMagentoParentId($parentContentId){
+        $data = DB::table('category')->where('data_category_id', $parentContentId)->get()->first();
+        if(!empty((array)$data)){
+            return $data->magento_category_id;
+        }else{
+            return '2';
+        }
         
     }
-
-    function testdata(){
-
-        $file1 = public_path('file/Avena1.csv');
-        $file2 = public_path('file/Avena2.csv');
-        $file3 = public_path('file/Avena3.csv');
-        $file4 = public_path('file/Avena4.csv');
-        $productsArrAll = array();
-        $categoryContentArray = array();
-
-        $productsArrAll2 = array();
-        $productsArrAll3 = array();
-        $CategoryArrAll4 = array();
-
-        $ArrayOfRedirection = array();
-        $ArrayOfCms = array();
-
-        $productidContentidMap = array();
-
-        /* Product and category sepration from product data */
-        $csvDataArray = $this->csvToArray($file1);
-        for ($i = 0; $i < count($csvDataArray); $i ++)
-        {
-            if($csvDataArray[$i]['AssociateType']=='Product'){
-                $productsArrAll[$csvDataArray[$i]['AssociateID']] = $csvDataArray[$i];
-                $productidContentidMap[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i]['AssociateID'];
-
-            }elseif($csvDataArray[$i]['AssociateType']=='Category'){
-                $categoryContentArray[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
-            }elseif($csvDataArray[$i]['AssociateType']=='301Redirect'){
-                $ArrayOfRedirection[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
-            }else{
-                $ArrayOfCms[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i];
-            }
-        }
-        /* Product and category sepration from product data end */
-
-        /* catagory sepration and parent added */
-        $catagoryUrlContentId = array();
-        foreach ($categoryContentArray as $key => $value) {
-            $catagoryUrlContentId[$value['FileName']] = $value['ContentID'];
-        }
-
-        $catagoryTreeCounter = 0;
-        foreach ($categoryContentArray as $key => $value) {
-            $urlArray = array();
-            $urlArray = array_values(array_filter(explode('/', $value['FileName'])));
-            $categoryContentParent='';
-            $link = '/';
-            for ($i = 0; $i < count($urlArray)-1; $i++){
-                $link = $link.$urlArray[$i].'/';
-                $categoryContentParent = $categoryContentParent.'|'.$catagoryUrlContentId[$link];
-            }
-            $categoryContentArray[$value['ContentID']]['paraent_catagory_content_id'] = ltrim($categoryContentParent,'|') ;;
-        }
-        /* catagory sepration end */
-
-        /* added sheet 2 in product array */
-        $productArr2 = $this->csvToArray($file2);
-        for ($i = 0; $i < count($productArr2); $i ++)
-        {
-            foreach ($productArr2[$i] as $key => $value) {
-                $productsArrAll[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
-            }            
-        }
-        /* added sheet 2 in product array end */
-
-        /* added sheet 3 in product array */
-        $productArr3 = $this->csvToArray($file3);
-        for ($i = 0; $i < count($productArr3); $i ++)
-        {
-            foreach ($productArr3[$i] as $key => $value) {
-                $productsArrAll[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
-            }            
-        }
-        /* added sheet 3 in product array end */
-
-        $categoryArr4 = $this->csvToArray($file4);
-        for ($i = 0; $i < count($categoryArr4); $i ++)
-        {
-            $checkExisting = $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]];
-            if(isset($checkExisting['category_content_id']) && !empty($checkExisting['category_content_id'])){
-                $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $checkExisting['category_content_id'].'|'.$categoryArr4[$i]['CategoryContentID'];
-            }else{
-                $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $categoryArr4[$i]['CategoryContentID'];
-            }
-            
-        }
-
-        $fileName = public_path('file/redirectFile.csv');
-        $file = fopen($fileName, 'w');
-        $flag=0;
-        foreach ($ArrayOfRedirection as $line) {
-            if($flag==0){ fputcsv($file, array_keys($line)); }
-            fputcsv($file, $line);
-            $flag=1;
-        }
-        fclose($file);
-
-        $fileName = public_path('file/cmsFile.csv');
-        $file = fopen($fileName, 'w');
-        $flag=0;
-        foreach ($ArrayOfCms as $line) {
-            if($flag==0){ fputcsv($file, array_keys($line)); }
-            fputcsv($file, $line);
-            $flag=1;
-        }
-        fclose($file);
-
-        $fileName = public_path('file/categoryFile.csv');
-        $file = fopen($fileName, 'w');
-        $flag=0;
-        foreach ($categoryContentArray as $line) {
-            if($flag==0){ fputcsv($file, array_keys($line)); }
-            fputcsv($file, $line);
-            $flag=1;
-        }
-        fclose($file);
-
-        $fileName = public_path('file/productFile.csv');
-        $file = fopen($fileName, 'w');
-        $flag=0;
-        foreach ($productsArrAll as $line) {
-            if($flag==0){ fputcsv($file, array_keys($line)); }
-            fputcsv($file, $line);
-            $flag=1;
-        }
-        fclose($file);
-        echo 'done';
-
-    }
+    
 }
