@@ -1,0 +1,6 @@
+ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,AdditionalPageTitle,MetaKeywords,MetaDescription,Template,CreatedDate,CreatedByUserID,PublishedDate,LastUpdated,UpdatedByUserID,Protected,Rank,ProductRank,Enabled,Featured,RedirectContentID,Views,MapID,GalleryID,NotificationType,paraent_catagory_content_id
+188,0,Category,150,/search-by-stone-type/,Search By Stone Type,Search By Stone Type1,Search By Stone Type11,Search By Stone Type111,category.aspx,7/11/2012,1,7/11/2012,10/22/2020,2,0,1,0,1,1,0,29103,0,0,0
+190,188,Category,151,/search-by-stone-type/agate1/,Agate222,,,,category.aspx,7/11/2012,1,7/11/2012,9/21/2021,2,0,1,0,1,0,0,12537,0,0,0,188
+191,188,Category,152,/search-by-stone-type/amethyst/,Amethyst111,,,,category.aspx,7/11/2012,1,7/11/2012,7/11/2012,2,0,1,0,1,0,0,12481,0,0,0,188
+192,188,Category,153,/search-by-stone-type/aventurine/,Aventurine111,,,,category.aspx,7/11/2012,1,7/11/2012,7/11/2012,2,0,1,0,1,0,0,11300,0,0,0,188
+190,188,Category,154,/search-by-stone-type/agate/,Agate111,,,,category.aspx,7/11/2012,1,7/11/2012,9/21/2021,2,0,1,0,1,0,0,12537,0,0,0,188

@@ -17,7 +17,7 @@ class RowDataToCsvController extends Controller
         $data = array();
         if (($handle = fopen($filename, 'r')) !== false)
         {
-            while (($row = fgetcsv($handle, 10000000, $delimiter)) !== false)
+            while (($row = fgetcsv($handle, 100000000, $delimiter)) !== false)
             {
                 if (!$header){
                     $header = $row;
@@ -32,8 +32,29 @@ class RowDataToCsvController extends Controller
         return $data;
     }
 
+    function csvToArrayHeader($filename = '', $delimiter = ',')
+    {
+        if (!file_exists($filename) || !is_readable($filename))
+            return false;
+
+        $header = null;
+        $headerCount = 0;
+        $data = array();
+        if (($handle = fopen($filename, 'r')) !== false)
+        {
+            while (($row = fgetcsv($handle, 10000000, $delimiter)) !== false)
+            {   
+                if (!$header){
+                    $header = $row;
+                    fclose($handle);
+                    return $header;
+                }
+            }
+        }
+    }
+
     function createCsvFromData(){
-        $file1 = public_path('file/Avena1.csv');
+        $file1 = public_path('file/AvenaNew1.csv');
         $file2 = public_path('file/Avena2.csv');
         $file3 = public_path('file/Avena3.csv');
         $file4 = public_path('file/Avena4.csv');
@@ -87,13 +108,13 @@ class RowDataToCsvController extends Controller
         }
         /* catagory sepration end */
 
+        /*echo 'aaa'; die();*/
+
         /* added sheet 2 in product array */
         $productArr2 = $this->csvToArray($file2);
         for ($i = 0; $i < count($productArr2); $i ++)
         {
-            foreach ($productArr2[$i] as $key => $value) {
-                $productsArrAll[$productArr2[$i]['ProductID']]['tbl_Derivative_'.$key] = $value;
-            }            
+            $productsArrAll[$productArr2[$i]['ProductID']]['config'][] = $productArr2[$i];         
         }
         /* added sheet 2 in product array end */
 
@@ -118,8 +139,38 @@ class RowDataToCsvController extends Controller
             }
             
         }
+        
+        $cnt=0;
+        $final_product=array();
+        foreach($productsArrAll as $proConId => $prodArr){
+            $configtempArr = array();
+            $configtempArr = $prodArr["config"];
 
-        $fileName = public_path('file/redirectFile.csv');
+            unset($prodArr["config"]);
+            $header = $this->csvToArrayHeader($file2);
+            
+            if(count($configtempArr)>0){
+                foreach ($configtempArr as $key => $derProds) {
+                    $final_product[$cnt] = $prodArr;
+                    $final_product[$cnt]['productType'] = 'config';
+                    foreach ($derProds as $key => $value) {
+                        $final_product[$cnt]['tbl_derivative_'.$key] = $value;
+                    }
+                    $cnt++;
+                }
+            }else{
+                echo 'Test';
+                $final_product[$cnt] = $prodArr;
+                $final_product[$cnt]['productType'] = 'simple';
+                foreach($header as $key => $value){
+                   $final_product[$cnt]['tbl_derivative_'.$value]='';
+                }
+                $cnt++;
+            }
+        }
+
+
+        /*$fileName = public_path('file/redirectFile.csv');
         $file = fopen($fileName, 'w');
         $flag=0;
         foreach ($ArrayOfRedirection as $line) {
@@ -147,12 +198,15 @@ class RowDataToCsvController extends Controller
             fputcsv($file, $line);
             $flag=1;
         }
-        fclose($file);
+        fclose($file);*/
+
+
+
 
         $fileName = public_path('file/productFile.csv');
         $file = fopen($fileName, 'w');
         $flag=0;
-        foreach ($productsArrAll as $line) {
+        foreach ($final_product as $line) {
             if($flag==0){ fputcsv($file, array_keys($line)); }
             fputcsv($file, $line);
             $flag=1;
