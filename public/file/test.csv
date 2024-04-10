@@ -1,2 +1,0 @@
-name,sku,attribute_set_id,price,status,visibility,type_id,qty,is_in_stock,stock_id,category_ids,meta_title,meta_keyword,meta_description,url_key
-test001,test001,4,10,1,4,simple,5,TRUE,1,3,meta title 1,meta keyword 1,meta des 1,test001

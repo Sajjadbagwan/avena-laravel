@@ -18,12 +18,18 @@ class ProductsController extends Controller
     public function syncProduct()
     {
         $MagentoProducts = array();
-        /*$MagentoProducts = $this->getAllProductsFromMagento();*/
+        //$MagentoProducts = $this->getAllProductsFromMagento();
 
         $MagentoProducts = array('2064'=>'1565','2065'=>'1566');
 
         $file = public_path('file/productFile.csv');
+
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
+
+        echo '<pre>';
+        print_r($productCsvArr);
+        echo '</pre>';
+        die();
 
 
         for ($i = 0; $i < count($productCsvArr); $i ++)
@@ -106,9 +112,10 @@ class ProductsController extends Controller
         $resultLogId = $this->generateLog($csvCatData['ContentID'],'product');
         $data = $this->getProductData($csvCatData);
 
-        /*echo '<pre>';
+        echo '<pre>';
         print_r($data);
-        die();*/
+        echo '</pre>';
+        
 
         $result = array();
         $this->service = configMagento();
@@ -192,7 +199,7 @@ class ProductsController extends Controller
 
         $productData = (object)array(
             "sku" => $csvCatData['ContentID'],
-            "name" => $csvCatData['PageTitle'].' a1',
+            "name" => $csvCatData['PageTitle'],
             "price" => $csvCatData['tbl_Product_Price'],
             "status" => 1,
             "type_id" => "simple",
@@ -285,7 +292,7 @@ class ProductsController extends Controller
     }
 
     public function findMagentoParentId($parentContentId){
-        $data = DB::table('category')->where('data_category_id', $parentContentId)->get()->first();
+        $data = DB::table('category')->where('data_category_id', $parentContentId)->orderBy('id', 'desc')->get()->first();
         if(!empty((array)$data)){
             return $data->magento_category_id;
         }else{
