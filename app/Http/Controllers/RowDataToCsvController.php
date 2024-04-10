@@ -76,6 +76,7 @@ class RowDataToCsvController extends Controller
         {
             if($csvDataArray[$i]['AssociateType']=='Product'){
                 $productsArrAll[$csvDataArray[$i]['AssociateID']] = $csvDataArray[$i];
+                $productsArrAll[$csvDataArray[$i]['AssociateID']]['category_content_id'] = '';
                 $productidContentidMap[$csvDataArray[$i]['ContentID']] = $csvDataArray[$i]['AssociateID'];
 
             }elseif($csvDataArray[$i]['AssociateType']=='Category'){
@@ -124,18 +125,24 @@ class RowDataToCsvController extends Controller
         {
             foreach ($productArr3[$i] as $key => $value) {
                 $productsArrAll[$productArr3[$i]['ProductID']]['tbl_Product_'.$key] = $value;
-            }            
+            }   
+     
         }
         /* added sheet 3 in product array end */
 
         $categoryArr4 = $this->csvToArray($file4);
         for ($i = 0; $i < count($categoryArr4); $i ++)
-        {
+        {   
+            
             $checkExisting = $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]];
             if(isset($checkExisting['category_content_id']) && !empty($checkExisting['category_content_id'])){
                 $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $checkExisting['category_content_id'].'|'.$categoryArr4[$i]['CategoryContentID'];
             }else{
-                $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $categoryArr4[$i]['CategoryContentID'];
+
+                if(!empty($categoryArr4[$i]['CategoryContentID'])){
+                    $productsArrAll[$productidContentidMap[$categoryArr4[$i]['ProductContentID']]]['category_content_id'] =  $categoryArr4[$i]['CategoryContentID'];
+                }
+                
             }
             
         }
@@ -148,20 +155,26 @@ class RowDataToCsvController extends Controller
 
             unset($prodArr["config"]);
             $header = $this->csvToArrayHeader($file2);
+
+            if(($prodArr['tbl_Product_Derivative1']=='n/a' || $prodArr['tbl_Product_Derivative1']=='') && ($prodArr['tbl_Product_Derivative2']=='n/a' || $prodArr['tbl_Product_Derivative2']=='')){
+                $type = 'simple';
+            }else{
+                $type = 'config';
+            }
             
             if(count($configtempArr)>0){
                 foreach ($configtempArr as $key => $derProds) {
                     $final_product[$cnt] = $prodArr;
-                    $final_product[$cnt]['productType'] = 'config';
+                    $final_product[$cnt]['productType'] = $type;
                     foreach ($derProds as $key => $value) {
                         $final_product[$cnt]['tbl_derivative_'.$key] = $value;
                     }
                     $cnt++;
                 }
             }else{
-                echo 'Test';
+
                 $final_product[$cnt] = $prodArr;
-                $final_product[$cnt]['productType'] = 'simple';
+                $final_product[$cnt]['productType'] = $type;
                 foreach($header as $key => $value){
                    $final_product[$cnt]['tbl_derivative_'.$value]='';
                 }
@@ -169,8 +182,7 @@ class RowDataToCsvController extends Controller
             }
         }
 
-
-        /*$fileName = public_path('file/redirectFile.csv');
+        $fileName = public_path('file/redirectFile.csv');
         $file = fopen($fileName, 'w');
         $flag=0;
         foreach ($ArrayOfRedirection as $line) {
@@ -199,9 +211,6 @@ class RowDataToCsvController extends Controller
             $flag=1;
         }
         fclose($file);*/
-
-
-
 
         $fileName = public_path('file/productFile.csv');
         $file = fopen($fileName, 'w');

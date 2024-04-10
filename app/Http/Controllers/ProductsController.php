@@ -22,12 +22,12 @@ class ProductsController extends Controller
 
         $MagentoProducts = array('2064'=>'1565','2065'=>'1566');
 
-        $file = public_path('file/productFile.csv');
+        $file = public_path('file/productFilepart.csv');
 
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
 
         echo '<pre>';
-        print_r($productCsvArr);
+        print_r(array_slice($productCsvArr, 0, 10));
         echo '</pre>';
         die();
 
