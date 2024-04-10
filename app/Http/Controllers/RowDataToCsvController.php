@@ -17,7 +17,7 @@ class RowDataToCsvController extends Controller
         $data = array();
         if (($handle = fopen($filename, 'r')) !== false)
         {
-            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
+            while (($row = fgetcsv($handle, 10000000, $delimiter)) !== false)
             {
                 if (!$header){
                     $header = $row;
