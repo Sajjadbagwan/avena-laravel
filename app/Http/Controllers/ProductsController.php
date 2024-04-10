@@ -63,6 +63,7 @@ class ProductsController extends Controller
             $result = $this->service->call('products', $data, 'POST');
         } catch (\Throwable $e) {
             echo 'Failed to insert category to magento for content ID '.$csvCatData['ContentID'];
+            echo '<br/>';
             Log::info("Failed to insert category to magento");
             Log::info($e);
         }
@@ -120,6 +121,7 @@ class ProductsController extends Controller
             Log::info("Failed to insert category to magento");
             Log::info($e);
             echo $proceesMsg;
+            echo '<br/>';
         }
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -208,7 +210,7 @@ class ProductsController extends Controller
         $catMagentoIdArr = array();
         if(!empty($contentIdArray)){
             foreach($contentIdArray as $key => $value){
-                $existingData = DB::table('category')->where('data_category_id', '=', $value)->get()->last();
+                $existingData = DB::table('category')->where('data_category_id', '=', $value)->orderBy('id', 'desc')->get()->first();
                 if(!empty($existingData)){
                     array_push($catMagentoIdArr,$existingData->magento_category_id);
                 }
