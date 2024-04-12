@@ -210,7 +210,7 @@ class RowDataToCsvController extends Controller
             fputcsv($file, $line);
             $flag=1;
         }
-        fclose($file);*/
+        fclose($file);
 
         $fileName = public_path('file/productFile.csv');
         $file = fopen($fileName, 'w');

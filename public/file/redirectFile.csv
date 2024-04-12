@@ -120,7 +120,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 4070,0,301Redirect,0,/spodge-the-gargoyle/2/,"Spodge The Gargoyle",,,,301-redirect.aspx,11/20/2012,1,11/20/2012,11/20/2012,1,0,1,0,1,0,1,0,0,0,0
 4072,0,301Redirect,0,/daffy-the-gargoyle-test/,"Daffy The Gargoyle test",,,,301-redirect.aspx,11/20/2012,1,11/20/2012,11/20/2012,1,0,1,0,1,0,3079,0,0,0,0
 4074,0,301Redirect,0,/spodge-the-gargoyle-test/,"Spodge The Gargoyle Test",,,,301-redirect.aspx,11/20/2012,1,11/20/2012,11/20/2012,1,0,1,0,1,0,3577,0,0,0,0
-4081,0,301Redirect,0,/fridge-magnet-145-i-dont-knowi-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't knowI don't care... That's why they put me in charge",,,,301-redirect.aspx,11/23/2012,8,11/23/2012,11/23/2012,8,0,1,0,1,0,2039,6,0,0,0
+4081,0,301Redirect,0,/fridge-magnet-145-i-dont-knowi-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't knowI don't care That's why they put me in charge",,,,301-redirect.aspx,11/23/2012,8,11/23/2012,11/23/2012,8,0,1,0,1,0,2039,6,0,0,0
 4103,0,301Redirect,0,/essential-oil-box-for-6-bottles-with-brass-trim/3/,"Essential Oil Box For 6 Bottles With Brass Trim",,,,301-redirect.aspx,11/27/2012,3,11/27/2012,11/27/2012,3,0,1,0,1,0,1,0,0,0,0
 4105,0,301Redirect,0,/essential-oil-box-for-6-bottles-with-brass-trim/,"Essential Oil Box For 6 Bottles With Brass Trim",,,,301-redirect.aspx,11/27/2012,3,11/27/2012,11/27/2012,3,0,1,0,1,0,1,0,0,0,0
 4115,0,301Redirect,0,/fern-leaves-large-500g-bag/2/,"Fern Leaves- Large 500g Bag",,,,301-redirect.aspx,11/28/2012,1,11/28/2012,11/28/2012,1,0,1,0,1,0,1,7,0,0,0
@@ -1165,7 +1165,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 5804,0,301Redirect,0,/classic-linen-votive-candles/,"Classic Linen Votive Candles",,,,301-redirect.aspx,10/31/2013,5,10/31/2013,10/31/2013,5,0,1,0,1,0,4018,102,0,0,0
 5805,0,301Redirect,0,/Cool-Mint-Bolsius-Tea-light-Candles-Box-of-Six/,"Cool Mint Bolsius Tea light Candles Box of Six",,,,301-redirect.aspx,10/31/2013,5,10/31/2013,10/31/2013,5,0,1,0,1,0,1769,148,0,0,0
 5807,0,301Redirect,0,/nag-champa-candle-in-a-tin/,"Nag Champa Candle In A Tin",,,,301-redirect.aspx,10/31/2013,5,10/31/2013,10/31/2013,5,0,1,0,1,0,5248,148,0,0,0
-5809,0,301Redirect,0,/fridge-magnet-50-grandma-a-little-bit-parent-a-little-bit-teacher/,"Fridge Magnet 50 GRANDMA - a little bit parent, a little bit teacher...",,,,301-redirect.aspx,11/2/2013,6,11/2/2013,11/2/2013,6,0,1,0,1,0,5808,0,0,0,0
+5809,0,301Redirect,0,/fridge-magnet-50-grandma-a-little-bit-parent-a-little-bit-teacher/,"Fridge Magnet 50 GRANDMA - a little bit parent, a little bit teacher",,,,301-redirect.aspx,11/2/2013,6,11/2/2013,11/2/2013,6,0,1,0,1,0,5808,0,0,0,0
 5813,0,301Redirect,0,/reed-diffuser-festive-fig-and-spiced-clementines/,"Reed Diffuser Festive Fig And Spiced Clementines",,,,301-redirect.aspx,11/2/2013,6,11/2/2013,11/2/2013,6,0,1,0,1,0,4132,181,0,0,0
 5814,0,301Redirect,0,/reed-diffuser-frankincense-and-myrrh/2/,"Reed Diffuser Frankincense and Myrrh",,,,301-redirect.aspx,11/2/2013,6,11/2/2013,11/2/2013,6,0,1,0,1,0,4130,59,0,0,0
 5815,0,301Redirect,0,/Reed-Diffuser-Cinnamon-Apple/,"Reed Diffuser Cinnamon & Apple",,,,301-redirect.aspx,11/2/2013,6,11/2/2013,11/2/2013,6,0,1,0,1,0,2696,199,0,0,0
@@ -1183,7 +1183,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 5830,0,301Redirect,0,/Friends-Forever-by-Anne-Stokes/,"Friends Forever by Anne Stokes",,,,301-redirect.aspx,11/8/2013,2,11/8/2013,11/8/2013,2,0,1,0,1,0,3210,126,0,0,0
 5848,0,301Redirect,0,/berry-and-foliage-pick/,"Berry And Foliage Pick",,,,301-redirect.aspx,11/17/2013,6,11/17/2013,11/17/2013,6,0,1,0,1,0,5842,16,0,0,0
 5852,0,301Redirect,0,/brute-skullwith-horns/,"Brute SkullWith Horns",,,,301-redirect.aspx,11/18/2013,7,11/18/2013,11/18/2013,7,0,1,0,1,0,5849,0,0,0,0
-5853,0,301Redirect,0,/fridge-magnet-106-follow-your-heart-embrace-tour-dreams/,"Fridge Magnet 106 Follow your HEART, embrace tour DREAMS...",,,,301-redirect.aspx,11/19/2013,5,11/19/2013,11/19/2013,5,0,1,0,1,0,5810,28,0,0,0
+5853,0,301Redirect,0,/fridge-magnet-106-follow-your-heart-embrace-tour-dreams/,"Fridge Magnet 106 Follow your HEART, embrace tour DREAMS",,,,301-redirect.aspx,11/19/2013,5,11/19/2013,11/19/2013,5,0,1,0,1,0,5810,28,0,0,0
 5854,0,301Redirect,0,/reed-diffuser-cinnamon-apple-200ml/,"Reed Diffuser Cinnamon & Apple 200ml",,,,301-redirect.aspx,11/19/2013,5,11/19/2013,11/19/2013,5,0,1,0,1,0,2696,66,0,0,0
 5855,0,301Redirect,0,/Reed-Diffuser-Lavender-In-Gift-Tube-200ml/,"Reed Diffuser Lavender In Gift Tube 200ml",,,,301-redirect.aspx,11/19/2013,5,11/19/2013,11/19/2013,5,0,1,0,1,0,2699,128,0,0,0
 5856,0,301Redirect,0,/Shower-Gel-Base-SLS-Free-Parabens-Free/,"Shower Gel Base SLS Free & Parabens Free",,,,301-redirect.aspx,11/19/2013,5,11/19/2013,11/19/2013,5,0,1,0,1,0,2829,196,0,0,0
@@ -1552,7 +1552,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 6430,0,301Redirect,0,/Fridge-Magnet-074-You-are-loved-for-the-little-girl-you-were/,"Fridge Magnet 074 You are loved for the little girl you were",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,1985,75,0,0,0
 6431,0,301Redirect,0,/Fridge-Magnet-075-If-God-had-wanted-me-to-touch-my-toes-hed-have-put-them-on-my-knees/,"Fridge Magnet 075 If God had wanted me to touch my toes he''''d have put them on my knees",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,1986,420,0,0,0
 6432,0,301Redirect,0,/Fridge-Magnet-078-Nobody-notices-what-I-do-until-I-dont-do-it/,"Fridge Magnet 078 Nobody notices what I do- until I don''''t do it!",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,1989,240,0,0,0
-6433,0,301Redirect,0,/fridge-magnet-082-you-dont-have-to-promise-me-the-moon/2/,"Fridge Magnet 082 You don`t have to promise me the moon...",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,3884,713,0,0,0
+6433,0,301Redirect,0,/fridge-magnet-082-you-dont-have-to-promise-me-the-moon/2/,"Fridge Magnet 082 You don`t have to promise me the moon",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,3884,713,0,0,0
 6434,0,301Redirect,0,/fridge-magnet-100-theres-no-friend-like-a-daughter/2/,"Fridge Magnet 100 There's no friend like a daughter",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,2010,82,0,0,0
 6435,0,301Redirect,0,/Fridge-Magnet-103-We-take-our-kids-everywhere/,"Fridge Magnet 103 We take our kids everywhere",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,2012,187,0,0,0
 6436,0,301Redirect,0,/fridge-magnet-106-id-let-myself-go-but-ive-already-gone/2/,"Fridge Magnet 106 I'd Let myself go - but I've already gone",,,,301-redirect.aspx,3/12/2014,5,3/12/2014,3/12/2014,5,0,1,0,1,0,2014,558,0,0,0
@@ -1567,11 +1567,11 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 6450,0,301Redirect,0,/Fridge-Magnet-131-A-sister-will-never-forget/,"Fridge Magnet 131 A sister will never forget",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2030,171,0,0,0
 6451,0,301Redirect,0,/Fridge-Magnet-133-You-may-be-only-one-person-in-the-world/,"Fridge Magnet 133 You may be only one person in the world",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2032,174,0,0,0
 6452,0,301Redirect,0,/Fridge-Magnet-143-Before-you-criticise-someone-you-should-walk-a-mile-in-their-shoes/,"Fridge Magnet 143 Before you criticise someone, you should walk a mile in their shoes",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2038,439,0,0,0
-6453,0,301Redirect,0,/fridge-magnet-145-i-dont-know-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't know don't care... That's why they put me in charge",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2039,136,0,0,0
+6453,0,301Redirect,0,/fridge-magnet-145-i-dont-know-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't know don't care That's why they put me in charge",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2039,136,0,0,0
 6454,0,301Redirect,0,/Fridge-Magnet-147-I-used-to-be-indecisive-but-now-Im-not-sure/,"Fridge Magnet 147 I used to be indecisive but now I`m not sure",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2041,291,0,0,0
-6455,0,301Redirect,0,/fridge-magnet-147-pet-it-be-pet-it-be-whisper-words-of-wisdom/,"Fridge Magnet 147 Pet it  be, pet it be, whisper words of wisdom...",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,5317,82,0,0,0
+6455,0,301Redirect,0,/fridge-magnet-147-pet-it-be-pet-it-be-whisper-words-of-wisdom/,"Fridge Magnet 147 Pet it  be, pet it be, whisper words of wisdom",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,5317,82,0,0,0
 6456,0,301Redirect,0,/Fridge-Magnet-149-The-5-steps-to-happiness/,"Fridge Magnet 149 The 5 steps to happiness",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2043,387,0,0,0
-6457,0,301Redirect,0,/fridge-magnet-152-to-the-world-youre-just-a-teacher-to-your-students/,"Fridge Magnet 152 To the world you`re just a Teacher. To your students...",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,5318,223,0,0,0
+6457,0,301Redirect,0,/fridge-magnet-152-to-the-world-youre-just-a-teacher-to-your-students/,"Fridge Magnet 152 To the world you`re just a Teacher. To your students",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,5318,223,0,0,0
 6458,0,301Redirect,0,/Fridge-Magnet-153-I-have-no-idea-what-I-want-but-I-know-I-wont/,"Fridge Magnet 153 I have no idea what I want but I know I won`t",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2048,67,0,0,0
 6459,0,301Redirect,0,/Fridge-Magnet-154-Im-not-so-good-on-the-advice-Can-I-interest-you/,"Fridge Magnet 154 I`m not so good on the advice Can I interest you",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2050,51,0,0,0
 6460,0,301Redirect,0,/Fridge-Magnet-155-Im-not-a-housewife-but-Im-desperate/,"Fridge Magnet 155 I`m not a housewife but I`m desperate!",,,,301-redirect.aspx,3/13/2014,5,3/13/2014,3/13/2014,5,0,1,0,1,0,2053,177,0,0,0
@@ -1579,24 +1579,24 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 6485,0,301Redirect,0,/Fridge-Magnet-158-Men-are-like-chocolates/,"Fridge Magnet 158 Men are like chocolates",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2056,205,0,0,0
 6486,0,301Redirect,0,/fridge-magnet-160-if-a-messy-kitchen-is-a-happy-kitchen-mines-delirious/2/,"Fridge Magnet 160 If A Messy Kitchen Is A Happy Kitchen Mine's Delirious",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2058,104,0,0,0
 6487,0,301Redirect,0,/Fridge-Magnet-162-I-understand-I-just-dont-care/,"Fridge Magnet 162 I understand - I just don`t care",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2060,253,0,0,0
-6488,0,301Redirect,0,/fridge-magnet-167-the-trouble-with-being-punctual-is-theres-no-one-there/,"Fridge Magnet 167 The trouble with being punctual is there`s no one there...",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,3891,74,0,0,0
+6488,0,301Redirect,0,/fridge-magnet-167-the-trouble-with-being-punctual-is-theres-no-one-there/,"Fridge Magnet 167 The trouble with being punctual is there`s no one there",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,3891,74,0,0,0
 6489,0,301Redirect,0,/Fridge-Magnet-168-Dont-marry-for-money-you-can-borrow-cheaper/,"Fridge Magnet 168 Don`t marry for money, you can borrow cheaper",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2067,100,0,0,0
 6490,0,301Redirect,0,/Fridge-Magnet-174-I-dont-suffer-from-insanity-I-enjoy/,"Fridge Magnet 174 I don`t suffer from insanity, I enjoy",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2073,61,0,0,0
 6491,0,301Redirect,0,/Fridge-Magnet-175-It-doesnt-matter-what-you-have-in-life-if-cant-find-it/,"Fridge Magnet 175 It doesn`t matter what you have in life if can`t find it",,,,301-redirect.aspx,3/19/2014,5,3/19/2014,3/19/2014,5,0,1,0,1,0,2075,69,0,0,0
 6492,0,301Redirect,0,/dream-catcher-large-avdc02e/,"Dream Catcher Large (AVDC02E)",,,,301-redirect.aspx,3/23/2014,2,3/23/2014,3/23/2014,2,0,1,0,1,0,1,0,0,0,0
 6493,0,301Redirect,0,/nag-champa-super-hit-incense-cones-12s-box/,"Nag Champa Super Hit Incense Cones 12`s Box",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,4969,80,0,0,0
-6494,0,301Redirect,0,/fridge-magnet-182-weve-been-through-so-much-together-and-most-if-it/,"Fridge Magnet 182 We`ve been through so much together and most if it...",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3895,82,0,0,0
+6494,0,301Redirect,0,/fridge-magnet-182-weve-been-through-so-much-together-and-most-if-it/,"Fridge Magnet 182 We`ve been through so much together and most if it",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3895,82,0,0,0
 6495,0,301Redirect,0,/Fridge-Magnet-183-Chocolate-here-today-gone-today/,"Fridge Magnet 183 Chocolate here today, gone today",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2083,77,0,0,0
 6496,0,301Redirect,0,/Fridge-Magnet-184-I-may-not-be-rich-and-famous/,"Fridge Magnet 184 I may not be rich and famous",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2085,169,0,0,0
 6497,0,301Redirect,0,/Fridge-Magnet-186-Little-by-little-whatever-the-weather/,"Fridge Magnet 186 Little by little, whatever the weather",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2087,158,0,0,0
-6498,0,301Redirect,0,/fridge-magnet-188-anyone-can-be-cool-but-awesome-takes-practice/,"Fridge Magnet 188 Anyone can be cool but awesome takes practice...",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3897,54,0,0,0
+6498,0,301Redirect,0,/fridge-magnet-188-anyone-can-be-cool-but-awesome-takes-practice/,"Fridge Magnet 188 Anyone can be cool but awesome takes practice",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3897,54,0,0,0
 6499,0,301Redirect,0,/fridge-magnet-190-marriage-is-a-relationship-in-which/,"Fridge Magnet 190 Marriage is a relationship in which",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2092,221,0,0,0
 6500,0,301Redirect,0,/Fridge-Magnet-191-Just-when-we-get-to-an-age-when-our-head-is-screwed-on-tight/,"Fridge Magnet 191 Just when we get to an age when our head is screwed on tight",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2093,82,0,0,0
 6501,0,301Redirect,0,/fridge-magnet-193-if-a-womans-work-is-never-done-why-start/2/,"Fridge Magnet 193 If a woman's work is never done- Why start!",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2096,183,0,0,0
 6502,0,301Redirect,0,/Fridge-Magnet-194-The-opinions-expressed-by-the-husband/,"Fridge Magnet 194 The opinions expressed by the husband",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2097,480,0,0,0
 6503,0,301Redirect,0,/Fridge-Magnet-200-Good-friends-are-like-stars/,"Fridge Magnet 200 Good friends are like stars",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2103,333,0,0,0
 6504,0,301Redirect,0,/Fridge-Magnet-202-Destined-for-greatnessjust-pacing-myself-for/,"Fridge Magnet 202 Destined for greatnessjust pacing myself for",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2105,244,0,0,0
-6505,0,301Redirect,0,/fridge-magnet-205-in-two-days-from-now-tomorrow-will-be-yesterday/,"Fridge Magnet 205 In two days from now tomorrow will be yesterday...",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3898,88,0,0,0
+6505,0,301Redirect,0,/fridge-magnet-205-in-two-days-from-now-tomorrow-will-be-yesterday/,"Fridge Magnet 205 In two days from now tomorrow will be yesterday",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,3898,88,0,0,0
 6506,0,301Redirect,0,/Glass-Bottles-Amber-Kingston-With-Brush-Cap-10ml/,"Glass Bottles Amber Kingston With Brush Cap 10ml",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2158,154,0,0,0
 6511,0,301Redirect,0,/Glass-Bottles-Amber-Kingston-With-Glass-Pipette-Tamper-Evident-Cap-100ml/,"Glass Bottles Amber Kingston With Glass Pipette Tamper Evident Cap 100ml",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2163,165,0,0,0
 6512,0,301Redirect,0,/Glass-Bottles-Amber-Kingston-With-Mist-Sprayer-Atomiser-Cap-100ml/,"Glass Bottles Amber Kingston With Mist Sprayer / Atomiser Cap 100ml",,,,301-redirect.aspx,3/26/2014,5,3/26/2014,3/26/2014,5,0,1,0,1,0,2164,157,0,0,0
@@ -1920,7 +1920,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7089,0,301Redirect,0,/ylang-ylang-incense-sticks-20s-box/,"Ylang Ylang Incense Sticks 20's Box",,,,301-redirect.aspx,6/4/2014,6,6/4/2014,6/4/2014,6,0,1,0,1,0,6304,70,0,0,0
 7090,0,301Redirect,0,/Garden-Face-On-Legs-Shouting/,"Garden Face On Legs ''''Shouting''''",,,,301-redirect.aspx,6/6/2014,2,6/6/2014,6/6/2014,2,0,1,0,1,0,1,0,0,0,0
 7092,0,301Redirect,0,/candy-bath-blaster/,"Candy Bath Blaster",,,,301-redirect.aspx,6/6/2014,2,6/6/2014,6/6/2014,2,0,1,0,1,0,5654,147,0,0,0
-7105,0,301Redirect,0,/fridge-magnet-160-true-friends-know-how-stupid-you-are/,"Fridge Magnet 160 True Friends know how stupid you are...",,,,301-redirect.aspx,6/9/2014,6,6/9/2014,6/9/2014,6,0,1,0,1,0,7102,0,0,0,0
+7105,0,301Redirect,0,/fridge-magnet-160-true-friends-know-how-stupid-you-are/,"Fridge Magnet 160 True Friends know how stupid you are",,,,301-redirect.aspx,6/9/2014,6,6/9/2014,6/9/2014,6,0,1,0,1,0,7102,0,0,0,0
 7107,0,301Redirect,0,/pentagon-tarot-bag-large/,"Pentagon Tarot Bag Large",,,,301-redirect.aspx,6/9/2014,6,6/9/2014,6/9/2014,6,0,1,0,1,0,7106,0,0,0,0
 7112,0,301Redirect,0,/cajaput-essential-oil-melaleuca-leucodendron/,"Cajaput Essential Oil (Melaleuca leucodendron)",,,,301-redirect.aspx,6/9/2014,5,6/9/2014,6/9/2014,5,0,1,0,1,0,1681,224,0,0,0
 7116,0,301Redirect,0,/Cardamom-Organic-Essential-Oil-Elettaria-cardamomum/,"Cardamom Organic Essential Oil (Elettaria cardamomum)",,,,301-redirect.aspx,6/12/2014,2,6/12/2014,6/12/2014,2,0,1,0,1,0,1696,459,0,0,0
@@ -1934,9 +1934,9 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7131,0,301Redirect,0,/Fridge-Magnet-091-Im-on-a-gin-and-tonic-diet-so-far/,"Fridge Magnet 091 I`m on a gin and tonic diet - so far",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,2002,217,0,0,0
 7132,0,301Redirect,0,/Fridge-Magnet-148-Everyone-brings-joy-to-the-house/,"Fridge Magnet 148 Everyone brings joy to the house",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,2042,190,0,0,0
 7133,0,301Redirect,0,/Fridge-Magnet-209-I-live-for-nights-I-cant-remember-with-friends-I-never-forget/,"Fridge Magnet 209 I live for nights I can`t remember with friends I never forget",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,2116,102,0,0,0
-7134,0,301Redirect,0,/fridge-magnet-077-the-party-cant-be-over-i-still-look-fabulous/,"Fridge Magnet 077 The party can`t be over... I still look fabulous!",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,4191,19,0,0,0
+7134,0,301Redirect,0,/fridge-magnet-077-the-party-cant-be-over-i-still-look-fabulous/,"Fridge Magnet 077 The party can`t be over I still look fabulous!",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,4191,19,0,0,0
 7135,0,301Redirect,0,/mable-ladybird-scarecrow-on-stick-large/,"Mable Ladybird Scarecrow on Stick Large",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,7093,51,0,0,0
-7136,0,301Redirect,0,/fridge-magnet-165-true-friends-know-how-stupid-you-are/,"Fridge Magnet 165 True Friends know how stupid you are...",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,7102,6,0,0,0
+7136,0,301Redirect,0,/fridge-magnet-165-true-friends-know-how-stupid-you-are/,"Fridge Magnet 165 True Friends know how stupid you are",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,7102,6,0,0,0
 7137,0,301Redirect,0,/metal-tube-chime-77cm/,"Metal Tube Chime 77Cm",,,,301-redirect.aspx,6/18/2014,5,6/18/2014,6/18/2014,5,0,1,0,1,0,4886,102,0,0,0
 7138,0,301Redirect,0,/Lavender-Incense-Sticks-20-flat-box/,"Lavender Incense Sticks 20 (flat box)",,,,301-redirect.aspx,6/19/2014,2,6/19/2014,6/19/2014,2,0,1,0,1,0,2361,52,0,0,0
 7139,0,301Redirect,0,/lavender-incense-sticks-20s-box/,"Lavender Incense Sticks 20`s Box",,,,301-redirect.aspx,6/19/2014,2,6/19/2014,6/19/2014,2,0,1,0,1,0,4990,0,0,0,0
@@ -1986,9 +1986,9 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7313,0,301Redirect,0,/cherub-letters-love-on-base/,"Cherub Letters 'Love' On Base",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,4939,112,0,0,0
 7314,0,301Redirect,0,/wolf-and-women-3d-key-ring/,"Wolf and Women 3D Key Ring",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7203,100,0,0,0
 7315,0,301Redirect,0,/fridge-magnet-005-the-more-i-grow-the-more-i-riealise/,"Fridge Magnet 005 The more I grow, the more I riealise",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7207,73,0,0,0
-7317,0,301Redirect,0,/fridge-magnet-203-no-one-looks-back-on-their-lives-and-remembers/,"Fridge Magnet 203 No one looks back on their lives and remembers...",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7209,23,0,0,0
-7318,0,301Redirect,0,/fridge-magnet-192-more-than-you-can-ever-imagine-more-than-you-ever/,"Fridge Magnet 192 More than you can ever imagine, more than you ever...",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7210,14,0,0,0
-7319,0,301Redirect,0,/fridge-magnet-149-todays-menu-eat-it-is-starve/,"Fridge Magnet 149 Today’s Menu EAT IT IS STARVE",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7213,24,0,0,0
+7317,0,301Redirect,0,/fridge-magnet-203-no-one-looks-back-on-their-lives-and-remembers/,"Fridge Magnet 203 No one looks back on their lives and remembers",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7209,23,0,0,0
+7318,0,301Redirect,0,/fridge-magnet-192-more-than-you-can-ever-imagine-more-than-you-ever/,"Fridge Magnet 192 More than you can ever imagine, more than you ever",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7210,14,0,0,0
+7319,0,301Redirect,0,/fridge-magnet-149-todays-menu-eat-it-is-starve/,"Fridge Magnet 149 Today's Menu EAT IT IS STARVE",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7213,24,0,0,0
 7324,0,301Redirect,0,/rose-ear-candle-pack-of-two-trumpet/,"Rose Ear Candle Pack Of Two 'Trumpet'",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7238,39,0,0,0
 7326,0,301Redirect,0,/sandalwood-ear-candle-pack-of-two-trumpet/,"Sandalwood Ear Candle Pack Of Two 'Trumpet'",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7239,48,0,0,0
 7327,0,301Redirect,0,/lavender-and-sage-smudge-stick-7/,"Lavender And Sage Smudge Stick 7""",,,,301-redirect.aspx,9/8/2014,5,9/8/2014,9/8/2014,5,0,1,0,1,0,7241,24,0,0,0
@@ -2010,7 +2010,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7490,0,301Redirect,0,/sister-cherub-letters/,"Sister Cherub Letters",,,,301-redirect.aspx,9/26/2014,6,9/26/2014,9/26/2014,6,0,1,0,1,0,7489,0,0,0,0
 7496,0,301Redirect,0,/faith-whisper-heart-in-gift-bag/,"Faith Whisper Heart in Gift Bag",,,,301-redirect.aspx,9/26/2014,6,9/26/2014,9/26/2014,6,0,1,0,1,0,7494,0,0,0,0
 7500,0,301Redirect,0,/both-of-us-wooden-heart-block/,"Both of Us Wooden Heart Block",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7365,83,0,0,0
-7501,0,301Redirect,0,/im-usually-thin-wooden-heart-block/,"I’m Usually Thin Wooden Heart Block",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7364,72,0,0,0
+7501,0,301Redirect,0,/im-usually-thin-wooden-heart-block/,"I'm Usually Thin Wooden Heart Block",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7364,72,0,0,0
 7502,0,301Redirect,0,/behind-every-great-man-wooden-heart-block/,"Behind Every Great Man Wooden Heart Block",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7366,45,0,0,0
 7503,0,301Redirect,0,/i-love-fitness-wooden-heart-block/,"I Love Fitness Wooden Heart Block",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7368,78,0,0,0
 7504,0,301Redirect,0,/love-and-kisses-owl-slate-hanger/,"Love And Kisses Owl Slate Hanger",,,,301-redirect.aspx,9/29/2014,5,9/29/2014,9/29/2014,5,0,1,0,1,0,7381,19,0,0,0
@@ -2039,7 +2039,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7628,0,301Redirect,0,/stack-of-fragranced-sea-urchins-blue/,"Stack Of Fragranced Sea Urchins Blue",,,,301-redirect.aspx,10/18/2014,6,10/18/2014,10/18/2014,6,0,1,0,1,0,5241,125,0,0,0
 7629,0,301Redirect,0,/stack-of-fragranced-sea-urchins-green/,"Stack Of Fragranced Sea Urchins Green",,,,301-redirect.aspx,10/18/2014,6,10/18/2014,10/18/2014,6,0,1,0,1,0,5242,149,0,0,0
 7653,0,301Redirect,0,/Fridge-Magnet-062-Sometimes-I-wake-up-grumpy-other-days-I-let-him-sleep/,"Fridge Magnet 062 Sometimes I wake up grumpy, other days I let him sleep",,,,301-redirect.aspx,10/19/2014,6,10/19/2014,10/19/2014,6,0,1,0,1,0,1974,210,0,0,0
-7654,0,301Redirect,0,/fridge-magnet-116-friendship-must-be-built-upon-a-solid-foundation-of-alcohol/,"Fridge Magnet 116 Friendship must be built upon a solid foundation of alcohol...",,,,301-redirect.aspx,10/19/2014,6,10/19/2014,10/19/2014,6,0,1,0,1,0,7218,84,0,0,0
+7654,0,301Redirect,0,/fridge-magnet-116-friendship-must-be-built-upon-a-solid-foundation-of-alcohol/,"Fridge Magnet 116 Friendship must be built upon a solid foundation of alcohol",,,,301-redirect.aspx,10/19/2014,6,10/19/2014,10/19/2014,6,0,1,0,1,0,7218,84,0,0,0
 7655,0,301Redirect,0,/fridge-magnet-117-grandmas-place-where-memories-are-made-and-children-spoiled/2/,"Fridge Magnet 117 Grandma's Place Where memories are made and children spoiled",,,,301-redirect.aspx,10/19/2014,6,10/19/2014,10/19/2014,6,0,1,0,1,0,3888,28,0,0,0
 7656,0,301Redirect,0,/fridge-magnet-120-real-women-dont-have-hot-flushes-they-have-power-surges/2/,"Fridge Magnet 120 Real women don't have hot flushes, they have power surges",,,,301-redirect.aspx,10/19/2014,6,10/19/2014,10/19/2014,6,0,1,0,1,0,2022,105,0,0,0
 7657,0,301Redirect,0,/blog/2014/10/einstein-quote/2/,"Einstein Quote",,,,301-redirect.aspx,10/20/2014,2,10/20/2014,10/20/2014,2,0,1,0,1,0,7644,111,0,0,0
@@ -2048,7 +2048,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7662,0,301Redirect,0,/citrus-garland-with-wood-heart/2/,"Citrus Garland with Wood Heart",,,,301-redirect.aspx,10/22/2014,6,10/22/2014,10/22/2014,6,0,1,0,1,0,5841,0,0,0,0
 7666,0,301Redirect,0,/cinnamon-and-orange-garland-with-wooden-heartstar/,"Cinnamon and Orange Garland with Wooden Heart/Star",,,,301-redirect.aspx,10/22/2014,6,10/22/2014,10/22/2014,6,0,1,0,1,0,1,135,0,0,0
 7667,0,301Redirect,0,/citrus-garland-with-wood-star/,"Citrus Garland with Wood Star",,,,301-redirect.aspx,10/22/2014,2,10/22/2014,10/22/2014,2,0,1,0,1,0,5841,0,0,0,0
-7688,0,301Redirect,0,/freezin-season-mini-christmas-wreath/,"Freezin’ Season Mini Christmas Wreath",,,,301-redirect.aspx,10/31/2014,6,10/31/2014,10/31/2014,6,0,1,0,1,0,1,13,0,0,0
+7688,0,301Redirect,0,/freezin-season-mini-christmas-wreath/,"Freezin' Season Mini Christmas Wreath",,,,301-redirect.aspx,10/31/2014,6,10/31/2014,10/31/2014,6,0,1,0,1,0,1,13,0,0,0
 7689,0,301Redirect,0,/happy-christmas-mini-christmas-wreath/,"Happy Christmas Mini Christmas Wreath",,,,301-redirect.aspx,10/31/2014,6,10/31/2014,10/31/2014,6,0,1,0,1,0,1,9,0,0,0
 7690,0,301Redirect,0,/happy-ho-ho-ho-mini-christmas-wreath/,"Happy Ho Ho Ho Mini Christmas Wreath",,,,301-redirect.aspx,10/31/2014,6,10/31/2014,10/31/2014,6,0,1,0,1,0,1,14,0,0,0
 7691,0,301Redirect,0,/let-it-snow-mini-christmas-wreath/,"Let It Snow Mini Christmas Wreath",,,,301-redirect.aspx,10/31/2014,6,10/31/2014,10/31/2014,6,0,1,0,1,0,1,14,0,0,0
@@ -2133,8 +2133,8 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7844,0,301Redirect,0,/glass-bottles-amber-winchester-2500ml-25ltr-with-black-cap/2/,"Glass Bottles Amber Winchester 2500ml / 2.5ltr With Black Cap",,,,301-redirect.aspx,11/23/2014,2,11/23/2014,11/23/2014,2,0,1,0,1,0,1,0,0,0,0
 7845,0,301Redirect,0,/Glass-Bottles-Amber-Winchester-300ml-REDUCED-TO-CLEAR/,"Glass Bottles Amber- Winchester 300ml REDUCED TO CLEAR!",,,,301-redirect.aspx,11/23/2014,2,11/23/2014,11/23/2014,2,0,1,0,1,0,1,0,0,0,0
 7846,0,301Redirect,0,/balanced-diet-chocolate-word-block/,"Balanced Diet Chocolate Word Block",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,7577,75,0,0,0
-7847,0,301Redirect,0,/fridge-magnet-098-a-house-is-not-a-home-without-a-cat/2/,"Fridge Magnet 098 A house is not a home without a cat...",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,2006,18,0,0,0
-7848,0,301Redirect,0,/fridge-magnet-141-its-better-to-be-late-than-to-arrive-ugly/2/,"Fridge Magnet 141 It's better to be LATE, than to arrive ugly...",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,7630,30,0,0,0
+7847,0,301Redirect,0,/fridge-magnet-098-a-house-is-not-a-home-without-a-cat/2/,"Fridge Magnet 098 A house is not a home without a cat",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,2006,18,0,0,0
+7848,0,301Redirect,0,/fridge-magnet-141-its-better-to-be-late-than-to-arrive-ugly/2/,"Fridge Magnet 141 It's better to be LATE, than to arrive ugly",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,7630,30,0,0,0
 7849,0,301Redirect,0,/christmas-citrus-twig-tree-with-bow/,"Christmas Citrus Twig Tree With Bow",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,5465,95,0,0,0
 7850,0,301Redirect,0,/dear-santa-word-block-please-define-good/,"Dear Santa Word Block Please Define “good”",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,7806,72,0,0,0
 7851,0,301Redirect,0,/snow-better-friend-than-you-wooden-bauble-hanger/,"Snow Better Friend than You Wooden Bauble Hanger",,,,301-redirect.aspx,11/24/2014,5,11/24/2014,11/24/2014,5,0,1,0,1,0,7674,77,0,0,0
@@ -2151,22 +2151,22 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7948,0,301Redirect,0,/fridge-magnet-001-youll-always-be-my-friend-you-know-too-much/,"Fridge Magnet 001 You'll always be my friend - you know too much",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,1918,129,0,0,0
 7949,0,301Redirect,0,/fridge-magnet-002-i-love-you/,"Fridge Magnet 002 I LOVE YOU",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,5669,206,0,0,0
 7950,0,301Redirect,0,/fridge-magnet-004-a-mothers-love-lives-in-your-heart-forever/2/,"Fridge Magnet 004 A mother's love lives in your heart forever",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,1919,83,0,0,0
-7951,0,301Redirect,0,/fridge-magnet-005-the-more-i-grow-the-more-i-realise/,"Fridge Magnet 005 The more I grow, the more I realise...",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,7207,64,0,0,0
-7952,0,301Redirect,0,/fridge-magnet-006-alcohol-doesnt-cause-hangovers-waking-up-does/,"Fridge Magnet 006 Alcohol doesn't cause hangovers... Waking up does",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,1921,118,0,0,0
+7951,0,301Redirect,0,/fridge-magnet-005-the-more-i-grow-the-more-i-realise/,"Fridge Magnet 005 The more I grow, the more I realise",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,7207,64,0,0,0
+7952,0,301Redirect,0,/fridge-magnet-006-alcohol-doesnt-cause-hangovers-waking-up-does/,"Fridge Magnet 006 Alcohol doesn't cause hangovers Waking up does",,,,301-redirect.aspx,1/7/2015,6,1/7/2015,1/7/2015,6,0,1,0,1,0,1921,118,0,0,0
 7953,0,301Redirect,0,/coco-kisses-lip-balm/,"Coco Kisses Lip Balm",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,5368,165,0,0,0
 7954,0,301Redirect,0,/juicy-pineapple-lip-balm/,"Juicy Pineapple Lip Balm",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,5660,365,0,0,0
 7955,0,301Redirect,0,/lipology-lip-balm/,"Lipology Lip Balm",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,6018,195,0,0,0
 7956,0,301Redirect,0,/fridge-magnet-007-great-mums-get-promoted-to-grandmas/,"Fridge Magnet 007 Great Mums get promoted to Grandmas",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,5668,426,0,0,0
 7957,0,301Redirect,0,/Fridge-Magnet-009-DAD-A-short-title-for-a-really-big-job/,"Fridge Magnet 009 DAD A short title for a really big job",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1924,135,0,0,0
-7958,0,301Redirect,0,/fridge-magnet-010-mothers-of-little-boys-work-from-son-up-to-son-down/,"Fridge Magnet 010 Mothers of little boys... Work from son up to son down",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1925,213,0,0,0
+7958,0,301Redirect,0,/fridge-magnet-010-mothers-of-little-boys-work-from-son-up-to-son-down/,"Fridge Magnet 010 Mothers of little boys Work from son up to son down",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1925,213,0,0,0
 7959,0,301Redirect,0,/fridge-magnet-011-theres-no-friend-like-a-sister/,"Fridge Magnet 011 There's no friend like a sister",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1926,224,0,0,0
-7960,0,301Redirect,0,/fridge-magnet-012-sister-you-were-the-one-i-always-told-on/,"Fridge Magnet 012 Sister, you were the one I always told on...",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,3876,106,0,0,0
+7960,0,301Redirect,0,/fridge-magnet-012-sister-you-were-the-one-i-always-told-on/,"Fridge Magnet 012 Sister, you were the one I always told on",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,3876,106,0,0,0
 7961,0,301Redirect,0,/fridge-magnet-012-youve-been-a-blessing/2/,"Fridge Magnet 012 You've Been A Blessing",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1927,716,0,0,0
 7962,0,301Redirect,0,/fridge-magnet-014-some-days-our-friendship-is-the-glue-that-holds-me-together/,"Fridge Magnet 014 Some days our friendship is the glue that holds me together",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,3878,397,0,0,0
 7963,0,301Redirect,0,/Fridge-Magnet-016-Anyone-can-be-a-father-it-takes-someone-special-to-be-a-daddy/,"Fridge Magnet 016 Anyone can be a father, it takes someone special to be a daddy",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1930,1879,0,0,0
 7964,0,301Redirect,0,/fridge-magnet-017-welcome-to-grandmas-house/,"Fridge Magnet 017 Welcome To Grandma's House",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1931,123,0,0,0
 7965,0,301Redirect,0,/Fridge-Magnet-018-Fathers-carry-photos-where-their-money-used-to-be/,"Fridge Magnet 018 Fathers carry photos where their money used to be",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,1932,1069,0,0,0
-7966,0,301Redirect,0,/fridge-magnet-022-daughter-be-your-own-kind-of-wonderful/,"Fridge Magnet 022 Daughter… be your own kind of wonderful!",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,7211,79,0,0,0
+7966,0,301Redirect,0,/fridge-magnet-022-daughter-be-your-own-kind-of-wonderful/,"Fridge Magnet 022 Daughter. be your own kind of wonderful!",,,,301-redirect.aspx,1/8/2015,6,1/8/2015,1/8/2015,6,0,1,0,1,0,7211,79,0,0,0
 7967,0,301Redirect,0,/fridge-magnet-019-a-mothers-love-lasts-forever/2/,"Fridge Magnet 019 A mother's love, lasts forever",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1933,97,0,0,0
 7968,0,301Redirect,0,/Fridge-Magnet-023-I-would-be-unstoppable-if-I-could-only-get-started/,"Fridge Magnet 023 I would be unstoppable, if I could only get started",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1937,414,0,0,0
 7969,0,301Redirect,0,/Fridge-Magnet-025-I-can-only-please-one-person-per-day/,"Fridge Magnet 025 I can only please one person per day",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1938,106,0,0,0
@@ -2181,32 +2181,32 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 7978,0,301Redirect,0,/Fridge-Magnet-039-A-sister-is-worth-a-thousand-friends/,"Fridge Magnet 039 A sister is worth a thousand friends",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1948,138,0,0,0
 7979,0,301Redirect,0,/fridge-magnet-041-if-your-dog-thinks-youre-the-best-dont-seek-a-second-opinion/,"Fridge Magnet 041 If your dog thinks you're the best, don't seek a second opinion",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1950,224,0,0,0
 7980,0,301Redirect,0,/fridge-magnet-044-dont-try-to-understand-me-just-love-me/2/,"Fridge Magnet 044 Don't try to understand me, just love me",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1955,821,0,0,0
-7981,0,301Redirect,0,/fridge-magnet-045-dad-a-sons-first-hero/,"Fridge Magnet 045 DAD - a Son's first hero...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,7096,72,0,0,0
+7981,0,301Redirect,0,/fridge-magnet-045-dad-a-sons-first-hero/,"Fridge Magnet 045 DAD - a Son's first hero",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,7096,72,0,0,0
 7982,0,301Redirect,0,/fridge-magnet-045-i-dont-do-mornings/2/,"Fridge Magnet 045 I don't do mornings",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1956,889,0,0,0
 7983,0,301Redirect,0,/Fridge-Magnet-047-Mummy-knows-a-lot-but-grandma-knows-everything/,"Fridge Magnet 047 Mummy knows a lot but grandma knows everything",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1958,563,0,0,0
-7984,0,301Redirect,0,/fridge-magnet-050-grandma-a-little-bit-parent-a-little-bit-teacher/,"Fridge Magnet 050 GRANDMA - a little bit parent, a little bit teacher...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,5808,177,0,0,0
-7985,0,301Redirect,0,/fridge-magnet-051-you-can-travel-the-world-over-in-search/2/,"Fridge Magnet 051 You can travel the world over in search...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1960,70,0,0,0
-7986,0,301Redirect,0,/fridge-magnet-053-sisters-like-branches-on-a-tree/2/,"Fridge Magnet 053 Sisters - like branches on a tree...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1964,61,0,0,0
+7984,0,301Redirect,0,/fridge-magnet-050-grandma-a-little-bit-parent-a-little-bit-teacher/,"Fridge Magnet 050 GRANDMA - a little bit parent, a little bit teacher",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,5808,177,0,0,0
+7985,0,301Redirect,0,/fridge-magnet-051-you-can-travel-the-world-over-in-search/2/,"Fridge Magnet 051 You can travel the world over in search",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1960,70,0,0,0
+7986,0,301Redirect,0,/fridge-magnet-053-sisters-like-branches-on-a-tree/2/,"Fridge Magnet 053 Sisters - like branches on a tree",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1964,61,0,0,0
 7987,0,301Redirect,0,/fridge-magnet-054-teachers-put-the-stars-within-our-reach/,"Fridge Magnet 054 Teachers put the stars within our reach",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1965,869,0,0,0
 7988,0,301Redirect,0,/fridge-magnet-054-what-happens-in-the-kitchen-stays-in-the-kitchen/,"Fridge Magnet 054 What happens in the kitchen, stays in the kitchen",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,7865,83,0,0,0
-7989,0,301Redirect,0,/fridge-magnet-055-its-not-a-hangover-its-wine-flu/,"Fridge Magnet 055 It's not a hangover, it's wine flu...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,7097,129,0,0,0
+7989,0,301Redirect,0,/fridge-magnet-055-its-not-a-hangover-its-wine-flu/,"Fridge Magnet 055 It's not a hangover, it's wine flu",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,7097,129,0,0,0
 7990,0,301Redirect,0,/Fridge-Magnet-056-A-hug-is-a-great-gift-one-size-fits-all/,"Fridge Magnet 056 A hug is a great gift, one size fits all",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1968,344,0,0,0
 7991,0,301Redirect,0,/fridge-magnet-057-i-keep-losing-weight-but-it-keeps-finding-me/,"Fridge Magnet 057 I keep losing weight but it keeps finding me",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1969,114,0,0,0
 7992,0,301Redirect,0,/fridge-magnet-058-if-you-dont-like-cat-hair-get-off-the-couch/,"Fridge Magnet 058 If you don't like cat hair get off the couch",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1970,174,0,0,0
 7993,0,301Redirect,0,/fridge-magnet-059-brain-still-loading-please-wait/2/,"Fridge Magnet 059 Brain still loading please wait",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1971,140,0,0,0
-7994,0,301Redirect,0,/fridge-magnet-060-one-in-four-people-are-unbalanced/2/,"Fridge Magnet 060 One in four people are unbalanced...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1972,438,0,0,0
-7995,0,301Redirect,0,/fridge-magnet-061-a-friend-is-someone-who-understands-your-past/,"Fridge Magnet 061 A friend is someone who understands your past...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1973,125,0,0,0
-7996,0,301Redirect,0,/fridge-magnet-062-sometimes-i-wake-up-grumpy-other-days/,"Fridge Magnet 062 Sometimes I wake up grumpy, other days...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1974,125,0,0,0
-7997,0,301Redirect,0,/fridge-magnet-063-doing-nothing-is-very-hard-to-do/,"Fridge Magnet 063 Doing nothing is very hard to do...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,5667,86,0,0,0
+7994,0,301Redirect,0,/fridge-magnet-060-one-in-four-people-are-unbalanced/2/,"Fridge Magnet 060 One in four people are unbalanced",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1972,438,0,0,0
+7995,0,301Redirect,0,/fridge-magnet-061-a-friend-is-someone-who-understands-your-past/,"Fridge Magnet 061 A friend is someone who understands your past",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1973,125,0,0,0
+7996,0,301Redirect,0,/fridge-magnet-062-sometimes-i-wake-up-grumpy-other-days/,"Fridge Magnet 062 Sometimes I wake up grumpy, other days",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1974,125,0,0,0
+7997,0,301Redirect,0,/fridge-magnet-063-doing-nothing-is-very-hard-to-do/,"Fridge Magnet 063 Doing nothing is very hard to do",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,5667,86,0,0,0
 7998,0,301Redirect,0,/fridge-magnet-064-grandkids-are-lifes-most-precious-gifts/2/,"Fridge Magnet 064 Grandkids are life's most precious gifts",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1976,55,0,0,0
 7999,0,301Redirect,0,/Fridge-Magnet-064-Peace-Love-Happiness/,"Fridge Magnet 064 Peace Love Happiness",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1977,788,0,0,0
 8000,0,301Redirect,0,/fridge-magnet-066-mothers-are-angels-in-training/,"Fridge Magnet 066 Mothers are angels in training",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1978,186,0,0,0
 8001,0,301Redirect,0,/fridge-magnet-067-god-couldnt-be-everywhere-so-he-made-grandmas/2/,"Fridge Magnet 067 God couldn't be everywhere so he made Grandmas",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1979,1056,0,0,0
-8002,0,301Redirect,0,/fridge-magnet-068-when-it-comes-to-giving-hugs/2/,"Fridge Magnet 068 When it comes to giving hugs...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1981,42,0,0,0
+8002,0,301Redirect,0,/fridge-magnet-068-when-it-comes-to-giving-hugs/2/,"Fridge Magnet 068 When it comes to giving hugs",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1981,42,0,0,0
 8003,0,301Redirect,0,/fridge-magnet-070-friends-are-gods-way-of-looking-after-us/2/,"Fridge Magnet 070 Friends are God's way of looking after us",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1982,158,0,0,0
 8004,0,301Redirect,0,/fridge-magnet-071-you-cant-scare-me-i-have-children/2/,"Fridge Magnet 071 You can't scare me, I have children",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1983,735,0,0,0
 8005,0,301Redirect,0,/Fridge-Magnet-073-Sisters-by-chance-friends-by-choice/,"Fridge Magnet 073 Sisters by chance, friends by choice",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1984,1043,0,0,0
-8006,0,301Redirect,0,/fridge-magnet-074-you-are-loved-for-the-little-girl-you-were/2/,"Fridge Magnet 074 You are loved for the little girl you were...",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1985,38,0,0,0
+8006,0,301Redirect,0,/fridge-magnet-074-you-are-loved-for-the-little-girl-you-were/2/,"Fridge Magnet 074 You are loved for the little girl you were",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1985,38,0,0,0
 8007,0,301Redirect,0,/fridge-magnet-075-if-god-had-wanted-me-to-touch-my-toes-hed-have-put-them-on-my-knees/3/,"Fridge Magnet 075 If God had wanted me to touch my toes he'd have put them on my knees",,,,301-redirect.aspx,1/9/2015,6,1/9/2015,1/9/2015,6,0,1,0,1,0,1986,23,0,0,0
 8008,0,301Redirect,0,/Fridge-Magnet-076-Love-conquers-all-things-even-snoring/,"Fridge Magnet 076 Love conquers all things, even snoring",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,1987,210,0,0,0
 8009,0,301Redirect,0,/fridge-magnet-084-ive-got-one-nerve-left-and-youre-getting-on-it/2/,"Fridge Magnet 084 I've got one nerve left and you're getting on it",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,1995,399,0,0,0
@@ -2216,68 +2216,68 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8013,0,301Redirect,0,/fridge-magnet-088-save-the-earth-its-the-only-planet-with-chocolate/2/,"Fridge Magnet 088 Save the earth It's the only planet with chocolate",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,1999,553,0,0,0
 8014,0,301Redirect,0,/fridge-magnet-089-hold-a-true-friend-with-both-hands/,"Fridge Magnet 089 Hold a true friend with both hands",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,3885,112,0,0,0
 8015,0,301Redirect,0,/fridge-magnet-090-because-im-your-mother-thats-why/2/,"Fridge Magnet 090 Because I'm your Mother that's why",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,2001,583,0,0,0
-8016,0,301Redirect,0,/fridge-magnet-091-im-on-a-gin-and-tonic-diet-so-far/2/,"Fridge Magnet 091 I'm on a gin and tonic diet - so far...",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,2002,686,0,0,0
+8016,0,301Redirect,0,/fridge-magnet-091-im-on-a-gin-and-tonic-diet-so-far/2/,"Fridge Magnet 091 I'm on a gin and tonic diet - so far",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,2002,686,0,0,0
 8017,0,301Redirect,0,/fridge-magnet-091-wine-improves-with-age-i-improve-with-wine/,"Fridge Magnet 091 Wine improves with age, I improve with wine",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,7208,120,0,0,0
-8018,0,301Redirect,0,/fridge-magnet-092-im-smiling-because-youre-my-sister/2/,"Fridge Magnet 092 I'm smiling because you're my sister...",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,3886,1144,0,0,0
-8019,0,301Redirect,0,/fridge-magnet-093-women-half-of-the-population/,"Fridge Magnet 093 WOMEN Half of the population...",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,7099,154,0,0,0
+8018,0,301Redirect,0,/fridge-magnet-092-im-smiling-because-youre-my-sister/2/,"Fridge Magnet 092 I'm smiling because you're my sister",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,3886,1144,0,0,0
+8019,0,301Redirect,0,/fridge-magnet-093-women-half-of-the-population/,"Fridge Magnet 093 WOMEN Half of the population",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,7099,154,0,0,0
 8020,0,301Redirect,0,/fridge-magnet-095-love-is-temporary-but-friends-are-forever/2/,"Fridge Magnet 095 Love is temporary but friends are forever",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,4192,67,0,0,0
-8021,0,301Redirect,0,/fridge-magnet-077-the-party-cant-be-over-i-still-look-fabulous/2/,"Fridge Magnet 077 The party can't be over... I still look fabulous!",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,4191,46,0,0,0
+8021,0,301Redirect,0,/fridge-magnet-077-the-party-cant-be-over-i-still-look-fabulous/2/,"Fridge Magnet 077 The party can't be over I still look fabulous!",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,4191,46,0,0,0
 8022,0,301Redirect,0,/fridge-magnet-078-nobody-notices-what-i-do-until-i-dont-do-it/3/,"Fridge Magnet 078 Nobody notices what I do - until I don't do it!",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,1989,715,0,0,0
 8023,0,301Redirect,0,/Fridge-Magnet-079-I-Love-You/,"Fridge Magnet 079 I Love You",,,,301-redirect.aspx,1/10/2015,6,1/10/2015,1/10/2015,6,0,1,0,1,0,1990,80,0,0,0
 8024,0,301Redirect,0,/Microwavable-Bagpuss/,"Microwavable Bagpuss",,,,301-redirect.aspx,1/16/2015,2,1/16/2015,1/16/2015,2,0,1,0,1,0,2456,79,0,0,0
 8025,0,301Redirect,0,/Fridge-Magnet-115-Without-stress-my-life-would-be-empty/,"Fridge Magnet 115 Without stress my life would be empty",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2019,649,0,0,0
-8026,0,301Redirect,0,/fridge-magnet-160-special-friends-the-people-you-can/,"Fridge Magnet 160 Special Friends - The people you can...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,5665,157,0,0,0
+8026,0,301Redirect,0,/fridge-magnet-160-special-friends-the-people-you-can/,"Fridge Magnet 160 Special Friends - The people you can",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,5665,157,0,0,0
 8027,0,301Redirect,0,/fridge-magnet-128-i-know-im-in-my-own-world-its-ok-they-know-me-here/2/,"Fridge Magnet 128 I Know I'm in my own world - it's ok, they know me here",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2028,63,0,0,0
-8028,0,301Redirect,0,/fridge-magnet-167-the-trouble-with-being-punctual-is-theres-no-one-there/2/,"Fridge Magnet 167 The trouble with being punctual is there's no one there...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,3891,26,0,0,0
+8028,0,301Redirect,0,/fridge-magnet-167-the-trouble-with-being-punctual-is-theres-no-one-there/2/,"Fridge Magnet 167 The trouble with being punctual is there's no one there",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,3891,26,0,0,0
 8029,0,301Redirect,0,/Fridge-Magnet-027-A-balanced-diet-is-a-chocolate-in-each-hand/,"Fridge Magnet 027 A balanced diet is a chocolate in each hand",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,1940,153,0,0,0
 8030,0,301Redirect,0,/fridge-magnet-208-its-a-cats-world-im-just-here-to-open-cans/2/,"Fridge Magnet 208 It's a cat's world - I'm just here to open cans",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2114,40,0,0,0
 8031,0,301Redirect,0,/Fridge-Magnet-157-I-no-longer-skinny-dip-I-chunky-dunk/,"Fridge Magnet 157 I no longer skinny dip, I chunky dunk",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2055,252,0,0,0
 8032,0,301Redirect,0,/fridge-magnet-125-im-not-a-complete-idiot-some-parts-are-missing/2/,"Fridge Magnet 125 I'm not a complete idiot some parts are missing",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2024,192,0,0,0
 8033,0,301Redirect,0,/Fridge-Magnet-096-Aunties-fill-the-world-with-love/,"Fridge Magnet 096 Aunties fill the world with love",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2005,202,0,0,0
-8034,0,301Redirect,0,/fridge-magnet-126-truly-great-friends-are-hard-to-find/2/,"Fridge Magnet 126 Truly great friends are hard to find...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2025,178,0,0,0
-8035,0,301Redirect,0,/fridge-magnet-123-please-excuse-the-mess/,"Fridge Magnet 123 Please excuse the mess...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7100,129,0,0,0
+8034,0,301Redirect,0,/fridge-magnet-126-truly-great-friends-are-hard-to-find/2/,"Fridge Magnet 126 Truly great friends are hard to find",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2025,178,0,0,0
+8035,0,301Redirect,0,/fridge-magnet-123-please-excuse-the-mess/,"Fridge Magnet 123 Please excuse the mess",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7100,129,0,0,0
 8036,0,301Redirect,0,/Fridge-Magnet-166-Teachers-change-the-world-one-child-at-a-time/,"Fridge Magnet 166 Teachers change the world, one child at a time",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2065,276,0,0,0
-8037,0,301Redirect,0,/fridge-magnet-113-friends-like-you-dont-grow-on-trees/,"Fridge Magnet 113 Friends like you don't grow on trees...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2018,158,0,0,0
+8037,0,301Redirect,0,/fridge-magnet-113-friends-like-you-dont-grow-on-trees/,"Fridge Magnet 113 Friends like you don't grow on trees",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2018,158,0,0,0
 8038,0,301Redirect,0,/Fridge-Magnet-180-I-made-a-wish-and-you-came-true/,"Fridge Magnet 180 I made a wish and you came true",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2081,369,0,0,0
 8039,0,301Redirect,0,/fridge-magnet-132-housework-wont-kill-you-but-why-take-the-chance/2/,"Fridge Magnet 132 Housework won't kill you, but why take the chance",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2031,156,0,0,0
-8040,0,301Redirect,0,/fridge-magnet-200-good-friends-are-like-stars/2/,"Fridge Magnet 200 Good friends are like stars...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2103,666,0,0,0
+8040,0,301Redirect,0,/fridge-magnet-200-good-friends-are-like-stars/2/,"Fridge Magnet 200 Good friends are like stars",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2103,666,0,0,0
 8041,0,301Redirect,0,/fridge-magnet-135-i-love-you-to-the-moon-and-back/,"Fridge Magnet 135 I LOVE YOU to the moon and back",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7101,75,0,0,0
-8042,0,301Redirect,0,/fridge-magnet-165-true-friends-know-how-stupid-you-are/2/,"Fridge Magnet 165 True friends know how stupid you are...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7102,38,0,0,0
-8043,0,301Redirect,0,/fridge-magnet-078-oh-dear-i-really-ought-to-do-something/,"Fridge Magnet 078 Oh dear, I really ought to do something...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7098,10,0,0,0
+8042,0,301Redirect,0,/fridge-magnet-165-true-friends-know-how-stupid-you-are/2/,"Fridge Magnet 165 True friends know how stupid you are",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7102,38,0,0,0
+8043,0,301Redirect,0,/fridge-magnet-078-oh-dear-i-really-ought-to-do-something/,"Fridge Magnet 078 Oh dear, I really ought to do something",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,7098,10,0,0,0
 8044,0,301Redirect,0,/Fridge-Magnet-201-Wine-improves-with-age-the-older-I-get-the-more-I-like-it/,"Fridge Magnet 201 Wine improves with age - the older I get the more I like it",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2104,390,0,0,0
 8045,0,301Redirect,0,/Fridge-Magnet-196-I-drink-to-make-other-people-more-interesting/,"Fridge Magnet 196 I drink to make other people more interesting",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2099,291,0,0,0
-8046,0,301Redirect,0,/fridge-magnet-117-grandmas-place-where-memories-are-made/,"Fridge Magnet 117 Grandma's Place Where memories are made...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,3888,91,0,0,0
+8046,0,301Redirect,0,/fridge-magnet-117-grandmas-place-where-memories-are-made/,"Fridge Magnet 117 Grandma's Place Where memories are made",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,3888,91,0,0,0
 8047,0,301Redirect,0,/fridge-magnet-127-if-i-could-take-a-star-out-of-the-sky-every-time-you/,"Fridge Magnet 127 If I could take a star out of the sky every time you..",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,3706,52,0,0,0
 8048,0,301Redirect,0,/fridge-magnet-193-if-a-womans-work-is-never-done-why-start/,"Fridge Magnet 193 If a woman's work is never done - why start!",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2096,330,0,0,0
-8049,0,301Redirect,0,/fridge-magnet-184-i-may-not-be-rich-and-famous/2/,"Fridge Magnet 184 I may not be rich and famous...",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2085,836,0,0,0
+8049,0,301Redirect,0,/fridge-magnet-184-i-may-not-be-rich-and-famous/2/,"Fridge Magnet 184 I may not be rich and famous",,,,301-redirect.aspx,1/20/2015,6,1/20/2015,1/20/2015,6,0,1,0,1,0,2085,836,0,0,0
 8050,0,301Redirect,0,/a-christmas-collection/,"A Christmas Collection",,,,301-redirect.aspx,1/22/2015,2,1/22/2015,1/22/2015,2,0,1,0,1,0,5432,264,0,0,0
 8051,0,301Redirect,0,/a-christmas-collection/dried-citrus-pine-cones/,"Dried Citrus & Pine Cones",,,,301-redirect.aspx,1/22/2015,2,1/22/2015,1/22/2015,2,0,1,0,1,0,5847,260,0,0,0
 8052,0,301Redirect,0,/a-christmas-collection/christmas-candles/,"Christmas Candles",,,,301-redirect.aspx,1/22/2015,2,1/22/2015,1/22/2015,2,0,1,0,1,0,7799,170,0,0,0
 8053,0,301Redirect,0,/a-christmas-collection/wooden-blocks-hangers/,"Wooden Blocks & Hangers",,,,301-redirect.aspx,1/22/2015,2,1/22/2015,1/22/2015,2,0,1,0,1,0,7800,180,0,0,0
 8054,0,301Redirect,0,/a-christmas-collection/pre-christmas-sale/,"Pre Christmas SALE",,,,301-redirect.aspx,1/22/2015,2,1/22/2015,1/22/2015,2,0,1,0,1,0,7862,144,0,0,0
-8056,0,301Redirect,0,/fridge-magnet-109-if-you-want-the-best-seat-in-the-house/2/,"Fridge Magnet 109 If you want the best seat in the house...",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2017,78,0,0,0
-8057,0,301Redirect,0,/fridge-magnet-151-my-mum-is-my-guardian-angel-my-heart-mender-my-best-friend/,"Fridge Magnet 151 My Mum is... My guardian angel, My heart mender, My best friend",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2046,230,0,0,0
+8056,0,301Redirect,0,/fridge-magnet-109-if-you-want-the-best-seat-in-the-house/2/,"Fridge Magnet 109 If you want the best seat in the house",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2017,78,0,0,0
+8057,0,301Redirect,0,/fridge-magnet-151-my-mum-is-my-guardian-angel-my-heart-mender-my-best-friend/,"Fridge Magnet 151 My Mum is My guardian angel, My heart mender, My best friend",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2046,230,0,0,0
 8058,0,301Redirect,0,/Fridge-Magnet-159-Talk-to-the-paw/,"Fridge Magnet 159 Talk to the paw",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2057,180,0,0,0
 8059,0,301Redirect,0,/fridge-magnet-188-anyone-can-be-cool-but-awesome-takes-practice/2/,"Fridge Magnet 188 Anyone can be cool but awesome takes practice",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,3897,51,0,0,0
 8060,0,301Redirect,0,/Fridge-Magnet-173-So-many-birds-so-little-time/,"Fridge Magnet 173 So many birds, so little time",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2072,196,0,0,0
 8061,0,301Redirect,0,/Fridge-Magnet-021-If-mothers-were-flowers-youd-be-the-one-Id-pick/,"Fridge Magnet 021 If mothers were flowers, you''''d be the one I''''d pick",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,3159,0,0,0,0
-8062,0,301Redirect,0,/fridge-magnet-191-just-when-we-get-to-an-age-when-our-head-is-screwed-on-tight/2/,"Fridge Magnet 191 Just when we get to an age when our head is screwed on tight...",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2093,255,0,0,0
+8062,0,301Redirect,0,/fridge-magnet-191-just-when-we-get-to-an-age-when-our-head-is-screwed-on-tight/2/,"Fridge Magnet 191 Just when we get to an age when our head is screwed on tight",,,,301-redirect.aspx,1/24/2015,6,1/24/2015,1/24/2015,6,0,1,0,1,0,2093,255,0,0,0
 8065,0,301Redirect,0,/fridge-magnet-098-a-house-is-not-a-home-without-a-cat/,"Fridge Magnet 098 A house is not a home without a cat.",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2006,530,0,0,0
 8066,0,301Redirect,0,/Fridge-Magnet-099-Cats-are-not-our-whole-life-but-they-make-our-lives-whole/,"Fridge Magnet 099 Cats are not our whole life but they make our lives whole",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2008,144,0,0,0
-8067,0,301Redirect,0,/fridge-magnet-100-theres-no-friend-like-a-daughter/,"Fridge Magnet 100 There's no friend like a daughter...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2010,139,0,0,0
+8067,0,301Redirect,0,/fridge-magnet-100-theres-no-friend-like-a-daughter/,"Fridge Magnet 100 There's no friend like a daughter",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2010,139,0,0,0
 8068,0,301Redirect,0,/fridge-magnet-101-dont-treat-me-any-differently-than-you-would-the-queen/2/,"Fridge Magnet 101 Don't treat me any differently than you would the queen",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2011,178,0,0,0
-8069,0,301Redirect,0,/fridge-magnet-103-we-take-our-kids-everywhere/2/,"Fridge Magnet 103 We take our kids everywhere...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2012,48,0,0,0
-8070,0,301Redirect,0,/fridge-magnet-106-follow-your-heart-embrace-your-dreams/,"Fridge Magnet 106 Follow your HEART, embrace your DREAMS...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,5810,54,0,0,0
+8069,0,301Redirect,0,/fridge-magnet-103-we-take-our-kids-everywhere/2/,"Fridge Magnet 103 We take our kids everywhere",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2012,48,0,0,0
+8070,0,301Redirect,0,/fridge-magnet-106-follow-your-heart-embrace-your-dreams/,"Fridge Magnet 106 Follow your HEART, embrace your DREAMS",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,5810,54,0,0,0
 8071,0,301Redirect,0,/Fridge-Magnet-105-My-house-was-clean-last-week-sorry-you-missed-it/,"Fridge Magnet 105 My house was clean last week sorry you missed it",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2013,383,0,0,0
 8072,0,301Redirect,0,/fridge-magnet-106-id-let-myself-go-but-ive-already-gone/,"Fridge Magnet 106 I'd let myself go - but I've already gone",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2014,739,0,0,0
-8073,0,301Redirect,0,/fridge-magnet-107-my-husband-needs-glasses/2/,"Fridge Magnet 107 My husband needs glasses...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2015,70,0,0,0
+8073,0,301Redirect,0,/fridge-magnet-107-my-husband-needs-glasses/2/,"Fridge Magnet 107 My husband needs glasses",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2015,70,0,0,0
 8074,0,301Redirect,0,/Fridge-Magnet-108-Children-are-born-with-wings-teachers-help-them-to-fly/,"Fridge Magnet 108 Children are born with wings, teachers help them to fly",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2016,768,0,0,0
 8075,0,301Redirect,0,/Fridge-Magnet-116-A-mind-is-a-terrible-thing-to-waste-on-housework/,"Fridge Magnet 116 A mind is a terrible thing to waste on housework",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2020,1538,0,0,0
-8076,0,301Redirect,0,/fridge-magnet-116-friendship-must-be-built-upon-a-solid-foundation/,"Fridge Magnet 116 Friendship must be built upon a solid foundation...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,7218,38,0,0,0
-8077,0,301Redirect,0,/fridge-magnet-120-real-women-dont-have-hot-flushes/,"Fridge Magnet 120 Real women don't have hot flushes...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2022,120,0,0,0
+8076,0,301Redirect,0,/fridge-magnet-116-friendship-must-be-built-upon-a-solid-foundation/,"Fridge Magnet 116 Friendship must be built upon a solid foundation",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,7218,38,0,0,0
+8077,0,301Redirect,0,/fridge-magnet-120-real-women-dont-have-hot-flushes/,"Fridge Magnet 120 Real women don't have hot flushes",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2022,120,0,0,0
 8078,0,301Redirect,0,/fridge-magnet-129-i-know-im-not-perfect-but-im-so-close-it-scares-me/,"Fridge Magnet 129 I know I'm not perfect but I'm so close it scares me",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,3889,160,0,0,0
 8079,0,301Redirect,0,/Fridge-Magnet-130-My-family-tree-is-full-of-nuts/,"Fridge Magnet 130 My family tree is full of nuts",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2029,370,0,0,0
-8080,0,301Redirect,0,/fridge-magnet-131-a-sister-will-never-forget/2/,"Fridge Magnet 131 A sister will never forget...",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2030,71,0,0,0
+8080,0,301Redirect,0,/fridge-magnet-131-a-sister-will-never-forget/2/,"Fridge Magnet 131 A sister will never forget",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2030,71,0,0,0
 8081,0,301Redirect,0,/fridge-magnet-133-gone-insane-be-back-soon/,"Fridge Magnet 133 Gone insane – be back soon!",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,7212,263,0,0,0
 8082,0,301Redirect,0,/Fridge-Magnet-134-How-many-roads-must-a-man-walk-down-before-he-admits-he-is-lost/,"Fridge Magnet 134 How many roads must a man walk down before he admits he is lost",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2033,932,0,0,0
 8083,0,301Redirect,0,/fridge-magnet-138-im-not-a-morning-person/2/,"Fridge Magnet 138 I'm not a morning person",,,,301-redirect.aspx,1/26/2015,6,1/26/2015,1/26/2015,6,0,1,0,1,0,2035,123,0,0,0
@@ -2285,19 +2285,19 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8085,0,301Redirect,0,/indonesian-sandstone-oil-burner/,"Indonesian Sandstone Oil Burner",,,,301-redirect.aspx,1/27/2015,2,1/27/2015,1/27/2015,2,0,1,0,1,0,7821,1309,0,0,0
 8086,0,301Redirect,0,/Nag-Champa-Sandalwood-Incense-Sticks-15g/,"Nag Champa Sandalwood Incense Sticks 15g",,,,301-redirect.aspx,1/27/2015,2,1/27/2015,1/27/2015,2,0,1,0,1,0,1,0,0,0,0
 8087,0,301Redirect,0,/fridge-magnet-141-its-better-to-be-late-than-to-arrive-ugly/,"Fridge Magnet 141 It's better to be LATE, than to arrive ugly",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,7630,131,0,0,0
-8088,0,301Redirect,0,/fridge-magnet-142-we-child-proofed-the-house-but-theyre-still-getting-in/,"Fridge Magnet 142 We child proofed the house but they're still getting in...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2037,160,0,0,0
-8089,0,301Redirect,0,/fridge-magnet-143-before-you-criticise-someone-you-should-walk-a-mile-in-their-shoes/2/,"Fridge Magnet 143 Before you criticise someone, you should walk a mile in their shoes...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2038,694,0,0,0
+8088,0,301Redirect,0,/fridge-magnet-142-we-child-proofed-the-house-but-theyre-still-getting-in/,"Fridge Magnet 142 We child proofed the house but they're still getting in",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2037,160,0,0,0
+8089,0,301Redirect,0,/fridge-magnet-143-before-you-criticise-someone-you-should-walk-a-mile-in-their-shoes/2/,"Fridge Magnet 143 Before you criticise someone, you should walk a mile in their shoes",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2038,694,0,0,0
 8091,0,301Redirect,0,/fridge-magnet-143-instead-of-cleaning-the-house-i-just-turn-off-the-lights/,"Fridge Magnet 143 Instead of cleaning the house I just turn off the lights",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,7215,43,0,0,0
-8092,0,301Redirect,0,/fridge-magnet-145-i-dont-know-i-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't know... I don't care... That's why they put me in charge",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2039,702,0,0,0
-8093,0,301Redirect,0,/fridge-magnet-146-you-know-youre-in-love-when-you/,"Fridge Magnet 146 You know you're in love when you...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5811,121,0,0,0
+8092,0,301Redirect,0,/fridge-magnet-145-i-dont-know-i-dont-care-thats-why-they-put-me-in-charge/,"Fridge Magnet 145 I don't know I don't care That's why they put me in charge",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2039,702,0,0,0
+8093,0,301Redirect,0,/fridge-magnet-146-you-know-youre-in-love-when-you/,"Fridge Magnet 146 You know you're in love when you",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5811,121,0,0,0
 8094,0,301Redirect,0,/fridge-magnet-147-i-used-to-be-indecisive-but-now-im-not-sure/2/,"Fridge Magnet 147 I used to be indecisive but now I'm not sure",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2041,684,0,0,0
-8095,0,301Redirect,0,/fridge-magnet-147-pet-it-be-pet-it-be-whisper-words-of-wisdom/2/,"Fridge Magnet 147 Pet it be, pet it be, whisper words of wisdom...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5317,48,0,0,0
-8096,0,301Redirect,0,/fridge-magnet-148-everyone-brings-joy-to-the-house/2/,"Fridge Magnet 148 Everyone brings joy to the house...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2042,889,0,0,0
-8097,0,301Redirect,0,/fridge-magnet-149-the-5-steps-to-happiness/2/,"Fridge Magnet 149 The 5 steps to happiness...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2043,1214,0,0,0
-8098,0,301Redirect,0,/fridge-magnet-149-todays-menu-eat-it-or-starve/,"Fridge Magnet 149 Today’s Menu EAT IT OR STARVE",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,7213,72,0,0,0
-8099,0,301Redirect,0,/fridge-magnet-150-some-things-last-and-some-things-end/,"Fridge Magnet 150 Some things last and some things end...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5666,97,0,0,0
-8100,0,301Redirect,0,/fridge-magnet-152-to-the-world-youre-just-a-teacher-to-your-students/2/,"Fridge Magnet 152 To the world you're just a Teacher. To your students...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5318,683,0,0,0
-8101,0,301Redirect,0,/fridge-magnet-153-i-have-no-idea-what-i-want-but-i-know-i-wont/2/,"Fridge Magnet 153 I have no idea what I want but I know I won't...",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2048,15,0,0,0
+8095,0,301Redirect,0,/fridge-magnet-147-pet-it-be-pet-it-be-whisper-words-of-wisdom/2/,"Fridge Magnet 147 Pet it be, pet it be, whisper words of wisdom",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5317,48,0,0,0
+8096,0,301Redirect,0,/fridge-magnet-148-everyone-brings-joy-to-the-house/2/,"Fridge Magnet 148 Everyone brings joy to the house",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2042,889,0,0,0
+8097,0,301Redirect,0,/fridge-magnet-149-the-5-steps-to-happiness/2/,"Fridge Magnet 149 The 5 steps to happiness",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2043,1214,0,0,0
+8098,0,301Redirect,0,/fridge-magnet-149-todays-menu-eat-it-or-starve/,"Fridge Magnet 149 Today's Menu EAT IT OR STARVE",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,7213,72,0,0,0
+8099,0,301Redirect,0,/fridge-magnet-150-some-things-last-and-some-things-end/,"Fridge Magnet 150 Some things last and some things end",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5666,97,0,0,0
+8100,0,301Redirect,0,/fridge-magnet-152-to-the-world-youre-just-a-teacher-to-your-students/2/,"Fridge Magnet 152 To the world you're just a Teacher. To your students",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,5318,683,0,0,0
+8101,0,301Redirect,0,/fridge-magnet-153-i-have-no-idea-what-i-want-but-i-know-i-wont/2/,"Fridge Magnet 153 I have no idea what I want but I know I won't",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2048,15,0,0,0
 8102,0,301Redirect,0,/fridge-magnet-154-im-not-so-good-on-the-advice-can-i-interest-you-in-a-sarcastic-comment/,"Fridge Magnet 154 I'm not so good on the advice Can I interest you in a sarcastic comment?",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2050,111,0,0,0
 8103,0,301Redirect,0,/Fridge-Magnet-155-Desperate-Housewife/,"Fridge Magnet 155 Desperate Housewife",,,,301-redirect.aspx,1/27/2015,6,1/27/2015,1/27/2015,6,0,1,0,1,0,2052,57,0,0,0
 8104,0,301Redirect,0,/plastic-bottles-frosted-boston-with-black-t-e-cap-500ml/2/,"Plastic Bottles Frosted Boston with Black T E Cap 500ml",,,,301-redirect.aspx,1/30/2015,2,1/30/2015,1/30/2015,2,0,1,0,1,0,1,0,0,0,0
@@ -2336,8 +2336,8 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8138,0,301Redirect,0,/citronella-essential-oil-cymbopogon-nardus/2/,"Citronella Essential Oil (Cymbopogon nardus)",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,1748,318,0,0,0
 8139,0,301Redirect,0,/Eucalyptus-Pure-Essential-Oil-Eucalptus-globulus/,"Eucalyptus Pure Essential Oil (Eucalptus globulus)",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,1858,539,0,0,0
 8144,0,301Redirect,0,/fridge-magnet-155-im-not-a-housewife-but-i-am-desperate/2/,"Fridge Magnet 155 I'm not a housewife but I am desperate!",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2053,43,0,0,0
-8145,0,301Redirect,0,/fridge-magnet-156-home-is-where-the-hugs-are/2/,"Fridge Magnet 156 Home is where the hugs are...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2054,374,0,0,0
-8146,0,301Redirect,0,/fridge-magnet-158-men-are-like-chocolates/2/,"Fridge Magnet 158 Men are like chocolates...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2056,124,0,0,0
+8145,0,301Redirect,0,/fridge-magnet-156-home-is-where-the-hugs-are/2/,"Fridge Magnet 156 Home is where the hugs are",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2054,374,0,0,0
+8146,0,301Redirect,0,/fridge-magnet-158-men-are-like-chocolates/2/,"Fridge Magnet 158 Men are like chocolates",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2056,124,0,0,0
 8147,0,301Redirect,0,/fridge-magnet-160-if-a-messy-kitchen-is-a-happy-kitchen-mines-delirious/,"Fridge Magnet 160 If a messy kitchen is a happy kitchen mine's delirious",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2058,848,0,0,0
 8148,0,301Redirect,0,/fridge-magnet-161-i-dont-need-your-attitude-i-already-have-one/2/,"Fridge Magnet 161 I don't need your attitude, I already have one",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2059,95,0,0,0
 8149,0,301Redirect,0,/fridge-magnet-162-i-understand-i-just-dont-care/2/,"Fridge Magnet 162 I understand - I just don't care",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2060,64,0,0,0
@@ -2348,35 +2348,35 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8154,0,301Redirect,0,/fridge-magnet-171-my-age-is-between-29-and-none-of-your-business/,"Fridge Magnet 171 My age is between 29 and 'none of your business'",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2070,774,0,0,0
 8155,0,301Redirect,0,/fridge-magnet-171-one-seventh-of-your-life-will-be-spent-on-mondays/,"Fridge Magnet 171 One seventh of your life will be spent on Mondays",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3892,48,0,0,0
 8156,0,301Redirect,0,/Fridge-Magnet-172-When-In-doubt-add-more-wine/,"Fridge Magnet 172 When In doubt, add more wine",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2071,181,0,0,0
-8157,0,301Redirect,0,/fridge-magnet-174-i-dont-suffer-from-insanity-i-enjoy/2/,"Fridge Magnet 174 I don't suffer from insanity, I enjoy...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2073,184,0,0,0
+8157,0,301Redirect,0,/fridge-magnet-174-i-dont-suffer-from-insanity-i-enjoy/2/,"Fridge Magnet 174 I don't suffer from insanity, I enjoy",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2073,184,0,0,0
 8158,0,301Redirect,0,/fridge-magnet-175-it-doesnt-matter-what-you-have-in-life-if-you-cant-find-it/,"Fridge Magnet 175 It doesn't matter what you have in life if you can't find it",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2075,15,0,0,0
 8159,0,301Redirect,0,/fridge-magnet-176-cats-are-like-chocolates-its-hard-to-just-have-one/2/,"Fridge Magnet 176 Cats are like chocolates, it's hard to just have one",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2076,405,0,0,0
 8160,0,301Redirect,0,/Fridge-Magnet-177-A-family-stitched-together-seldom-unravels/,"Fridge Magnet 177 A family stitched together seldom unravels",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2077,429,0,0,0
-8161,0,301Redirect,0,/fridge-magnet-177-they-tell-me-that-you-lose-your-mind-when-you-get-older/,"Fridge Magnet 177 They tell me that you lose your mind when you get older...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3893,197,0,0,0
-8162,0,301Redirect,0,/fridge-magnet-178-i-forgot-to-go-to-the-gym-today-thats-3-years-in-a-row/,"Fridge Magnet 178 I forgot to go to the gym today… that’s 3 years in a row!",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,7216,78,0,0,0
-8163,0,301Redirect,0,/fridge-magnet-179-the-senility-prayer-god-give-me-the-senility-to-forget-the-people/,"Fridge Magnet 179 THE SENILITY PRAYER God give me the senility to forget the people...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3894,786,0,0,0
+8161,0,301Redirect,0,/fridge-magnet-177-they-tell-me-that-you-lose-your-mind-when-you-get-older/,"Fridge Magnet 177 They tell me that you lose your mind when you get older",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3893,197,0,0,0
+8162,0,301Redirect,0,/fridge-magnet-178-i-forgot-to-go-to-the-gym-today-thats-3-years-in-a-row/,"Fridge Magnet 178 I forgot to go to the gym today. that's 3 years in a row!",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,7216,78,0,0,0
+8163,0,301Redirect,0,/fridge-magnet-179-the-senility-prayer-god-give-me-the-senility-to-forget-the-people/,"Fridge Magnet 179 THE SENILITY PRAYER God give me the senility to forget the people",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3894,786,0,0,0
 8164,0,301Redirect,0,/Fridge-Magnet-181-Mothers-plant-seeds-of-love-that-help-us-bloom-forever/,"Fridge Magnet 181 Mothers plant seeds of love that help us bloom forever",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3206,196,0,0,0
-8165,0,301Redirect,0,/fridge-magnet-182-weve-been-through-so-much-together-and-most-of-it/,"Fridge Magnet 182 We've been through so much together and most of it...",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3895,115,0,0,0
-8166,0,301Redirect,0,/fridge-magnet-183-chocolate-here-today-gone-today/2/,"Fridge Magnet 183 Chocolate... here today, gone today",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2083,700,0,0,0
+8165,0,301Redirect,0,/fridge-magnet-182-weve-been-through-so-much-together-and-most-of-it/,"Fridge Magnet 182 We've been through so much together and most of it",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,3895,115,0,0,0
+8166,0,301Redirect,0,/fridge-magnet-183-chocolate-here-today-gone-today/2/,"Fridge Magnet 183 Chocolate here today, gone today",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2083,700,0,0,0
 8167,0,301Redirect,0,/Fridge-Magnet-183-Inner-beauty-is-overrated/,"Fridge Magnet 183 Inner beauty is over-rated",,,,301-redirect.aspx,2/7/2015,6,2/7/2015,2/7/2015,6,0,1,0,1,0,2084,18,0,0,0
 8168,0,301Redirect,0,/sweet-almond-oil-cosmetic-grade-prunus-dulcis/2/,"Sweet Almond Oil Cosmetic Grade (Prunus dulcis)",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2892,407,0,0,0
 8169,0,301Redirect,0,/jojoba-oil-simmonsia-chinensis/2/,"Jojoba Oil (Simmonsia chinensis)",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2330,347,0,0,0
-8170,0,301Redirect,0,/fridge-magnet-185-i-sometimes-think-that-god-in-creating-man/,"Fridge Magnet 185 I sometimes think that God, in creating man...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7103,37,0,0,0
-8171,0,301Redirect,0,/fridge-magnet-186-little-by-little-whatever-the-weather/2/,"Fridge Magnet 186 Little by little, whatever the weather...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2087,53,0,0,0
+8170,0,301Redirect,0,/fridge-magnet-185-i-sometimes-think-that-god-in-creating-man/,"Fridge Magnet 185 I sometimes think that God, in creating man",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7103,37,0,0,0
+8171,0,301Redirect,0,/fridge-magnet-186-little-by-little-whatever-the-weather/2/,"Fridge Magnet 186 Little by little, whatever the weather",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2087,53,0,0,0
 8172,0,301Redirect,0,/Fridge-Magnet-187-I-dress-to-kill-and-cook-the-same-way/,"Fridge Magnet 187 I dress to kill and cook the same way",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2088,1246,0,0,0
-8173,0,301Redirect,0,/fridge-magnet-187-true-friends-are-never-apart/,"Fridge Magnet 187 True Friends are never apart...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7947,72,0,0,0
+8173,0,301Redirect,0,/fridge-magnet-187-true-friends-are-never-apart/,"Fridge Magnet 187 True Friends are never apart",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7947,72,0,0,0
 8174,0,301Redirect,0,/Fridge-Magnet-189-Are-my-hot-flushes-causing-global-warming/,"Fridge Magnet 189 Are my hot flushes causing global warming?",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2091,321,0,0,0
-8175,0,301Redirect,0,/fridge-magnet-190-marriage-is-a-relationship-in-which/2/,"Fridge Magnet 190 Marriage is a relationship in which...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2092,12,0,0,0
-8176,0,301Redirect,0,/fridge-magnet-192-more-than-you-can-ever-imagine-more-than-you-could-ever/,"Fridge Magnet 192 More than you can ever imagine, more than you could ever...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7210,92,0,0,0
-8177,0,301Redirect,0,/fridge-magnet-194-the-opinions-expressed-by-the-husband/3/,"Fridge Magnet 194 The opinions expressed by the husband...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2097,73,0,0,0
+8175,0,301Redirect,0,/fridge-magnet-190-marriage-is-a-relationship-in-which/2/,"Fridge Magnet 190 Marriage is a relationship in which",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2092,12,0,0,0
+8176,0,301Redirect,0,/fridge-magnet-192-more-than-you-can-ever-imagine-more-than-you-could-ever/,"Fridge Magnet 192 More than you can ever imagine, more than you could ever",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7210,92,0,0,0
+8177,0,301Redirect,0,/fridge-magnet-194-the-opinions-expressed-by-the-husband/3/,"Fridge Magnet 194 The opinions expressed by the husband",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2097,73,0,0,0
 8178,0,301Redirect,0,/Fridge-Magnet-195-A-clean-house-is-a-sign-of-a-wasted-life/,"Fridge Magnet 195 A clean house is a sign of a wasted life",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2098,1232,0,0,0
 8179,0,301Redirect,0,/fridge-magnet-197-im-really-easy-to-get-on-with-once-you-learn-to-worship-me/2/,"Fridge Magnet 197 I'm really easy to get on with once you learn to worship me",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2100,1333,0,0,0
-8180,0,301Redirect,0,/fridge-magnet-197-your-lack-of-current-photos-on-fb/,"Fridge Magnet 197 Your lack of current photos on FB...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,5664,19,0,0,0
-8181,0,301Redirect,0,/fridge-magnet-198-dear-diet-things-just-arent-going-to-work-out/,"Fridge Magnet 198 Dear Diet, Things just aren't going to work out...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7104,100,0,0,0
+8180,0,301Redirect,0,/fridge-magnet-197-your-lack-of-current-photos-on-fb/,"Fridge Magnet 197 Your lack of current photos on FB",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,5664,19,0,0,0
+8181,0,301Redirect,0,/fridge-magnet-198-dear-diet-things-just-arent-going-to-work-out/,"Fridge Magnet 198 Dear Diet, Things just aren't going to work out",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7104,100,0,0,0
 8182,0,301Redirect,0,/Fridge-Magnet-199-Learn-from-yesterday-live-for-today-hope-for-tomorrow/,"Fridge Magnet 199 Learn from yesterday, live for today, hope for tomorrow",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2102,141,0,0,0
-8183,0,301Redirect,0,/fridge-magnet-202-im-a-stay-at-home-mum-go-ahead/,"Fridge Magnet 202 I'm a stay at home Mum. Go ahead...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7864,310,0,0,0
-8184,0,301Redirect,0,/fridge-magnet-203-no-one-looks-back-on-their-life-and-remembers/,"Fridge Magnet 203 No one looks back on their life and remembers...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7209,47,0,0,0
-8185,0,301Redirect,0,/fridge-magnet-204-sometimes-the-smallest-things-take-up/,"Fridge Magnet 204 Sometimes the smallest things take up...",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7631,43,0,0,0
+8183,0,301Redirect,0,/fridge-magnet-202-im-a-stay-at-home-mum-go-ahead/,"Fridge Magnet 202 I'm a stay at home Mum. Go ahead",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7864,310,0,0,0
+8184,0,301Redirect,0,/fridge-magnet-203-no-one-looks-back-on-their-life-and-remembers/,"Fridge Magnet 203 No one looks back on their life and remembers",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7209,47,0,0,0
+8185,0,301Redirect,0,/fridge-magnet-204-sometimes-the-smallest-things-take-up/,"Fridge Magnet 204 Sometimes the smallest things take up",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,7631,43,0,0,0
 8186,0,301Redirect,0,/fridge-magnet-205-in-two-days-from-now-tomorrow-will-be-yesterday/2/,"Fridge Magnet 205 In two days from now tomorrow will be yesterday",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,3898,37,0,0,0
 8187,0,301Redirect,0,/fridge-magnet-206-im-not-drunk-just-chemically-inconvenienced/2/,"Fridge Magnet 206 I'm not drunk just chemically inconvenienced",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2111,62,0,0,0
 8188,0,301Redirect,0,/Fridge-Magnet-207-The-words-you-are-looking-for-are-YES-DEAR/,"Fridge Magnet 207 The words you are looking for are YES DEAR",,,,301-redirect.aspx,2/8/2015,6,2/8/2015,2/8/2015,6,0,1,0,1,0,2113,90,0,0,0
@@ -2475,7 +2475,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8427,0,301Redirect,0,/vampires-blood-incense-cones-stamford-12s/2/,"Vampires Blood Incense Cones Stamford 12s",,,,301-redirect.aspx,4/21/2015,2,4/21/2015,4/21/2015,2,0,1,0,1,0,5050,178,0,0,0
 8428,0,301Redirect,0,/vampires-blood-incense-cones-stamford-12s-box/2/,"Vampires Blood Incense Cones Stamford 12s Box",,,,301-redirect.aspx,4/21/2015,2,4/21/2015,4/21/2015,2,0,1,0,1,0,5057,41,0,0,0
 8429,0,301Redirect,0,/fridge-magnet-046-a-family-is-a-little-world-created-by-love/,"Fridge Magnet 046 A family is a little world created by love",,,,301-redirect.aspx,4/22/2015,6,4/22/2015,4/22/2015,6,0,1,0,1,0,1957,37,0,0,0
-8430,0,301Redirect,0,/fridge-magnet-164-family-is-a-connection-to-life-a-tie-to-the-past/,"Fridge Magnet 164 Family is a connection to life, a tie to the past...",,,,301-redirect.aspx,4/22/2015,6,4/22/2015,4/22/2015,6,0,1,0,1,0,3890,40,0,0,0
+8430,0,301Redirect,0,/fridge-magnet-164-family-is-a-connection-to-life-a-tie-to-the-past/,"Fridge Magnet 164 Family is a connection to life, a tie to the past",,,,301-redirect.aspx,4/22/2015,6,4/22/2015,4/22/2015,6,0,1,0,1,0,3890,40,0,0,0
 8462,0,301Redirect,0,/wintergreen-ointment-ready-to-apply-rub-on-ointment/2/,"Wintergreen Ointment - ready to apply rub on ointment",,,,301-redirect.aspx,4/27/2015,2,4/27/2015,4/27/2015,2,0,1,0,1,0,2976,304,0,0,0
 8463,0,301Redirect,0,/wintergreen-ointment-ready-to-apply-muscle-rub/2/,"Wintergreen Ointment - ready to apply muscle rub",,,,301-redirect.aspx,4/27/2015,2,4/27/2015,4/27/2015,2,0,1,0,1,0,2975,268,0,0,0
 8466,0,301Redirect,0,/vv-calendula-cream-natural-treatment-for-visible-veins/2/,"VV Calendula Cream - natural treatment for visible veins",,,,301-redirect.aspx,4/29/2015,2,4/29/2015,4/29/2015,2,0,1,0,1,0,2949,106,0,0,0
@@ -2495,7 +2495,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8539,0,301Redirect,0,/Fridge-Magnet-151-T1/,"Fridge Magnet 151 (T1)",,,,301-redirect.aspx,6/11/2015,6,6/11/2015,6/11/2015,6,0,1,0,1,0,1,22,0,0,0
 8540,0,301Redirect,0,/Fridge-Magnet-029-Warning-I-have-attitude-and-I-know-how-to-use-it/,"Fridge Magnet 029 Warning: I have attitude and I know how to use it",,,,301-redirect.aspx,6/11/2015,6,6/11/2015,6/11/2015,6,0,1,0,1,0,1941,145,0,0,0
 8541,0,301Redirect,0,/Fridge-Magnet-008-Would-you-like-to-speak-to-the-man-in-charge/,"Fridge Magnet 008 Would you like to speak to the man in charge",,,,301-redirect.aspx,6/11/2015,6,6/11/2015,6/11/2015,6,0,1,0,1,0,1923,190,0,0,0
-8542,0,301Redirect,0,/fridge-magnet-082-you-dont-have-to-promise-me-the-moon/,"Fridge Magnet 082 You don't have to promise me the moon...",,,,301-redirect.aspx,6/11/2015,6,6/11/2015,6/11/2015,6,0,1,0,1,0,3884,32,0,0,0
+8542,0,301Redirect,0,/fridge-magnet-082-you-dont-have-to-promise-me-the-moon/,"Fridge Magnet 082 You don't have to promise me the moon",,,,301-redirect.aspx,6/11/2015,6,6/11/2015,6/11/2015,6,0,1,0,1,0,3884,32,0,0,0
 8553,0,301Redirect,0,/pil-balm-60ml-a-natural-ointment-for-piles-haemorrhoids/,"PIL Balm 60ml - a natural ointment for piles & haemorrhoids",,,,301-redirect.aspx,6/14/2015,2,6/14/2015,6/14/2015,2,0,1,0,1,0,2625,85,0,0,0
 8554,0,301Redirect,0,/sulphur-soap-bar-by-christina-may/,"Sulphur Soap Bar by Christina May",,,,301-redirect.aspx,6/26/2015,2,6/26/2015,6/26/2015,2,0,1,0,1,0,2880,225,0,0,0
 8572,0,301Redirect,0,/Citronella-Burning-Granules-80g/,"Citronella Burning Granules 80g",,,,301-redirect.aspx,7/2/2015,2,7/2/2015,7/2/2015,2,0,1,0,1,0,1,0,0,0,0
@@ -2519,7 +2519,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 8643,0,301Redirect,0,/black-simple-sound-oil-burner/,"Black Simple Sound Oil Burner",,,,301-redirect.aspx,7/28/2015,5,7/28/2015,7/28/2015,5,0,1,0,1,0,8583,95,0,0,0
 8644,0,301Redirect,0,/white-simple-sound-oil-burner/,"White Simple Sound Oil Burner",,,,301-redirect.aspx,7/28/2015,5,7/28/2015,7/28/2015,5,0,1,0,1,0,8584,132,0,0,0
 8645,0,301Redirect,0,/vitamin-e-oil-dalphatocopherol/,"Vitamin E Oil (d-alpha-tocopherol)",,,,301-redirect.aspx,7/29/2015,6,7/29/2015,7/29/2015,6,0,1,0,1,0,2947,194,0,0,0
-8647,0,301Redirect,0,/dragons-blood-oil-burner-simmering-granules-extra-large-jar/,"Dragon’s Blood Oil Burner Simmering Granules Extra Large Jar",,,,301-redirect.aspx,7/29/2015,5,7/29/2015,7/29/2015,5,0,1,0,1,0,8620,100,0,0,0
+8647,0,301Redirect,0,/dragons-blood-oil-burner-simmering-granules-extra-large-jar/,"Dragon's Blood Oil Burner Simmering Granules Extra Large Jar",,,,301-redirect.aspx,7/29/2015,5,7/29/2015,7/29/2015,5,0,1,0,1,0,8620,100,0,0,0
 8649,0,301Redirect,0,/lisa-parker-wolf-head-mug/,"Lisa Parker Wolf  Head Mug",,,,301-redirect.aspx,8/3/2015,2,8/3/2015,8/3/2015,2,0,1,0,1,0,1,176,0,0,0
 8650,0,301Redirect,0,/angel-dream-catcher-by-lisa-parker-small/,"Angel Dream Catcher by Lisa Parker Small",,,,301-redirect.aspx,8/5/2015,6,8/5/2015,8/5/2015,6,0,1,0,1,0,6870,258,0,0,0
 8652,0,301Redirect,0,/angel-dream-catcher-purple-by-lisa-parker-small/2/,"Angel Dream Catcher Purple by Lisa Parker Small",,,,301-redirect.aspx,8/5/2015,6,8/5/2015,8/5/2015,6,0,1,0,1,0,8651,0,0,0,0
@@ -2678,7 +2678,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 9363,0,301Redirect,0,/tangerine-lemongrass-4-hour-root-legacy-tea-light-candle/,"Tangerine Lemongrass 4 Hour Root Legacy Tea Light Candle",,,,301-redirect.aspx,8/26/2016,6,8/26/2016,8/26/2016,6,0,1,0,1,0,8611,85,0,0,0
 9374,0,301Redirect,0,/happy-birthday-to-eweh-sheep-magnet-by-thomas-joseph/,"Happy Birthday To Eweh Sheep Magnet by Thomas Joseph",,,,301-redirect.aspx,8/31/2016,6,8/31/2016,8/31/2016,6,0,1,0,1,0,5609,177,0,0,0
 9395,0,301Redirect,0,/sulphur-cream-50ml/,"Sulphur Cream 50ml",,,,301-redirect.aspx,9/8/2016,2,9/8/2016,9/8/2016,2,0,1,0,1,0,8481,127,0,0,0
-9424,0,301Redirect,0,/i-have-enough-clothes-shoes-and-dont-need-to-fridge-magnet-164/,"‘I have enough clothes & shoes and don’t need to… Fridge Magnet 164",,,,301-redirect.aspx,9/14/2016,6,9/14/2016,9/14/2016,6,0,1,0,1,0,9401,80,0,0,0
+9424,0,301Redirect,0,/i-have-enough-clothes-shoes-and-dont-need-to-fridge-magnet-164/,"'I have enough clothes & shoes and don't need to. Fridge Magnet 164",,,,301-redirect.aspx,9/14/2016,6,9/14/2016,9/14/2016,6,0,1,0,1,0,9401,80,0,0,0
 9436,0,301Redirect,0,/zandu-balm-small-jar/,"Zandu Balm Small Jar",,,,301-redirect.aspx,9/17/2016,6,9/17/2016,9/17/2016,6,0,1,0,1,0,1,2,0,0,0
 9443,0,301Redirect,0,/bulk-buy-incense-set-48-assorted-packs/,"Bulk Buy Incense Set 48 Assorted packs",,,,301-redirect.aspx,9/19/2016,5,9/19/2016,9/19/2016,5,0,1,0,1,0,9412,125,0,0,0
 9444,0,301Redirect,0,/black-cat-weegie-board-3d-bookmark-by-lisa-parker/,"Black Cat & Weegie Board 3D Bookmark by Lisa Parker",,,,301-redirect.aspx,9/19/2016,5,9/19/2016,9/19/2016,5,0,1,0,1,0,9415,60,0,0,0
@@ -2746,7 +2746,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 9885,0,301Redirect,0,/onyx-swimming-dolphin-lge/,"Onyx Swimming Dolphin Lge",,,,301-redirect.aspx,4/28/2017,5,4/28/2017,4/28/2017,5,0,1,0,1,0,9272,59,0,0,0
 9886,0,301Redirect,0,/gift-set-woodlands-in-watering-can/,"Gift Set Woodlands in Watering Can",,,,301-redirect.aspx,4/28/2017,5,4/28/2017,4/28/2017,5,0,1,0,1,0,6278,140,0,0,0
 9887,0,301Redirect,0,/sweet-petal-garden-fairy-laying/,"Sweet Petal Garden Fairy Laying",,,,301-redirect.aspx,4/28/2017,5,4/28/2017,4/28/2017,5,0,1,0,1,0,9858,29,0,0,0
-9888,0,301Redirect,0,/grumpy-old-mans-wooden-tray/,"Grumpy Old Man’s Wooden Tray",,,,301-redirect.aspx,4/28/2017,5,4/28/2017,4/28/2017,5,0,1,0,1,0,9883,9,0,0,0
+9888,0,301Redirect,0,/grumpy-old-mans-wooden-tray/,"Grumpy Old Man's Wooden Tray",,,,301-redirect.aspx,4/28/2017,5,4/28/2017,4/28/2017,5,0,1,0,1,0,9883,9,0,0,0
 9895,0,301Redirect,0,/mustard-seed-oil-sinapis-alba/2/,"Mustard Seed Oil (Sinapis alba)",,,,301-redirect.aspx,5/2/2017,2,5/2/2017,5/2/2017,2,0,1,0,1,0,2514,72,0,0,0
 9896,0,301Redirect,0,/Glass-Bottles-Green-Durham-10ml-With-Brush-Cap/,"Glass Bottles Green Durham 10ml With Brush Cap",,,,301-redirect.aspx,5/2/2017,2,5/2/2017,5/2/2017,2,0,1,0,1,0,1,0,0,0,0
 9897,0,301Redirect,0,/Glass-Bottles-Blue-10ml-With-Brush-Cap/,"Glass Bottles Blue 10ml With Brush Cap",,,,301-redirect.aspx,5/2/2017,2,5/2/2017,5/2/2017,2,0,1,0,1,0,1,0,0,0,0
@@ -2784,58 +2784,58 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 10170,0,301Redirect,0,/St-Johns-Wort-Infused-Oil/,"St Johns Wort Infused Oil",,,,301-redirect.aspx,8/12/2017,2,8/12/2017,8/12/2017,2,0,1,0,1,0,1,72,0,0,0
 10171,0,301Redirect,0,/Wintergreen-Cream/,"Wintergreen Cream",,,,301-redirect.aspx,8/13/2017,2,8/13/2017,8/13/2017,2,0,1,0,1,0,1,33,0,0,0
 10172,0,301Redirect,0,/Wintergreen-Ointment-Hand-Cream/,"Wintergreen Ointment / Hand Cream",,,,301-redirect.aspx,8/13/2017,2,8/13/2017,8/13/2017,2,0,1,0,1,0,1,24,0,0,0
-10194,0,301Redirect,0,/i-enjoy-long-romantic-walks-to-the-fridge-fridge-magnet-136/,"I enjoy long romantic walks… to the FRIDGE! Fridge Magnet 136",,,,301-redirect.aspx,8/13/2017,6,8/13/2017,8/13/2017,6,0,1,0,1,0,10193,0,0,0,0
+10194,0,301Redirect,0,/i-enjoy-long-romantic-walks-to-the-fridge-fridge-magnet-136/,"I enjoy long romantic walks. to the FRIDGE! Fridge Magnet 136",,,,301-redirect.aspx,8/13/2017,6,8/13/2017,8/13/2017,6,0,1,0,1,0,10193,0,0,0,0
 10196,0,301Redirect,0,/dogroughselfie-fridge-magnet-72/,"#DogRoughSelfie Fridge Magnet 72",,,,301-redirect.aspx,8/15/2017,2,8/15/2017,8/15/2017,2,0,1,0,1,0,10174,3,0,0,0
 10198,0,301Redirect,0,/twilight-heart-home-gift-set-6-piece/,"Twilight Heart & Home Gift Set 6 Piece",,,,301-redirect.aspx,8/18/2017,6,8/18/2017,8/18/2017,6,0,1,0,1,0,9561,88,0,0,0
 10202,0,301Redirect,0,/Mini-Black-Drawstring-Pouch/,"Mini Black Drawstring Pouch",,,,301-redirect.aspx,8/24/2017,2,8/24/2017,8/24/2017,2,0,1,0,1,0,2474,68,0,0,0
 10205,0,301Redirect,0,/multibuy-offer/,"Multi-Buy Offer",,,,301-redirect.aspx,9/9/2017,2,9/9/2017,9/9/2017,2,0,1,0,1,0,7255,74,0,0,0
 10206,0,301Redirect,0,/Nag-Champa-Aastha-Incense-Sticks-15g/,"Nag Champa Aastha Incense Sticks 15g",,,,301-redirect.aspx,9/13/2017,2,9/13/2017,9/13/2017,2,0,1,0,1,0,1,0,0,0,0
 10215,0,301Redirect,0,/reindeer-bath-blaster/,"Reindeer Bath Blaster",,,,301-redirect.aspx,9/15/2017,2,9/15/2017,9/15/2017,2,0,1,0,1,0,9518,2,0,0,0
-10221,0,301Redirect,0,/bosss-gift-bubble-bath-sls-parabens-free/,"Boss’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/15/2017,6,9/15/2017,9/15/2017,6,0,1,0,1,0,10218,0,0,0,0
+10221,0,301Redirect,0,/bosss-gift-bubble-bath-sls-parabens-free/,"Boss's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/15/2017,6,9/15/2017,9/15/2017,6,0,1,0,1,0,10218,0,0,0,0
 10258,0,301Redirect,0,/mums-luxury-bubble-bath-sls-free/,"Mums Luxury Bubble Bath SLS Free",,,,301-redirect.aspx,9/16/2017,6,9/16/2017,9/16/2017,6,0,1,0,1,0,1,51,0,0,0
 10276,0,301Redirect,0,/boozi-bodycare/,"Boozi Bodycare",,,,301-redirect.aspx,9/19/2017,2,9/19/2017,9/19/2017,2,0,1,0,1,0,1,23,0,0,0
 10277,0,301Redirect,0,/fragrance-lamps-oils/,"Fragrance Lamps & Oils",,,,301-redirect.aspx,9/19/2017,2,9/19/2017,9/19/2017,2,0,1,0,1,0,1,72,0,0,0
 10278,0,301Redirect,0,/reed-diffusers/,"Reed Diffusers",,,,301-redirect.aspx,9/19/2017,2,9/19/2017,9/19/2017,2,0,1,0,1,0,1,57,0,0,0
-10321,0,301Redirect,0,/we-asked-for-a-daughter-we-were-sent-a-princess-fridge-magnet-48/,"We asked for a daughter… We were sent a princess Fridge Magnet 48",,,,301-redirect.aspx,9/26/2017,5,9/26/2017,9/26/2017,5,0,1,0,1,0,10195,20,0,0,0
-10322,0,301Redirect,0,/there-is-no-place-like-home-shabby-plaque/,"There Is No Place Like Home… Shabby Plaque",,,,301-redirect.aspx,9/26/2017,5,9/26/2017,9/26/2017,5,0,1,0,1,0,9691,23,0,0,0
+10321,0,301Redirect,0,/we-asked-for-a-daughter-we-were-sent-a-princess-fridge-magnet-48/,"We asked for a daughter. We were sent a princess Fridge Magnet 48",,,,301-redirect.aspx,9/26/2017,5,9/26/2017,9/26/2017,5,0,1,0,1,0,10195,20,0,0,0
+10322,0,301Redirect,0,/there-is-no-place-like-home-shabby-plaque/,"There Is No Place Like Home. Shabby Plaque",,,,301-redirect.aspx,9/26/2017,5,9/26/2017,9/26/2017,5,0,1,0,1,0,9691,23,0,0,0
 10323,0,301Redirect,0,/do-more-slate-coaster/,"Do More Slate Coaster",,,,301-redirect.aspx,9/26/2017,5,9/26/2017,9/26/2017,5,0,1,0,1,0,8780,22,0,0,0
 10324,0,301Redirect,0,/Plastic-Jar-Solid-White-100ml/,"Plastic Jar Solid White 100ml",,,,301-redirect.aspx,9/27/2017,2,9/27/2017,9/27/2017,2,0,1,0,1,0,2655,34,0,0,0
-10325,0,301Redirect,0,/accountants-gift-bubble-bath-sls-parabens-free/,"Accountant’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10211,10,0,0,0
-10326,0,301Redirect,0,/badminton-players-gift-bubble-bath-sls-parabens-free/,"Badminton Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10213,17,0,0,0
-10327,0,301Redirect,0,/bikers-gift-bubble-bath-sls-parabens-free/,"Biker’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10283,12,0,0,0
-10328,0,301Redirect,0,/bingo-players-gift-bubble-bath-sls-parabens-free/,"Bingo Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10217,14,0,0,0
-10329,0,301Redirect,0,/boss-gift-bubble-bath-sls-parabens-free/,"Boss’ Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10218,19,0,0,0
-10330,0,301Redirect,0,/brothers-gift-bubble-bath-sls-parabens-free/,"Brother’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10284,14,0,0,0
-10331,0,301Redirect,0,/chefs-gift-bubble-bath-sls-parabens-free/,"Chef’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10287,15,0,0,0
-10332,0,301Redirect,0,/computer-genius-gift-bubble-bath-sls-parabens-free/,"Computer Genius’ Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10220,21,0,0,0
-10333,0,301Redirect,0,/cooks-gift-bubble-bath-sls-parabens-free/,"Cook’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10222,13,0,0,0
-10334,0,301Redirect,0,/cricket-players-gift-bubble-bath-sls-parabens-free/,"Cricket Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10223,12,0,0,0
-10335,0,301Redirect,0,/cyclists-gift-bubble-bath-sls-parabens-free/,"Cyclist’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10224,18,0,0,0
-10336,0,301Redirect,0,/dads-gift-bubble-bath-sls-parabens-free/,"Dad’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10288,13,0,0,0
-10337,0,301Redirect,0,/darts-players-gift-bubble-bath-sls-parabens-free/,"Darts Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10289,9,0,0,0
-10338,0,301Redirect,0,/domino-players-gift-bubble-bath-sls-parabens-free/,"Domino Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10226,11,0,0,0
-10339,0,301Redirect,0,/facebook-addicts-gift-bubble-bath-sls-parabens-free/,"Facebook Addict’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10229,12,0,0,0
-10340,0,301Redirect,0,/fathers-day-gift-bubble-bath-sls-parabens-free/,"Father’s Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10292,9,0,0,0
-10341,0,301Redirect,0,/fishermans-day-gift-bubble-bath-sls-parabens-free/,"Fisherman’s Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10294,9,0,0,0
-10342,0,301Redirect,0,/golfers-gift-bubble-bath-sls-parabens-free/,"Golfer’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10232,13,0,0,0
+10325,0,301Redirect,0,/accountants-gift-bubble-bath-sls-parabens-free/,"Accountant's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10211,10,0,0,0
+10326,0,301Redirect,0,/badminton-players-gift-bubble-bath-sls-parabens-free/,"Badminton Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10213,17,0,0,0
+10327,0,301Redirect,0,/bikers-gift-bubble-bath-sls-parabens-free/,"Biker's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10283,12,0,0,0
+10328,0,301Redirect,0,/bingo-players-gift-bubble-bath-sls-parabens-free/,"Bingo Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10217,14,0,0,0
+10329,0,301Redirect,0,/boss-gift-bubble-bath-sls-parabens-free/,"Boss' Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10218,19,0,0,0
+10330,0,301Redirect,0,/brothers-gift-bubble-bath-sls-parabens-free/,"Brother's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10284,14,0,0,0
+10331,0,301Redirect,0,/chefs-gift-bubble-bath-sls-parabens-free/,"Chef's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10287,15,0,0,0
+10332,0,301Redirect,0,/computer-genius-gift-bubble-bath-sls-parabens-free/,"Computer Genius' Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10220,21,0,0,0
+10333,0,301Redirect,0,/cooks-gift-bubble-bath-sls-parabens-free/,"Cook's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10222,13,0,0,0
+10334,0,301Redirect,0,/cricket-players-gift-bubble-bath-sls-parabens-free/,"Cricket Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10223,12,0,0,0
+10335,0,301Redirect,0,/cyclists-gift-bubble-bath-sls-parabens-free/,"Cyclist's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10224,18,0,0,0
+10336,0,301Redirect,0,/dads-gift-bubble-bath-sls-parabens-free/,"Dad's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10288,13,0,0,0
+10337,0,301Redirect,0,/darts-players-gift-bubble-bath-sls-parabens-free/,"Darts Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10289,9,0,0,0
+10338,0,301Redirect,0,/domino-players-gift-bubble-bath-sls-parabens-free/,"Domino Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10226,11,0,0,0
+10339,0,301Redirect,0,/facebook-addicts-gift-bubble-bath-sls-parabens-free/,"Facebook Addict's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10229,12,0,0,0
+10340,0,301Redirect,0,/fathers-day-gift-bubble-bath-sls-parabens-free/,"Father's Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10292,9,0,0,0
+10341,0,301Redirect,0,/fishermans-day-gift-bubble-bath-sls-parabens-free/,"Fisherman's Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10294,9,0,0,0
+10342,0,301Redirect,0,/golfers-gift-bubble-bath-sls-parabens-free/,"Golfer's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10232,13,0,0,0
 10343,0,301Redirect,0,/happy-birthday-gift-bubble-bath-sls-parabens-free/,"Happy Birthday Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10251,19,0,0,0
-10344,0,301Redirect,0,/his-royal-highness-day-gift-bubble-bath-sls-parabens-free/,"His Royal Highness’ Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10296,8,0,0,0
+10344,0,301Redirect,0,/his-royal-highness-day-gift-bubble-bath-sls-parabens-free/,"His Royal Highness' Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10296,8,0,0,0
 10345,0,301Redirect,0,/hug-in-a-bottle-gift-bubble-bath-sls-parabens-free/,"Hug In A Bottle Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10253,20,0,0,0
-10346,0,301Redirect,0,/his-royal-highness-bubble-bath-sls-paraben-free/,"His Royal Highness’ Bubble Bath SLS & Paraben Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10296,0,0,0,0
-10347,0,301Redirect,0,/husbands-day-gift-bubble-bath-sls-parabens-free/,"Husband’s Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10297,9,0,0,0
-10348,0,301Redirect,0,/musicians-gift-bubble-bath-sls-parabens-free/,"Musician’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10259,10,0,0,0
-10349,0,301Redirect,0,/poker-players-gift-bubble-bath-sls-parabens-free/,"Poker Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10263,10,0,0,0
-10350,0,301Redirect,0,/police-officers-gift-bubble-bath-sls-parabens-free/,"Police Officer’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10264,9,0,0,0
-10351,0,301Redirect,0,/pool-sharks-gift-bubble-bath-sls-parabens-free/,"Pool Shark’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10265,10,0,0,0
+10346,0,301Redirect,0,/his-royal-highness-bubble-bath-sls-paraben-free/,"His Royal Highness' Bubble Bath SLS & Paraben Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10296,0,0,0,0
+10347,0,301Redirect,0,/husbands-day-gift-bubble-bath-sls-parabens-free/,"Husband's Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10297,9,0,0,0
+10348,0,301Redirect,0,/musicians-gift-bubble-bath-sls-parabens-free/,"Musician's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10259,10,0,0,0
+10349,0,301Redirect,0,/poker-players-gift-bubble-bath-sls-parabens-free/,"Poker Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10263,10,0,0,0
+10350,0,301Redirect,0,/police-officers-gift-bubble-bath-sls-parabens-free/,"Police Officer's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10264,9,0,0,0
+10351,0,301Redirect,0,/pool-sharks-gift-bubble-bath-sls-parabens-free/,"Pool Shark's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10265,10,0,0,0
 10352,0,301Redirect,0,/self-employed-gift-bubble-bath-sls-parabens-free/,"Self Employed Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10267,10,0,0,0
-10353,0,301Redirect,0,/someone-specials-gift-bubble-bath-sls-parabens-free/,"Someone Special’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10270,13,0,0,0
-10354,0,301Redirect,0,/squash-players-gift-bubble-bath-sls-parabens-free/,"Squash Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10271,8,0,0,0
-10355,0,301Redirect,0,/students-gift-bubble-bath-sls-parabens-free/,"Student’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10272,10,0,0,0
-10356,0,301Redirect,0,/swimmers-gift-bubble-bath-sls-parabens-free/,"Swimmer’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10273,6,0,0,0
-10357,0,301Redirect,0,/tennis-players-gift-bubble-bath-sls-parabens-free/,"Tennis Player’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10275,7,0,0,0
+10353,0,301Redirect,0,/someone-specials-gift-bubble-bath-sls-parabens-free/,"Someone Special's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10270,13,0,0,0
+10354,0,301Redirect,0,/squash-players-gift-bubble-bath-sls-parabens-free/,"Squash Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10271,8,0,0,0
+10355,0,301Redirect,0,/students-gift-bubble-bath-sls-parabens-free/,"Student's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10272,10,0,0,0
+10356,0,301Redirect,0,/swimmers-gift-bubble-bath-sls-parabens-free/,"Swimmer's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10273,6,0,0,0
+10357,0,301Redirect,0,/tennis-players-gift-bubble-bath-sls-parabens-free/,"Tennis Player's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10275,7,0,0,0
 10358,0,301Redirect,0,/thank-you-gift-bubble-bath-sls-parabens-free/,"Thank You Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10279,8,0,0,0
-10359,0,301Redirect,0,/vets-gift-bubble-bath-sls-parabens-free/,"Vet’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10281,10,0,0,0
-10360,0,301Redirect,0,/walkers-gift-bubble-bath-sls-parabens-free/,"Walker’s Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10282,8,0,0,0
+10359,0,301Redirect,0,/vets-gift-bubble-bath-sls-parabens-free/,"Vet's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10281,10,0,0,0
+10360,0,301Redirect,0,/walkers-gift-bubble-bath-sls-parabens-free/,"Walker's Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,9/27/2017,5,9/27/2017,9/27/2017,5,0,1,0,1,0,10282,8,0,0,0
 10361,0,301Redirect,0,/owl-on-pumpkin-snow-globe/,"Owl on Pumpkin Snow globe",,,,301-redirect.aspx,9/28/2017,5,9/28/2017,9/28/2017,5,0,1,0,1,0,10303,18,0,0,0
 10362,0,301Redirect,0,/Gardeners-Exfoliating-Soap-Bar-200g-by-Christina-May/,"Gardeners Exfoliating  Soap Bar 200g by Christina May",,,,301-redirect.aspx,10/2/2017,5,10/2/2017,10/2/2017,5,0,1,0,1,0,2133,40,0,0,0
 10369,0,301Redirect,0,/rosehip-oil-rosa-canina-natural-beauty-skin-oil-50ml/2/,"Rosehip Oil (Rosa canina) - Natural Beauty Skin Oil 50ml",,,,301-redirect.aspx,10/3/2017,6,10/3/2017,10/3/2017,6,0,1,0,1,0,2762,24,0,0,0
@@ -2846,10 +2846,10 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 10393,0,301Redirect,0,/grape-seed-massage-oil-cosmetic-grade-ideal-for-baby-massage/,"Grape Seed Massage Oil - Cosmetic Grade - ideal for baby massage",,,,301-redirect.aspx,10/22/2017,6,10/22/2017,10/22/2017,6,0,1,0,1,0,2242,22,0,0,0
 10408,0,301Redirect,0,/massage-oil-sweet-almond-cosmetic-grade/,"Massage Oil Sweet Almond (Cosmetic Grade)",,,,301-redirect.aspx,10/22/2017,6,10/22/2017,10/22/2017,6,0,1,0,1,0,2439,24,0,0,0
 10413,0,301Redirect,0,/arnica-oil-heterotheca-inuloides-ready-to-apply-rub-on-oil/,"Arnica Oil (Heterotheca inuloides) - ready to apply rub on oil",,,,301-redirect.aspx,10/22/2017,6,10/22/2017,10/22/2017,6,0,1,0,1,0,1,24,0,0,0
-10454,0,301Redirect,0,/snooker-players-day-gift-bubble-bath-sls-parabens-free/,"Snooker Player’s Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,10/30/2017,5,10/30/2017,10/30/2017,5,0,1,0,1,0,10387,5,0,0,0
+10454,0,301Redirect,0,/snooker-players-day-gift-bubble-bath-sls-parabens-free/,"Snooker Player's Day Gift Bubble Bath SLS & Parabens Free",,,,301-redirect.aspx,10/30/2017,5,10/30/2017,10/30/2017,5,0,1,0,1,0,10387,5,0,0,0
 10483,0,301Redirect,0,/candles/pillar-candles/,"Pillar Candles",,,,301-redirect.aspx,11/2/2017,2,11/2/2017,11/2/2017,2,0,1,0,1,0,1,20,0,0,0
 10484,0,301Redirect,0,/candles/assorted-candles/,"Assorted Candles",,,,301-redirect.aspx,11/2/2017,2,11/2/2017,11/2/2017,2,0,1,0,1,0,1,21,0,0,0
-10501,0,301Redirect,0,/spice-vanilla-candle-in-glass-jar-by-prices/,"Spice Vanilla Candle in Glass Jar by Price’s",,,,301-redirect.aspx,11/5/2017,5,11/5/2017,11/5/2017,5,0,1,0,1,0,10496,2,0,0,0
+10501,0,301Redirect,0,/spice-vanilla-candle-in-glass-jar-by-prices/,"Spice Vanilla Candle in Glass Jar by Price's",,,,301-redirect.aspx,11/5/2017,5,11/5/2017,11/5/2017,5,0,1,0,1,0,10496,2,0,0,0
 10503,0,301Redirect,0,/free-bath-blaster/,"Free Bath Blaster",,,,301-redirect.aspx,11/7/2017,6,11/7/2017,11/7/2017,6,0,1,0,1,0,10502,0,0,0,0
 10508,0,301Redirect,0,/cooltide-bath-blaster/,"Cooltide Bath Blaster",,,,301-redirect.aspx,11/10/2017,2,11/10/2017,11/10/2017,2,0,1,0,1,0,10240,1,0,0,0
 10557,0,301Redirect,0,/citrus-pot-pourri-bag-350g/,"Citrus Pot Pourri Bag 350g",,,,301-redirect.aspx,11/22/2017,2,11/22/2017,11/22/2017,2,0,1,0,1,0,5471,0,0,0,0
@@ -2868,7 +2868,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 10579,0,301Redirect,0,/cats-eye-hematite-bracelet-orange/,"Cats Eye & Hematite Bracelet Orange",,,,301-redirect.aspx,12/30/2017,6,12/30/2017,12/30/2017,6,0,1,0,1,0,1709,0,0,0,0
 10580,0,301Redirect,0,/cats-eye-palmstone-pink/,"Cats Eye Palmstone Pink",,,,301-redirect.aspx,12/30/2017,6,12/30/2017,12/30/2017,6,0,1,0,1,0,5063,0,0,0,0
 10581,0,301Redirect,0,/hematite-cats-eye-bracelets-set-of-5/,"Hematite Cats Eye Bracelets Set of 5",,,,301-redirect.aspx,12/30/2017,6,12/30/2017,12/30/2017,6,0,1,0,1,0,5568,0,0,0,0
-10615,0,301Redirect,0,/youre-ever-so-special-especially-to-me-fridge-magnet-073/2/,"You’re ever so special… especially to me Fridge Magnet 073",,,,301-redirect.aspx,1/25/2018,6,1/25/2018,1/25/2018,6,0,1,0,1,0,1,0,0,0,0
+10615,0,301Redirect,0,/youre-ever-so-special-especially-to-me-fridge-magnet-073/2/,"You're ever so special. especially to me Fridge Magnet 073",,,,301-redirect.aspx,1/25/2018,6,1/25/2018,1/25/2018,6,0,1,0,1,0,1,0,0,0,0
 10626,0,301Redirect,0,/obsidian-buddha-50mm/,"Obsidian Buddha 50mm",,,,301-redirect.aspx,1/26/2018,2,1/26/2018,1/26/2018,2,0,1,0,1,0,9275,0,0,0,0
 10633,0,301Redirect,0,/green-goldstone-heart-large-in-pouch/2/,"Green Goldstone Heart Large in Pouch",,,,301-redirect.aspx,1/27/2018,6,1/27/2018,1/27/2018,6,0,1,0,1,0,10632,0,0,0,0
 10681,0,301Redirect,0,/Lavender-Pomander-Bag/,"Lavender Pomander Bag",,,,301-redirect.aspx,1/30/2018,6,1/30/2018,1/30/2018,6,0,1,0,1,0,1,0,0,0,0
@@ -2896,11 +2896,11 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 11855,0,301Redirect,0,/Glass-Bottles-Blue-With-Roll-On-Ball-12ml/,"Glass Bottles Blue With Roll On Ball 12ml",,,,301-redirect.aspx,3/23/2018,2,3/23/2018,3/23/2018,2,0,1,0,1,0,1,0,0,0,0
 11856,0,301Redirect,0,/Glass-Bottles-Green-With-Roll-On-Ball-12ml/,"Glass Bottles Green With Roll On Ball 12ml",,,,301-redirect.aspx,3/23/2018,2,3/23/2018,3/23/2018,2,0,1,0,1,0,1,0,0,0,0
 11874,0,301Redirect,0,/lady-bird-on-spring-set-of-two/,"Lady Bird on Spring Set of Two",,,,301-redirect.aspx,3/26/2018,5,3/26/2018,3/26/2018,5,0,1,0,1,0,11819,0,0,0,0
-11875,0,301Redirect,0,/angel-spirit-guide-incense-sticks-by-anne-stokes-20s/,"Angel Spirit Guide Incense Sticks by Anne Stokes 20’s",,,,301-redirect.aspx,3/26/2018,5,3/26/2018,3/26/2018,5,0,1,0,1,0,11868,0,0,0,0
-11878,0,301Redirect,0,/household-candle-by-prices/,"Household Candle by Price’s",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8560,0,0,0,0
-11879,0,301Redirect,0,/open-window-candle-by-prices/,"Open Window Candle by Price’s",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8559,0,0,0,0
-11880,0,301Redirect,0,/chefs-eliminates-odours-candle-by-prices/,"Chef’s Eliminates Odours Candle by Price’s",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8558,0,0,0,0
-11887,0,301Redirect,0,/unicorns-grace-incense-sticks-15s/2/,"Unicorn’s Grace Incense Sticks 15s",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,11886,0,0,0,0
+11875,0,301Redirect,0,/angel-spirit-guide-incense-sticks-by-anne-stokes-20s/,"Angel Spirit Guide Incense Sticks by Anne Stokes 20's",,,,301-redirect.aspx,3/26/2018,5,3/26/2018,3/26/2018,5,0,1,0,1,0,11868,0,0,0,0
+11878,0,301Redirect,0,/household-candle-by-prices/,"Household Candle by Price's",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8560,0,0,0,0
+11879,0,301Redirect,0,/open-window-candle-by-prices/,"Open Window Candle by Price's",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8559,0,0,0,0
+11880,0,301Redirect,0,/chefs-eliminates-odours-candle-by-prices/,"Chef's Eliminates Odours Candle by Price's",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,8558,0,0,0,0
+11887,0,301Redirect,0,/unicorns-grace-incense-sticks-15s/2/,"Unicorn's Grace Incense Sticks 15s",,,,301-redirect.aspx,3/26/2018,6,3/26/2018,3/26/2018,6,0,1,0,1,0,11886,0,0,0,0
 11888,0,301Redirect,0,/smoky-fluorite-heart-large/,"Smoky Fluorite Heart Large",,,,301-redirect.aspx,3/27/2018,2,3/27/2018,3/27/2018,2,0,1,0,1,0,1,0,0,0,0
 11895,0,301Redirect,0,/Luxury-Bath-Cake-Rose-Lavender-Patchouli/,"Luxury Bath Cake Rose, Lavender & Patchouli",,,,301-redirect.aspx,3/28/2018,2,3/28/2018,3/28/2018,2,0,1,0,1,0,1,0,0,0,0
 11896,0,301Redirect,0,/Mothers-Day-Luxury-Bath-Cake-Lavender-Marjoram/,"Mothers Day Luxury Bath Cake Lavender & Marjoram",,,,301-redirect.aspx,3/28/2018,2,3/28/2018,3/28/2018,2,0,1,0,1,0,1,0,0,0,0
@@ -2957,7 +2957,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 13085,0,301Redirect,0,/muscle-ease-bath-massage-oil-for-a-cyclist/,"Muscle Ease Bath & Massage Oil for a Cyclist",,,,301-redirect.aspx,6/5/2018,6,6/5/2018,6/5/2018,6,0,1,0,1,0,10746,0,0,0,0
 13086,0,301Redirect,0,/muscle-ease-bath-massage-oil-for-a-cricket-player/,"Muscle Ease Bath & Massage Oil for a Cricket Player",,,,301-redirect.aspx,6/5/2018,6,6/5/2018,6/5/2018,6,0,1,0,1,0,10745,0,0,0,0
 13126,0,301Redirect,0,/lily-of-the-valley-fragrance-oil/2/,"Lily of the Valley Fragrance Oil",,,,301-redirect.aspx,6/10/2018,6,6/10/2018,6/10/2018,6,0,1,0,1,0,1,0,0,0,0
-13174,0,301Redirect,0,/moon-star-smoke-box-with-free-satya-dragons-blood-incense-sticks/,"Moon & Star Smoke Box with Free Satya Dragon’s Blood Incense Sticks",,,,301-redirect.aspx,7/4/2018,6,7/4/2018,7/4/2018,6,0,1,0,1,0,11910,0,0,0,0
+13174,0,301Redirect,0,/moon-star-smoke-box-with-free-satya-dragons-blood-incense-sticks/,"Moon & Star Smoke Box with Free Satya Dragon's Blood Incense Sticks",,,,301-redirect.aspx,7/4/2018,6,7/4/2018,7/4/2018,6,0,1,0,1,0,11910,0,0,0,0
 13183,0,301Redirect,0,/blue-egg-with-yellow-polkadots-in-gift-box-with-stand-fair-trade/,"Blue Egg with Yellow Polkadots in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,7/13/2018,21,7/13/2018,7/13/2018,21,0,1,0,1,0,13181,0,0,0,0
 13196,0,301Redirect,0,/sale/summer-sale-2018/,"Summer Sale 2018",,,,301-redirect.aspx,7/18/2018,6,7/18/2018,7/18/2018,6,0,1,0,1,0,1,0,0,0,0
 13218,0,301Redirect,0,/lion-heart-in-gift-box-fair-trade/,"Lion Heart in Gift Box Fair Trade",,,,301-redirect.aspx,7/19/2018,21,7/19/2018,7/19/2018,21,0,1,0,1,0,13216,0,0,0,0
@@ -2974,13 +2974,13 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 13374,0,301Redirect,0,/cool-emoji-car-air-freshener-peach/,"Cool Emoji Car Air Freshener Peach",,,,301-redirect.aspx,9/10/2018,2,9/10/2018,9/10/2018,2,0,1,0,1,0,10141,0,0,0,0
 13375,0,301Redirect,0,/summer-sale-2018/,"Summer Sale 2018",,,,301-redirect.aspx,9/13/2018,6,9/13/2018,9/13/2018,6,0,1,0,1,0,1,0,0,0,0
 14375,0,301Redirect,0,/rose-petals-bulk-buy-large-250g-bag/,"Rose Petals Bulk Buy Large 250g Bag",,,,301-redirect.aspx,9/23/2018,2,9/23/2018,9/23/2018,2,0,1,0,1,0,1,0,0,0,0
-14376,0,301Redirect,0,/foxy-cheeky-large-pebble-in-gift-box-with-stand-fair-trade/,"Foxy ‘Cheeky’ Large Pebble in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,9/26/2018,6,9/26/2018,9/26/2018,6,0,1,0,1,0,13181,0,0,0,0
+14376,0,301Redirect,0,/foxy-cheeky-large-pebble-in-gift-box-with-stand-fair-trade/,"Foxy 'Cheeky' Large Pebble in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,9/26/2018,6,9/26/2018,9/26/2018,6,0,1,0,1,0,13181,0,0,0,0
 14377,0,301Redirect,0,/grumpy-old-man-large-pebble-in-gift-box-with-stand-fair-trade/,"Grumpy Old Man Large Pebble in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,9/26/2018,6,9/26/2018,9/26/2018,6,0,1,0,1,0,13185,0,0,0,0
 14378,0,301Redirect,0,/princess-large-pebble-in-gift-box-with-stand-fair-trade/,"Princess Large Pebble in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,9/26/2018,6,9/26/2018,9/26/2018,6,0,1,0,1,0,13194,0,0,0,0
 14379,0,301Redirect,0,/well-done-large-pebble-in-gift-box-with-stand-fair-trade/,"Well Done Large Pebble in Gift Box with Stand Fair Trade",,,,301-redirect.aspx,9/26/2018,6,9/26/2018,9/26/2018,6,0,1,0,1,0,13184,0,0,0,0
 14380,0,301Redirect,0,/sandalwood-incense-sticks-15g-box-of-twelve-special-offer/,"Sandalwood Incense Sticks 15g Box Of Twelve Special Offer",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,13122,0,0,0,0
 14381,0,301Redirect,0,/sandalwood-nag-champa-incense-sticks-15g-box/,"Sandalwood Nag Champa Incense Sticks 15g Box",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,8277,0,0,0,0
-14383,0,301Redirect,0,/dragons-blood-incense-sticks-15g-box-of-twelve-special-offer/,"Dragon’s Blood Incense Sticks 15g Box Of Twelve Special Offer",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,13121,0,0,0,0
+14383,0,301Redirect,0,/dragons-blood-incense-sticks-15g-box-of-twelve-special-offer/,"Dragon's Blood Incense Sticks 15g Box Of Twelve Special Offer",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,13121,0,0,0,0
 14384,0,301Redirect,0,/californian-white-sage-incense-sticks-15g-box-of-twelve-special-offer/,"Californian White Sage Incense Sticks 15g Box Of Twelve Special Offer",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,13123,0,0,0,0
 14385,0,301Redirect,0,/californian-white-sage-incense-sticks-15g-box/,"Californian White Sage Incense Sticks 15g Box",,,,301-redirect.aspx,10/7/2018,2,10/7/2018,10/7/2018,2,0,1,0,1,0,11915,0,0,0,0
 14386,0,301Redirect,0,/Nag-Champa-Celestial-Incense-Sticks-15g/,"Nag Champa Celestial Incense Sticks 15g",,,,301-redirect.aspx,10/9/2018,2,10/9/2018,10/9/2018,2,0,1,0,1,0,1,0,0,0,0
@@ -3026,13 +3026,13 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 15544,0,301Redirect,0,/clove-bud-essential-oil-eugenia-caryophyllus/,"Clove Bud Essential Oil (Eugenia caryophyllus)",,,,301-redirect.aspx,10/25/2018,6,10/25/2018,10/25/2018,6,0,1,0,1,0,1753,0,0,0,0
 15545,0,301Redirect,0,/clove-bud-essential-oil-eugenia-caryophyllus-10ml/,"Clove Bud Essential Oil (Eugenia caryophyllus) 10ml",,,,301-redirect.aspx,10/25/2018,6,10/25/2018,10/25/2018,6,0,1,0,1,0,15440,0,0,0,0
 15568,0,301Redirect,0,/dart-vader-lack-of-faith-star-wars-wallet/,"Dart Vader Lack of Faith Star Wars Wallet",,,,301-redirect.aspx,10/26/2018,6,10/26/2018,10/26/2018,6,0,1,0,1,0,15567,0,0,0,0
-15620,0,301Redirect,0,/apple-spice-candle-rum-by-prices-25hr/,"Apple Spice Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15619,0,0,0,0
-15621,0,301Redirect,0,/black-cherry-candle-rum-by-prices-25hr/,"Black Cherry Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15618,0,0,0,0
-15622,0,301Redirect,0,/cinnamon-candle-rum-by-prices-25hr/,"Cinnamon Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15617,0,0,0,0
-15623,0,301Redirect,0,/damson-rose-candle-rum-by-prices-25hr/,"Damson Rose Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15616,0,0,0,0
-15624,0,301Redirect,0,/lavender-lemongrass-candle-rum-by-prices-25hr/,"Lavender & Lemongrass Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15615,0,0,0,0
-15625,0,301Redirect,0,/mix-berries-candle-rum-by-prices-25hr/,"Mix Berries Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15614,0,0,0,0
-15626,0,301Redirect,0,/sweet-vanilla-candle-rum-by-prices-25hr/,"Sweet Vanilla Candle rum by Price’s 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15613,0,0,0,0
+15620,0,301Redirect,0,/apple-spice-candle-rum-by-prices-25hr/,"Apple Spice Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15619,0,0,0,0
+15621,0,301Redirect,0,/black-cherry-candle-rum-by-prices-25hr/,"Black Cherry Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15618,0,0,0,0
+15622,0,301Redirect,0,/cinnamon-candle-rum-by-prices-25hr/,"Cinnamon Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15617,0,0,0,0
+15623,0,301Redirect,0,/damson-rose-candle-rum-by-prices-25hr/,"Damson Rose Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15616,0,0,0,0
+15624,0,301Redirect,0,/lavender-lemongrass-candle-rum-by-prices-25hr/,"Lavender & Lemongrass Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15615,0,0,0,0
+15625,0,301Redirect,0,/mix-berries-candle-rum-by-prices-25hr/,"Mix Berries Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15614,0,0,0,0
+15626,0,301Redirect,0,/sweet-vanilla-candle-rum-by-prices-25hr/,"Sweet Vanilla Candle rum by Price's 25hr",,,,301-redirect.aspx,11/15/2018,6,11/15/2018,11/15/2018,6,0,1,0,1,0,15613,0,0,0,0
 16630,0,301Redirect,0,/unicorn-in-woods-picture-by-anne-stokes/,"Unicorn in Woods Picture by Anne Stokes",,,,301-redirect.aspx,11/23/2018,6,11/23/2018,11/23/2018,6,0,1,0,1,0,16629,0,0,0,0
 16631,0,301Redirect,0,/tree-man-picture-by-anne-stokes/,"Tree Man Picture by Anne Stokes",,,,301-redirect.aspx,11/23/2018,6,11/23/2018,11/23/2018,6,0,1,0,1,0,16628,0,0,0,0
 16632,0,301Redirect,0,/Super-Hit-Nag-Champa-Incense-Sticks-15g/,"Super Hit Nag Champa Incense Sticks 15g",,,,301-redirect.aspx,11/27/2018,20,11/27/2018,11/27/2018,20,0,1,0,1,0,1,0,0,0,0
@@ -3056,7 +3056,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 16693,0,301Redirect,0,/incense-gift-set-14-piece/,"Incense Gift Set 14 piece",,,,301-redirect.aspx,1/15/2019,2,1/15/2019,1/15/2019,2,0,1,0,1,0,1,0,0,0,0
 16694,0,301Redirect,0,/gift-soap-for-brother-200g-quality-soap-bar/,"Gift Soap for Brother 200g Quality Soap Bar",,,,301-redirect.aspx,1/16/2019,2,1/16/2019,1/16/2019,2,0,1,0,1,0,10518,0,0,0,0
 16695,0,301Redirect,0,/gift-soap-for-dad-200g-quality-soap-bar/,"Gift Soap for Dad 200g Quality Soap Bar",,,,301-redirect.aspx,1/16/2019,2,1/16/2019,1/16/2019,2,0,1,0,1,0,10519,0,0,0,0
-16696,0,301Redirect,0,/gift-soap-for-fathers-day-200g-quality-soap-bar/,"Gift Soap for Father’s Day 200g Quality Soap Bar",,,,301-redirect.aspx,1/16/2019,2,1/16/2019,1/16/2019,2,0,1,0,1,0,10522,0,0,0,0
+16696,0,301Redirect,0,/gift-soap-for-fathers-day-200g-quality-soap-bar/,"Gift Soap for Father's Day 200g Quality Soap Bar",,,,301-redirect.aspx,1/16/2019,2,1/16/2019,1/16/2019,2,0,1,0,1,0,10522,0,0,0,0
 16697,0,301Redirect,0,/gift-soap-for-husband-200g-quality-soap-bar/,"Gift Soap for Husband 200g Quality Soap Bar",,,,301-redirect.aspx,1/16/2019,2,1/16/2019,1/16/2019,2,0,1,0,1,0,10526,0,0,0,0
 16698,0,301Redirect,0,/buddha-blessing-nag-champa-incense-sticks-box-of-twelve-special-offe/,"Buddha Blessing Nag Champa Incense Sticks Box of Twelve Special Offe",,,,301-redirect.aspx,1/18/2019,2,1/18/2019,1/18/2019,2,0,1,0,1,0,16663,0,0,0,0
 16699,0,301Redirect,0,/strawberry-milkshake-heart-home-votive-candle/,"Strawberry Milkshake Heart & Home Votive Candle",,,,301-redirect.aspx,1/20/2019,21,1/20/2019,1/20/2019,21,0,1,0,1,0,16688,0,0,0,0
@@ -3171,18 +3171,18 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 19990,0,301Redirect,0,/goblins-lair-incense-sticks-15s/2/,"Goblins Lair Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,5259,0,0,0,0
 19991,0,301Redirect,0,/gothic-prayer-incense-sticks-by-anne-stokes-20s/,"Gothic Prayer Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,16639,0,0,0,0
 19992,0,301Redirect,0,/jasmine-incense-sticks-hexagonal-pack-stamford-20g/,"Jasmine Incense Sticks Hexagonal Pack Stamford 20g",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,8312,0,0,0,0
-19994,0,301Redirect,0,/love-spell-rose-incense-sticks-20s/,"Love Spell – Rose Incense Sticks 20’s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,8906,0,0,0,0
+19994,0,301Redirect,0,/love-spell-rose-incense-sticks-20s/,"Love Spell – Rose Incense Sticks 20's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,8906,0,0,0,0
 19995,0,301Redirect,0,/oak-king-tree-man-incense-sticks-by-anne-stokes-20s/,"Oak King Tree Man Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,16641,0,0,0,0
 19996,0,301Redirect,0,/opium-incense-sticks-hexagonal-pack-stamford-20g/,"Opium Incense Sticks Hexagonal Pack Stamford 20g",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,8314,0,0,0,0
 19997,0,301Redirect,0,/patchouli-incense-sticks-hexagonal-pack-stamford-20g/,"Patchouli Incense Sticks Hexagonal Pack Stamford 20g",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,9740,0,0,0,0
 19998,0,301Redirect,0,/pixies-dance-incense-sticks-15s/2/,"Pixies Dance Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,5257,0,0,0,0
 19999,0,301Redirect,0,/sandalwood-incense-sticks-hexagonal-pack-stamford-20g/,"Sandalwood Incense Sticks Hexagonal Pack Stamford 20g",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,9742,0,0,0,0
 20000,0,301Redirect,0,/top3-incense-sticks-20g/,"Top3 Incense Sticks 20g",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,12971,0,0,0,0
-20001,0,301Redirect,0,/unicorns-grace-incense-sticks-15s/,"Unicorn’s Grace Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,11885,0,0,0,0
+20001,0,301Redirect,0,/unicorns-grace-incense-sticks-15s/,"Unicorn's Grace Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,11885,0,0,0,0
 20002,0,301Redirect,0,/vampire-kiss-incense-sticks-15s/,"Vampire Kiss Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,7511,0,0,0,0
 20003,0,301Redirect,0,/witches-curse-incense-sticks-stamford-15s/2/,"Witches Curse Incense Sticks Stamford 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,5035,0,0,0,0
 20004,0,301Redirect,0,/wizards-spell-incense-sticks-15s/2/,"Wizards Spell Incense Sticks 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,5263,0,0,0,0
-20005,0,301Redirect,0,/cannabis-incense-cones-stamford-15s/,"Cannabis Incense Cones Stamford 15’s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
+20005,0,301Redirect,0,/cannabis-incense-cones-stamford-15s/,"Cannabis Incense Cones Stamford 15's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20006,0,301Redirect,0,/cinnamon-incense-cones-15s-stamford/,"Cinnamon Incense Cones 15s Stamford",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20007,0,301Redirect,0,/cinnamon-incense-cones-15s-stamford-box/,"Cinnamon Incense Cones 15`s Stamford Box",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,4947,0,0,0,0
 20008,0,301Redirect,0,/citronella-incense-cones-stamford-15s/,"Citronella Incense Cones Stamford 15's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
@@ -3200,16 +3200,16 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 20020,0,301Redirect,0,/Nag-Champa-Super-Hit-Incense-Cones/,"Nag Champa Super Hit Incense Cones",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20021,0,301Redirect,0,/opium-incense-cones-stamford-25s/,"Opium Incense Cones Stamford 25's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20022,0,301Redirect,0,/Patchouli-Incense-Cones-Stamford-15s/,"Patchouli Incense Cones Stamford 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
-20023,0,301Redirect,0,/pixies-dance-incense-cones-12s/,"Pixie’s Dance Incense Cones 12s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
+20023,0,301Redirect,0,/pixies-dance-incense-cones-12s/,"Pixie's Dance Incense Cones 12s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20024,0,301Redirect,0,/rose-nag-champa-incense-cones-12s-box/,"Rose Nag Champa Incense Cones 12`s Box",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20025,0,301Redirect,0,/sandalwood-incense-cones-15s-stamford/,"Sandalwood Incense Cones 15's Stamford",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20026,0,301Redirect,0,/sandalwood-nag-champa-incense-cones-12s-box/2/,"Sandalwood Nag Champa Incense Cones 12's Box",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20027,0,301Redirect,0,/Stamford-Nag-Champa-Incense-Cones-12s/,"Stamford Nag Champa Incense Cones 12s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
-20028,0,301Redirect,0,/unicorns-grace-incense-cones-stamford-12s/,"Unicorn’s Grace Incense Cones Stamford 12’s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
+20028,0,301Redirect,0,/unicorns-grace-incense-cones-stamford-12s/,"Unicorn's Grace Incense Cones Stamford 12's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20029,0,301Redirect,0,/vampires-kiss-incense-cones-stamford-12s/,"Vampires Kiss Incense Cones Stamford 12s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20030,0,301Redirect,0,/violet-incense-cones-stamford-15s/,"Violet Incense Cones Stamford 15's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20031,0,301Redirect,0,/white-musk-incense-cones-stamford-15s/,"White Musk Incense Cones Stamford 15s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
-20032,0,301Redirect,0,/white-sage-incense-cones-stamford-15s/,"White Sage Incense Cones Stamford 15’s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
+20032,0,301Redirect,0,/white-sage-incense-cones-stamford-15s/,"White Sage Incense Cones Stamford 15's",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20033,0,301Redirect,0,/wizards-spell-incense-cones-12s/2/,"Wizards Spell Incense Cones 12s",,,,301-redirect.aspx,7/23/2019,24,7/23/2019,7/23/2019,24,0,1,0,1,0,1,0,0,0,0
 20035,0,301Redirect,0,/jasmine-deluxe-incense-sticks-20g/,"Jasmine Deluxe Incense Sticks 20g",,,,301-redirect.aspx,7/24/2019,24,7/24/2019,7/24/2019,24,0,1,0,1,0,7159,0,0,0,0
 20036,0,301Redirect,0,/Patchouli-Deluxe-Incense-Sticks-20g/,"Patchouli Deluxe Incense Sticks 20g",,,,301-redirect.aspx,7/24/2019,24,7/24/2019,7/24/2019,24,0,1,0,1,0,2603,0,0,0,0
@@ -3375,9 +3375,9 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 24474,0,301Redirect,0,/sandalwood-incense-sticks-hexagonal-pack-stamford-20s-box/,"Sandalwood Incense Sticks Hexagonal Pack Stamford 20's Box",,,,301-redirect.aspx,10/21/2020,23,10/21/2020,10/21/2020,23,0,1,0,1,0,9743,0,0,0,0
 24475,0,301Redirect,0,/awake-your-magic-incense-sticks-by-anne-stokes-box-of-six/,"Awake Your Magic Incense Sticks By Anne Stokes Box of SIX",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,22287,0,0,0,0
 24476,0,301Redirect,0,/blue-moon-incense-sticks-by-anne-stokes-box-of-six/,"Blue Moon Incense Sticks By Anne Stokes Box of SIX",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,22288,0,0,0,0
-24477,0,301Redirect,0,/dragonkin-incense-by-anne-stokes-20s/,"Dragonkin Incense by Anne Stokes 20’s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8476,0,0,0,0
-24478,0,301Redirect,0,/dragonkin-incense-sticks-by-anne-stokes-20s/,"Dragonkin Incense Sticks by Anne Stokes 20’s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8476,0,0,0,0
-24479,0,301Redirect,0,/dragonkin-incense-by-anne-stokes-20s-box/,"Dragonkin Incense by Anne Stokes 20’s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8477,0,0,0,0
+24477,0,301Redirect,0,/dragonkin-incense-by-anne-stokes-20s/,"Dragonkin Incense by Anne Stokes 20's",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8476,0,0,0,0
+24478,0,301Redirect,0,/dragonkin-incense-sticks-by-anne-stokes-20s/,"Dragonkin Incense Sticks by Anne Stokes 20's",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8476,0,0,0,0
+24479,0,301Redirect,0,/dragonkin-incense-by-anne-stokes-20s-box/,"Dragonkin Incense by Anne Stokes 20's Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8477,0,0,0,0
 24480,0,301Redirect,0,/fire-dragon-incense-sticks-by-anne-stokes-20s/,"Fire Dragon Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,13113,0,0,0,0
 24481,0,301Redirect,0,/golden-mountain-dragon-incense-sticks-by-anne-stokes-20s/,"Golden Mountain Dragon Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,13111,0,0,0,0
 24482,0,301Redirect,0,/gothic-prayer-incense-sticks-by-anne-stokes-box-of-six-special-offer/,"Gothic Prayer Incense Sticks by Anne Stokes Box Of Six Special Offer",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,16639,0,0,0,0
@@ -3387,7 +3387,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 24486,0,301Redirect,0,/pure-heart-incense-sticks-by-anne-stokes-box-of-six/,"Pure Heart Incense Sticks By Anne Stokes Box of SIX",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,22289,0,0,0,0
 24487,0,301Redirect,0,/silver-dragon-incense-sticks-by-anne-stokes-20s/,"Silver Dragon Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,13110,0,0,0,0
 24488,0,301Redirect,0,/rock-dragon-incense-sticks-by-anne-stokes-20s/,"Rock Dragon Incense Sticks by Anne Stokes 20s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,13114,0,0,0,0
-24489,0,301Redirect,0,/love-spell-rose-incense-sticks-20s-box/,"Love Spell – Rose Incense Sticks 20’s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8907,0,0,0,0
+24489,0,301Redirect,0,/love-spell-rose-incense-sticks-20s-box/,"Love Spell – Rose Incense Sticks 20's Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8907,0,0,0,0
 24490,0,301Redirect,0,/love-spell-rose-incense-sticks-box-of-six-special-offer/,"Love Spell – Rose Incense Sticks Box Of Six Special Offer",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8906,0,0,0,0
 24491,0,301Redirect,0,/semi-precious-stone-items/,"Semi Precious Stone Items",,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,188,0,0,0,0
 24492,0,301Redirect,0,/semi-precious-stone-items/agate/,Agate,,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,190,0,0,0,0
@@ -3439,7 +3439,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 24538,0,301Redirect,0,/search-by-stone/lapis-lazuli/,"Lapis Lazuli",,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,9669,0,0,0,0
 24539,0,301Redirect,0,/search-by-stone/unakite/,Unakite,,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,10031,0,0,0,0
 24540,0,301Redirect,0,/search-by-stone/rhodonite/,Rhodonite,,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,10659,0,0,0,0
-24541,0,301Redirect,0,/luck-moon-gazing-hare-incense-sticks-20s/2/,"Luck – Moon Gazing Hare Incense Sticks 20’s",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8570,0,0,0,0
+24541,0,301Redirect,0,/luck-moon-gazing-hare-incense-sticks-20s/2/,"Luck – Moon Gazing Hare Incense Sticks 20's",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8570,0,0,0,0
 24542,0,301Redirect,0,/luck-moon-gazing-hare-incense-sticks-box-of-six-special-offer/,"Luck – Moon Gazing Hare Incense Sticks Box Of Six Special Offer",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,8569,0,0,0,0
 24544,0,301Redirect,0,/palo-santo-incense-sticks-20s-elements/,"Palo Santo Incense Sticks 20s Elements",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,22340,0,0,0,0
 24545,0,301Redirect,0,/palo-santo-incense-sticks-hexagonal-pack-box-of-six-special-offer/,"Palo Santo Incense Sticks Hexagonal Pack Box Of Six Special Offer",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,22343,0,0,0,0
@@ -3449,7 +3449,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 24550,0,301Redirect,0,/earth-angel-incense-cones-12s-box/,"Earth Angel Incense Cones 12s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,5315,0,0,0,0
 24551,0,301Redirect,0,/goblins-lair-incense-cones-12s-box/2/,"Goblins Lair Incense Cones 12s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,5311,0,0,0,0
 24552,0,301Redirect,0,/guardian-angel-incense-cones-12s-box/,"Guardian Angel Incense Cones 12s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,5266,0,0,0,0
-24553,0,301Redirect,0,/pixies-dance-incense-cones-12s-box/,"Pixie’s Dance Incense Cones 12s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,7514,0,0,0,0
+24553,0,301Redirect,0,/pixies-dance-incense-cones-12s-box/,"Pixie's Dance Incense Cones 12s Box",,,,301-redirect.aspx,10/22/2020,23,10/22/2020,10/22/2020,23,0,1,0,1,0,7514,0,0,0,0
 24554,0,301Redirect,0,/funky-animal-eggs/,"Funky Animal Eggs",,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,1,0,0,0,0
 24555,0,301Redirect,0,/buddha/natural-stone-buddhas/2/,"Natural Stone Buddhas",,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,1,0,0,0,0
 24556,0,301Redirect,0,/stoneware/bags-of-stones/,"Bags of Stones",,,,301-redirect.aspx,10/22/2020,2,10/22/2020,10/22/2020,2,0,1,0,1,0,1,0,0,0,0
@@ -3558,7 +3558,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 25528,0,301Redirect,0,/plastic-jars-bottles/plastic-frosted-bottles/,"Plastic Frosted Bottles",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
 25529,0,301Redirect,0,/plastic-jars-bottles/plastic-jars-tubs/,"Plastic Jars & Tubs",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
 25530,0,301Redirect,0,/plastic-jars-bottles/plastic-jerry-cans/,"Plastic Jerry Cans",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
-25532,0,301Redirect,0,/tigers-eye-red-gift-pouch-of-ten-polished-tumblestones/,"Tiger’s Eye Red Gift Pouch of Ten Polished Tumblestones",,,,301-redirect.aspx,10/23/2020,23,10/23/2020,10/23/2020,23,0,1,0,1,0,15561,0,0,0,0
+25532,0,301Redirect,0,/tigers-eye-red-gift-pouch-of-ten-polished-tumblestones/,"Tiger's Eye Red Gift Pouch of Ten Polished Tumblestones",,,,301-redirect.aspx,10/23/2020,23,10/23/2020,10/23/2020,23,0,1,0,1,0,15561,0,0,0,0
 25533,0,301Redirect,0,/incense-products/smudge-sticks/,"Smudge Sticks",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
 25534,0,301Redirect,0,/candles/candle-gift-sets/,"Candle Gift Sets",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
 25535,0,301Redirect,0,/candles/outdoor-candles/,"Outdoor Candles",,,,301-redirect.aspx,10/23/2020,2,10/23/2020,10/23/2020,2,0,1,0,1,0,1,0,0,0,0
@@ -3680,7 +3680,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 25653,0,301Redirect,0,/rose-quartz-rune-stones-in-black-pouch/2/,"Rose Quartz Rune Stones in Black Pouch",,,,301-redirect.aspx,10/29/2020,2,10/29/2020,10/29/2020,2,0,1,0,1,0,5620,0,0,0,0
 25654,0,301Redirect,0,/amethyst-rune-stones-in-black-pouch/2/,"Amethyst Rune Stones in Black Pouch",,,,301-redirect.aspx,10/29/2020,2,10/29/2020,10/29/2020,2,0,1,0,1,0,5619,0,0,0,0
 25658,0,301Redirect,0,/himalayan-salt-candle-holder-natural-shape/,"Himalayan Salt Candle Holder Natural Shape",,,,301-redirect.aspx,10/29/2020,2,10/29/2020,10/29/2020,2,0,1,0,1,0,1,0,0,0,0
-25662,0,301Redirect,0,/fools-gold-rock/,"Fool’s Gold Rock",,,,301-redirect.aspx,11/2/2020,2,11/2/2020,11/2/2020,2,0,1,0,1,0,9894,0,0,0,0
+25662,0,301Redirect,0,/fools-gold-rock/,"Fool's Gold Rock",,,,301-redirect.aspx,11/2/2020,2,11/2/2020,11/2/2020,2,0,1,0,1,0,9894,0,0,0,0
 25674,0,301Redirect,0,/french-lavender-satya-incense-sticks-15g-box-of-twelve-special-offe/,"French Lavender Satya Incense Sticks 15g Box of Twelve Special Offe",,,,301-redirect.aspx,11/4/2020,23,11/4/2020,11/4/2020,23,0,1,0,1,0,25673,0,0,0,0
 25681,0,301Redirect,0,/assorted-stoneware-gifts/fossils/,Fossils,,,,301-redirect.aspx,11/4/2020,2,11/4/2020,11/4/2020,2,0,1,0,1,0,1,0,0,0,0
 25682,0,301Redirect,0,/assorted-stoneware-gifts/kids-activity-sets/,"Kids Activity Sets",,,,301-redirect.aspx,11/4/2020,2,11/4/2020,11/4/2020,2,0,1,0,1,0,1,0,0,0,0
@@ -3780,7 +3780,7 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 32090,0,301Redirect,0,/orange-calcite-square-candle-holder/,"Orange Calcite Square Candle Holder",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,9664,0,0,0,0
 32091,0,301Redirect,0,/red-selenite-candle-holder-cut-top/,"Red Selenite Candle Holder Cut Top",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,4140,0,0,0,0
 32092,0,301Redirect,0,/terracotta-smudge-bowl-mandala-design/,"Terracotta Smudge Bowl Mandala Design",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,31960,0,0,0,0
-32093,0,301Redirect,0,/winter-berries-candle-in-glass-jar-by-prices/,"Winter Berries Candle in Glass Jar by Price’s",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,10499,0,0,0,0
+32093,0,301Redirect,0,/winter-berries-candle-in-glass-jar-by-prices/,"Winter Berries Candle in Glass Jar by Price's",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,10499,0,0,0,0
 32094,0,301Redirect,0,/ylang-ylang-40-luxury-incense-sticks-in-gold-tin/,"Ylang Ylang 40 Luxury Incense Sticks in Gold Tin",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,10066,0,0,0,0
 32095,0,301Redirect,0,/christmas-wooden-word-blocks/,"Christmas Wooden Word Blocks",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,7669,0,0,0,0
 32096,0,301Redirect,0,/blue-prosecco-led-light-up-bottle/,"Blue Prosecco LED Light Up Bottle",,,,301-redirect.aspx,12/20/2022,2,12/20/2022,12/20/2022,2,0,1,0,1,0,10559,0,0,0,0
@@ -3823,17 +3823,17 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 32238,0,301Redirect,0,/rose-quartz-chip-bracelet-in-gift-pouch/,"Rose Quartz Chip Bracelet in Gift Pouch",,,,301-redirect.aspx,9/13/2023,2,9/13/2023,9/13/2023,2,0,1,0,1,0,1,0,0,0,0
 32239,0,301Redirect,0,/shell-chip-bracelet-in-gift-pouch/,"Shell Chip Bracelet in Gift Pouch",,,,301-redirect.aspx,9/13/2023,2,9/13/2023,9/13/2023,2,0,1,0,1,0,1,0,0,0,0
 32240,0,301Redirect,0,/sodalite-chip-bracelet-in-gift-pouch/,"Sodalite Chip Bracelet in Gift Pouch",,,,301-redirect.aspx,9/13/2023,2,9/13/2023,9/13/2023,2,0,1,0,1,0,1,0,0,0,0
-32241,0,301Redirect,0,/tigers-eye-chip-bracelet-in-gift-pouch/,"Tiger’s Eye Chip Bracelet in Gift Pouch",,,,301-redirect.aspx,9/13/2023,2,9/13/2023,9/13/2023,2,0,1,0,1,0,1,0,0,0,0
-32251,0,301Redirect,0,/footballers-gift-bubble-bath-deep-foam-cleaning/,"Footballer’s Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
+32241,0,301Redirect,0,/tigers-eye-chip-bracelet-in-gift-pouch/,"Tiger's Eye Chip Bracelet in Gift Pouch",,,,301-redirect.aspx,9/13/2023,2,9/13/2023,9/13/2023,2,0,1,0,1,0,1,0,0,0,0
+32251,0,301Redirect,0,/footballers-gift-bubble-bath-deep-foam-cleaning/,"Footballer's Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
 32252,0,301Redirect,0,/sheep-dip-bubble-bath-with-tea-tree-eucalyptus-250ml/,"Sheep Dip Bubble Bath with Tea Tree & Eucalyptus 250ml",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
 32253,0,301Redirect,0,/sheep-dip-bubble-bath-lavender-5ltr-bulk-buy/,"Sheep Dip Bubble Bath Lavender 5ltr Bulk Buy",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
 32254,0,301Redirect,0,/lavender-sheep-dip-bubble-bath-250ml/,"Lavender Sheep Dip Bubble Bath 250ml",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
 32255,0,301Redirect,0,/tea-tree-eucalyptus-sheep-dip-bubble-bath/,"Tea Tree & Eucalyptus Sheep Dip Bubble Bath",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,5079,0,0,0,0
 32256,0,301Redirect,0,/sheep-dip-bubble-bath-250ml-sls-free-bubble-bath-with-essential-oils/2/,"Sheep Dip Bubble Bath 250ml SLS Free Bubble Bath with Essential Oils",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
 32257,0,301Redirect,0,/lavender-sheep-dip-bubble-bath/,"Lavender Sheep Dip Bubble Bath",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,3358,0,0,0,0
-32258,0,301Redirect,0,/gardeners-gift-bubble-bath-deep-foam-cleaning/,"Gardener’s Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
-32263,0,301Redirect,0,/runners-gift-bubble-bath-deep-foam-cleaning/,"Runner’s Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/16/2023,2,9/16/2023,9/16/2023,2,0,1,0,1,0,1,0,0,0,0
-32264,0,301Redirect,0,/rugby-players-gift-bubble-bath-sls-paraben-free/,"Rugby Player’s Gift Bubble Bath SLS & Paraben Free",,,,301-redirect.aspx,9/16/2023,2,9/16/2023,9/16/2023,2,0,1,0,1,0,1,0,0,0,0
+32258,0,301Redirect,0,/gardeners-gift-bubble-bath-deep-foam-cleaning/,"Gardener's Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/14/2023,2,9/14/2023,9/14/2023,2,0,1,0,1,0,1,0,0,0,0
+32263,0,301Redirect,0,/runners-gift-bubble-bath-deep-foam-cleaning/,"Runner's Gift Bubble Bath Deep Foam Cleaning",,,,301-redirect.aspx,9/16/2023,2,9/16/2023,9/16/2023,2,0,1,0,1,0,1,0,0,0,0
+32264,0,301Redirect,0,/rugby-players-gift-bubble-bath-sls-paraben-free/,"Rugby Player's Gift Bubble Bath SLS & Paraben Free",,,,301-redirect.aspx,9/16/2023,2,9/16/2023,9/16/2023,2,0,1,0,1,0,1,0,0,0,0
 32265,0,301Redirect,0,/amethyst-gemchip-bracelet/,"Amethyst Gem-chip Bracelet",,,,301-redirect.aspx,9/17/2023,25,9/17/2023,9/17/2023,25,0,1,0,1,0,32261,0,0,0,0
 32290,0,301Redirect,0,/aromatic-frankincense-satya-incense-sticks-15g-box/,"Aromatic Frankincense Satya Incense Sticks 15g Box",,,,301-redirect.aspx,9/28/2023,2,9/28/2023,9/28/2023,2,0,1,0,1,0,31801,0,0,0,0
 32291,0,301Redirect,0,/aromatic-frankincense-satya-incense-sticks-15g-box-of-twelve-special-offer/,"Aromatic Frankincense Satya Incense Sticks 15g Box Of Twelve Special Offer",,,,301-redirect.aspx,9/28/2023,2,9/28/2023,9/28/2023,2,0,1,0,1,0,31806,0,0,0,0
@@ -3853,18 +3853,18 @@ ContentID,ParentContentID,AssociateType,AssociateID,FileName,PageTitle,Additiona
 32334,0,301Redirect,0,/french-lavender-satya-incense-sticks-15g-box-of-twelve-special-offer/,"French Lavender Satya Incense Sticks 15g Box of Twelve Special Offer",,,,301-redirect.aspx,11/21/2023,2,11/21/2023,11/21/2023,2,0,1,0,1,0,25673,0,0,0,0
 32337,0,301Redirect,0,/sulphur-soap-slight-seconds-200g/,"Sulphur Soap Slight Seconds 200g",,,,301-redirect.aspx,12/9/2023,2,12/9/2023,12/9/2023,2,0,1,0,1,0,1,0,0,0,0
 32338,0,301Redirect,0,/feel-good-gifts/,"Feel Good Gifts",,,,301-redirect.aspx,12/27/2023,2,12/27/2023,12/27/2023,2,0,1,0,1,0,7254,0,0,0,0
-32339,0,301Redirect,0,/buddha-smoke-box-with-free-satya-dragons-blood-incense-sticks/,"Buddha Smoke Box with Free Satya Dragon’s Blood Incense Sticks",,,,301-redirect.aspx,1/5/2024,2,1/5/2024,1/5/2024,2,0,1,0,1,0,11908,0,0,0,0
+32339,0,301Redirect,0,/buddha-smoke-box-with-free-satya-dragons-blood-incense-sticks/,"Buddha Smoke Box with Free Satya Dragon's Blood Incense Sticks",,,,301-redirect.aspx,1/5/2024,2,1/5/2024,1/5/2024,2,0,1,0,1,0,11908,0,0,0,0
 32348,0,301Redirect,0,/Resin-Incense-Three-Kings-Blend-40g-Jar/,"Resin Incense Three Kings Blend 40g Jar",,,,301-redirect.aspx,1/11/2024,2,1/11/2024,1/11/2024,2,0,1,0,1,0,2728,0,0,0,0
 32349,0,301Redirect,0,/Essential-Oil-Of-Tea-Tree-Ideal-For-Insect-Bites-Stings-Roller-Ball-10ml/,"Essential Oil Of Tea Tree Ideal For Insect Bites & Stings Roller Ball 10ml",,,,301-redirect.aspx,1/16/2024,2,1/16/2024,1/16/2024,2,0,1,0,1,0,1,0,0,0,0
 32350,0,301Redirect,0,/cone-acorn-garland-extra-large-5-foot-long/,"Cone & Acorn Garland Extra Large 5 Foot Long",,,,301-redirect.aspx,1/18/2024,2,1/18/2024,1/18/2024,2,0,1,0,1,0,1,0,0,0,0
 32357,0,301Redirect,0,/gift-soap-for-sister-200g-quality-soap-bar/,"Gift Soap for Sister 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10530,0,0,0,0
 32358,0,301Redirect,0,/gift-soap-for-nan-200g-quality-soap-bar/,"Gift Soap for Nan 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10529,0,0,0,0
 32359,0,301Redirect,0,/gift-soap-for-mum-200g-quality-soap-bar/,"Gift Soap for Mum 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10528,0,0,0,0
-32360,0,301Redirect,0,/gift-soap-for-mothers-day-200g-quality-soap-bar/,"Gift Soap for Mother’s Day 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10527,0,0,0,0
+32360,0,301Redirect,0,/gift-soap-for-mothers-day-200g-quality-soap-bar/,"Gift Soap for Mother's Day 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10527,0,0,0,0
 32361,0,301Redirect,0,/gift-soap-for-dad-200g-quality-sulphur-soap-bar/,"Gift Soap for Dad 200g Quality Sulphur Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10519,0,0,0,0
 32362,0,301Redirect,0,/gift-soap-for-aunty-200g-quality-soap-bar/,"Gift Soap for Aunty 200g Quality Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10517,0,0,0,0
 32363,0,301Redirect,0,/gift-soap-for-brother-200g-quality-sulphur-soap-bar/,"Gift Soap for Brother 200g Quality Sulphur Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10518,0,0,0,0
-32364,0,301Redirect,0,/gift-soap-for-fathers-day-200g-quality-sulphur-soap-bar/,"Gift Soap for Father’s Day 200g Quality Sulphur Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10522,0,0,0,0
+32364,0,301Redirect,0,/gift-soap-for-fathers-day-200g-quality-sulphur-soap-bar/,"Gift Soap for Father's Day 200g Quality Sulphur Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10522,0,0,0,0
 32365,0,301Redirect,0,/gift-soap-for-husband-200g-quality-sulphur-soap-bar/,"Gift Soap for Husband 200g Quality Sulphur Soap Bar",,,,301-redirect.aspx,1/23/2024,25,1/23/2024,1/23/2024,25,0,1,0,1,0,10526,0,0,0,0
 32366,0,301Redirect,0,/gift-soap-for-a-friend-200g-quality-soap-bar/,"Gift Soap for a Friend 200g Quality Soap Bar",,,,301-redirect.aspx,1/24/2024,25,1/24/2024,1/24/2024,25,0,1,0,1,0,10523,0,0,0,0
 32367,0,301Redirect,0,/gift-soap-for-birthday-200g-quality-soap-bar/,"Gift Soap for Birthday 200g Quality Soap Bar",,,,301-redirect.aspx,1/24/2024,25,1/24/2024,1/24/2024,25,0,1,0,1,0,10525,0,0,0,0
