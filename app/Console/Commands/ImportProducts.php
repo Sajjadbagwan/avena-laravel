@@ -41,7 +41,7 @@ class ImportProducts extends Command
      */
     public function handle()
     {
-        $this->productsController->index();
+        $this->productsController->syncProduct();
         return 0;
     }
 }
