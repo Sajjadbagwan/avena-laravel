@@ -24,8 +24,8 @@ class ProductsController extends Controller
         
 
         $MagentoProducts = array();
-        $MagentoProducts = $this->getAllProductsFromMagento();
-        /*$MagentoProducts = array('2340'=>'1155','2341'=>'1160','2324'=>'1155-2157','2325'=>'1160-2162','2326'=>'1160-10411','2327'=>'1160-5528','2328'=>'1160-20607');*/
+        /*$MagentoProducts = $this->getAllProductsFromMagento();*/
+        $MagentoProducts = array('2340'=>'1155','2341'=>'1160','2324'=>'1155-2157','2325'=>'1160-2162','2326'=>'1160-10411','2327'=>'1160-5528','2328'=>'1160-20607');
 
         for ($i = 0; $i < count($productCsvArr); $i ++)
         {
@@ -49,12 +49,14 @@ class ProductsController extends Controller
             }
         }
 
-        $this->addConfigurableMainProduct($productCsvArr,$MagentoProducts);
+        $this->addConfigurableMainProduct($productCsvArr);
         echo 'All the products has been updated.';
         die();
     }
 
-    function addConfigurableMainProduct($productCsvArr,$MagentoProducts){
+    function addConfigurableMainProduct($productCsvArr){
+        $MagentoProducts = array();
+        $MagentoProducts = $this->getAllProductsFromMagento();
         $mainProductArr = array();
         for ($i = 0; $i < count($productCsvArr); $i ++){
             if($productCsvArr[$i]['productType']=='config'){
@@ -194,6 +196,10 @@ class ProductsController extends Controller
 
     public function getProductData($csvCatData,$curProcess){
 
+        /*echo '<pre>';
+        print_r($csvCatData);
+        die();*/
+
         $parentContentId = $csvCatData['ParentContentID'];
         $magentoParentId = $this->findMagentoParentId($parentContentId);
 
@@ -224,11 +230,11 @@ class ProductsController extends Controller
             }
             $typeId = 'configurable';
         }else{
-            if($csvCatData['tbl_Product_Derivative1']!='' && $csvCatData['tbl_Product_Derivative1']!='n/a'){
+            if($csvCatData['tbl_Product_Derivative1']!='' && $csvCatData['tbl_Product_Derivative1']!='n/a' && $csvCatData['tbl_derivative_Title']!='' && $csvCatData['tbl_derivative_Title']!='n/a'){
                 $val1 = $this->magentoAttributes[$csvCatData['tbl_Product_Derivative1']][$csvCatData['tbl_derivative_Title']];
                 $custom_attributes[] = (object)array("attribute_code" => $csvCatData['tbl_Product_Derivative1'], "value" => $val1);
             }
-            if($csvCatData['tbl_Product_Derivative2']!='' && $csvCatData['tbl_Product_Derivative2']!='n/a'){
+            if($csvCatData['tbl_Product_Derivative2']!='' && $csvCatData['tbl_Product_Derivative2']!='n/a' && $csvCatData['tbl_derivative_Title2']!='' && $csvCatData['tbl_derivative_Title2']!='n/a'){
                 $val2 = $this->magentoAttributes[$csvCatData['tbl_Product_Derivative2']][$csvCatData['tbl_derivative_Title2']];
                 $custom_attributes[] = (object)array("attribute_code" => $csvCatData['tbl_Product_Derivative2'], "value" => $val2);
             }
@@ -256,12 +262,7 @@ class ProductsController extends Controller
             
         $magentoData = (object)array('product' => $productData);
         $data = $magentoData;
-
-        /*echo '<pre>';
-        print_r($data);
-        print_r($csvCatData);
-        die();*/
-
+        /*echo '<pre>'; print_r($data); echo '</pre>';*/
         return $data;
         
     }
