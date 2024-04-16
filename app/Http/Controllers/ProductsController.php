@@ -17,6 +17,7 @@ class ProductsController extends Controller
 
     public function syncProduct()
     {
+
         $file = public_path('file/productFile.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
@@ -114,6 +115,12 @@ class ProductsController extends Controller
             Log::info($e);
         }
 
+        if(!empty($result)){
+            $sku = $result->sku;
+            $productImage = $csvCatData['tbl_derivative_ProductImage'];
+            if(!empty($productImage)){ $this->addMediaToMagentoProduct($sku,$productImage); echo $result->sku; }
+        }
+
         $CurrentTime = date("Y-m-d H:i:s");
         $dataCatTblArr = array();
         $logIdArr=array();
@@ -165,6 +172,12 @@ class ProductsController extends Controller
             Log::info($e);
             echo $proceesMsg;
             echo '<br/>';
+        }
+
+        if(!empty($result)){
+            $sku = $result->sku;
+            $productImage = $csvCatData['tbl_derivative_ProductImage'];
+            if(!empty($productImage)){ $this->addMediaToMagentoProduct($sku,$productImage);  echo $result->sku; }
         }
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -479,6 +492,51 @@ class ProductsController extends Controller
             return '2';
         }
         
+    }
+
+    public function addMediaToMagentoProduct($sku,$productImage){
+
+
+        $imageContent = array();
+        $arrayImage = array();
+        $image = explode(",",$productImage);
+        foreach($image as $key => $value){
+
+            $name = $value;
+            $url = 'file\images\\';
+            $path = public_path($url.$value);
+            $type = pathinfo($path, PATHINFO_EXTENSION);
+            $data = file_get_contents($path);
+            $base64 = base64_encode($data);
+
+            $imageContent[] = (object) array(
+                "media_type" => "image",
+                "label" => $name,
+                "position" => 1,
+                "disabled" => false,
+                "types" => array(
+                    "image",
+                    "small_image",
+                    "thumbnail"
+                ),
+                "file" => $name,
+                "content" => (object) array(
+                    "base64_encoded_data" => $base64,
+                    "type" => "image/jpeg",
+                    "name" => $name
+                )
+            );
+        }
+
+        $arrayImage = (object) array(
+            "product" => (object) array(
+                "media_gallery_entries" => $imageContent
+            )
+        );
+        $route = "products/".$sku;
+        $result = $this->service->call($route, $arrayImage, 'PUT');
+
+
     }
     
 }
