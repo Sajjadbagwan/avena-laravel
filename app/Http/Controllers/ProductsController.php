@@ -17,7 +17,6 @@ class ProductsController extends Controller
 
     public function syncProduct()
     {
-
         $file = public_path('file/productFile.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
@@ -25,8 +24,8 @@ class ProductsController extends Controller
         
 
         $MagentoProducts = array();
-        /*$MagentoProducts = $this->getAllProductsFromMagento();*/
-        $MagentoProducts = array('2340'=>'1155','2341'=>'1160','2324'=>'1155-2157','2325'=>'1160-2162','2326'=>'1160-10411','2327'=>'1160-5528','2328'=>'1160-20607');
+        $MagentoProducts = $this->getAllProductsFromMagento();
+        /*$MagentoProducts = array('2340'=>'1155','2341'=>'1160','2324'=>'1155-2157','2325'=>'1160-2162','2326'=>'1160-10411','2327'=>'1160-5528','2328'=>'1160-20607');*/
 
         for ($i = 0; $i < count($productCsvArr); $i ++)
         {
@@ -49,7 +48,6 @@ class ProductsController extends Controller
                 }
             }
         }
-
         $this->addConfigurableMainProduct($productCsvArr);
         echo 'All the products has been updated.';
         die();
@@ -62,7 +60,10 @@ class ProductsController extends Controller
         for ($i = 0; $i < count($productCsvArr); $i ++){
             if($productCsvArr[$i]['productType']=='config'){
                 $productSku = $productCsvArr[$i]['AssociateID'].'-'.$productCsvArr[$i]['tbl_derivative_DerivativeID'];
-                $key = array_search ($productSku, $MagentoProducts);
+                $key='';
+                if(!empty($MagentoProducts)){
+                    $key = array_search ($productSku, $MagentoProducts);
+                }
                 $conPro='';
                 if(!empty($mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductId'])){
                     $conPro=$mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductId'].'|'.$key;
@@ -78,7 +79,6 @@ class ProductsController extends Controller
                 $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductOpt'][]=$productCsvArr[$i]['tbl_Product_Derivative2'];
             }     
         }
-
         foreach($mainProductArr as $k => $productArr){
             $productSku = $productArr['AssociateID'];
             if (in_array($productSku, $MagentoProducts)){
@@ -104,23 +104,21 @@ class ProductsController extends Controller
         $result = array();
         $this->service = configMagento();
         $this->service->init();
-
+        $errorMsg= '';
         try {
             $result = $this->service->call('products', $data, 'POST');
             echo '---------<br/>';
         } catch (\Throwable $e) {
+            $errorMsg = $e;
             echo 'Failed to insert product to magento for content ID '.$csvCatData['ContentID'];
             echo '<br/>';
             Log::info("Failed to insert category to magento");
             Log::info($e);
         }
-
         if(!empty($result)){
             $sku = $result->sku;
-            $productImage = $csvCatData['tbl_derivative_ProductImage'];
-            if(!empty($productImage)){ $this->addMediaToMagentoProduct($sku,$productImage); echo $result->sku; }
+            $this->addMediaToMagentoProduct($sku,$csvCatData);
         }
-
         $CurrentTime = date("Y-m-d H:i:s");
         $dataCatTblArr = array();
         $logIdArr=array();
@@ -146,11 +144,10 @@ class ProductsController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = 'Process failed';
+            $logIdArr['message'] = $errorMsg;
         }
         $this->insertProductTbl($dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
-        
         return $returnArr;
     }
 
@@ -162,22 +159,21 @@ class ProductsController extends Controller
         $result = array();
         $this->service = configMagento();
         $this->service->init();
+        $errorMsg= '';
+
         try {
             $restUrl = 'products/'.$productSku;
             $result = $this->service->call($restUrl, $data, 'PUT');
             echo '---------<br/>';
         } catch (\Throwable $e) {
+            $errorMsg = $e;
             $proceesMsg = 'Failed to update product to magento for content ID '.$csvCatData['ContentID'];
-            Log::info("Failed to insert category to magento");
-            Log::info($e);
             echo $proceesMsg;
-            echo '<br/>';
         }
 
         if(!empty($result)){
             $sku = $result->sku;
-            $productImage = $csvCatData['tbl_derivative_ProductImage'];
-            if(!empty($productImage)){ $this->addMediaToMagentoProduct($sku,$productImage);  echo $result->sku; }
+            $this->addMediaToMagentoProduct($sku,$csvCatData);
         }
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -201,17 +197,13 @@ class ProductsController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = $proceesMsg;
+            $logIdArr['message'] = $errorMsg;
         }
         $this->updateProductTbl($magento_id,$dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
     }
 
     public function getProductData($csvCatData,$curProcess){
-
-        /*echo '<pre>';
-        print_r($csvCatData);
-        die();*/
 
         $parentContentId = $csvCatData['ParentContentID'];
         $magentoParentId = $this->findMagentoParentId($parentContentId);
@@ -221,16 +213,31 @@ class ProductsController extends Controller
         $currentCatUrl = current($urlArr);
         $extension_attributes = (object)array();
         $typeId = 'simple';
+        $status=0;
 
         $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
 
         if($csvCatData['productType']=='config'){
             $prefix='tbl_derivative_';
             $sku=$csvCatData['AssociateID'].'-'.$csvCatData[$prefix.'DerivativeID'];
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'DerivGTIN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'DerivMPN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData[$prefix.'DerivRank']);
+            $status = $csvCatData[$prefix.'Enabled'];
+            $visibility=1;
         }else{
             $prefix='tbl_Product_';
             $sku=$csvCatData['AssociateID'];
             $custom_attributes[] = (object)array("attribute_code" => 'special_price', "value" => $csvCatData['tbl_Product_SalePrice']);
+            $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_height', "value" => $csvCatData['tbl_Product_Height']);
+            $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_width', "value" => $csvCatData['tbl_Product_Width']);
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'GTIN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'MPN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData['Rank']);
+            $custom_attributes[] = (object)array("attribute_code" => 'productrank', "value" => $csvCatData['ProductRank']);
+            $custom_attributes[] = (object)array("attribute_code" => 'mapping', "value" => $csvCatData['MapID']);
+            $status = $csvCatData['Enabled'];
+            $visibility=1;
         }
 
         if($csvCatData['productType']=='configurable'){
@@ -258,15 +265,27 @@ class ProductsController extends Controller
         $custom_attributes[] = (object)array("attribute_code" => 'meta_title', "value" => $csvCatData['AdditionalPageTitle']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_keywords', "value" => $csvCatData['MetaKeywords']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_description', "value" => $csvCatData['MetaDescription']);
+        $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+        $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
+        $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
+
         if(!empty($magentoCategoryIdsArr)){
             $custom_attributes[] = (object)array("attribute_code" => 'category_ids', "value" => $magentoCategoryIdsArr);
         }
+
+        if($csvCatData[$prefix.'TotalStock']=='' || $csvCatData[$prefix.'TotalStock']==' '){
+            $qty = 0;
+        }else{
+            $qty = $csvCatData[$prefix.'TotalStock'];
+        }
+        $extension_attributes->stock_item = (object)array("qty" => $qty);
 
         $productData = (object)array(
             "sku" => $sku,
             "name" => $csvCatData['PageTitle'],
             "price" => $csvCatData[$prefix.'Price'],
-            "status" => 1,
+            "status" => $status,
+            "visibility" => $visibility,
             "type_id" => $typeId,
             "attribute_set_id" => 4,
             "custom_attributes" => $custom_attributes,
@@ -277,7 +296,6 @@ class ProductsController extends Controller
         $data = $magentoData;
         /*echo '<pre>'; print_r($data); echo '</pre>';*/
         return $data;
-        
     }
 
     public function getAllConfigOptionIds($configData){
@@ -494,49 +512,67 @@ class ProductsController extends Controller
         
     }
 
-    public function addMediaToMagentoProduct($sku,$productImage){
+    public function addMediaToMagentoProduct($sku,$csvCatData){
 
+        $productImage = $csvCatData['tbl_derivative_ProductImage'];
+        if(!empty($productImage)){
+            $imageContent = array();
+            $arrayImage = array();
+            $image = explode(",",$productImage);
+            foreach($image as $key => $value){
 
-        $imageContent = array();
-        $arrayImage = array();
-        $image = explode(",",$productImage);
-        foreach($image as $key => $value){
+                $name = $value;
+                $url = 'file/images/'.$csvCatData['ContentID'].'/';
+                $path = public_path($url.$value);
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = base64_encode($data);
+                $fileType = $this->getImageType($name);
 
-            $name = $value;
-            $url = 'file\images\\';
-            $path = public_path($url.$value);
-            $type = pathinfo($path, PATHINFO_EXTENSION);
-            $data = file_get_contents($path);
-            $base64 = base64_encode($data);
+                $imageContent[] = (object) array(
+                    "media_type" => "image",
+                    "label" => $name,
+                    "position" => 1,
+                    "disabled" => false,
+                    "types" => array(
+                        "image",
+                        "small_image",
+                        "thumbnail"
+                    ),
+                    "file" => $name,
+                    "content" => (object) array(
+                        "base64_encoded_data" => $base64,
+                        "type" => $fileType,
+                        "name" => $name
+                    )
+                );
+            }
 
-            $imageContent[] = (object) array(
-                "media_type" => "image",
-                "label" => $name,
-                "position" => 1,
-                "disabled" => false,
-                "types" => array(
-                    "image",
-                    "small_image",
-                    "thumbnail"
-                ),
-                "file" => $name,
-                "content" => (object) array(
-                    "base64_encoded_data" => $base64,
-                    "type" => "image/jpeg",
-                    "name" => $name
+            $arrayImage = (object) array(
+                "product" => (object) array(
+                    "media_gallery_entries" => $imageContent
                 )
             );
+            $route = "products/".$sku;
+            $result = $this->service->call($route, $arrayImage, 'PUT');
         }
+    }
 
-        $arrayImage = (object) array(
-            "product" => (object) array(
-                "media_gallery_entries" => $imageContent
-            )
-        );
-        $route = "products/".$sku;
-        $result = $this->service->call($route, $arrayImage, 'PUT');
-
-
+    public function getImageType($name){
+        $ext = pathinfo($name, PATHINFO_EXTENSION);
+        $fileType = "";
+        switch ($ext) {
+            case 'jpg':
+                $fileType = "image/jpeg";
+                break;
+            case 'png':
+                $fileType = "image/png";
+                break;
+            default:
+                $fileType = "image/jpeg";
+                break;
+        }
+        return $fileType;
     }
     
 }

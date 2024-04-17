@@ -54,10 +54,10 @@ class RowDataToCsvController extends Controller
     }
 
     function createCsvFromData(){
-        $file1 = public_path('file/AvenaNew1.csv');
-        $file2 = public_path('file/Avena2.csv');
-        $file3 = public_path('file/Avena3.csv');
-        $file4 = public_path('file/Avena4.csv');
+        $file1 = public_path('file/Avena1.csv'); /* Content sheet xls to csv */
+        $file2 = public_path('file/Avena2.csv'); /* Derivative product sheet xls to cvs */
+        $file3 = public_path('file/Avena3.csv'); /* Product sheet xls to csv */
+        $file4 = public_path('file/Avena4.csv'); /* Category sheet xls to csv */
         $productsArrAll = array();
         $categoryContentArray = array();
 
@@ -108,8 +108,6 @@ class RowDataToCsvController extends Controller
             $categoryContentArray[$value['ContentID']]['paraent_catagory_content_id'] = ltrim($categoryContentParent,'|') ;;
         }
         /* catagory sepration end */
-
-        /*echo 'aaa'; die();*/
 
         /* added sheet 2 in product array */
         $productArr2 = $this->csvToArray($file2);
