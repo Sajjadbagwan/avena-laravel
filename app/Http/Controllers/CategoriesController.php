@@ -17,14 +17,17 @@ class CategoriesController extends Controller
 
     public function syncCategory()
     {
-        $MagentoCategories = array();
-        $MagentoCategories = $this->getAllCategoryFromMagento();
-
         $file = public_path('file/categoryFile.csv');
         $catCsvArr = $this->rowDataToCsvController->csvToArray($file);
 
+        $MagentoCategories = array();
+        $MagentoCategories = $this->getAllCategoryFromMagento();
+
         for ($i = 0; $i < count($catCsvArr); $i ++)
         {
+
+            /*echo '<pre>'; print_r($MagentoCategories); echo '</pre>';*/
+
             $category_url = $catCsvArr[$i]['FileName'];
             if (in_array($category_url, $MagentoCategories)){
                 echo "Update process for content id : ".$catCsvArr[$i]['ContentID'];;
@@ -36,9 +39,9 @@ class CategoriesController extends Controller
                 echo "Insert process for content id : ".$catCsvArr[$i]['ContentID'];;
                 echo '<br>';
                 $result = $this->insertCategoryInMagento($catCsvArr[$i]);
-                if(!empty($result)){
+                /*if(!empty($result)){
                     $MagentoCategories[$result['magento_id']] = $result['magento_url'];
-                }
+                }*/
             }
         }
         echo 'All the categories has been updated.';
@@ -49,6 +52,9 @@ class CategoriesController extends Controller
         $resultLogId = '';
         $resultLogId = $this->generateLog($csvCatData['ContentID'],'catagory');
         $data = $this->getCategoryData($csvCatData);
+        $category_url = $csvCatData['FileName'];
+
+        /*echo '<pre>'; print_r($data); echo '</pre>';*/
 
         $result = array();
         $this->service = configMagento();
@@ -59,6 +65,8 @@ class CategoriesController extends Controller
             echo 'Failed to insert category to magento for content ID '.$csvCatData['ContentID'];
             Log::info("Failed to insert category to magento");
             Log::info($e);
+            $errorMsg = '';
+            $errorMsg = $e;
         }    
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -88,7 +96,7 @@ class CategoriesController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = 'Process failed';
+            $logIdArr['message'] = $errorMsg;
         }
         $this->insertCatTbl($dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
@@ -112,6 +120,8 @@ class CategoriesController extends Controller
             Log::info("Failed to insert category to magento");
             Log::info($e);
             echo $proceesMsg;
+            $errorMsg = '';
+            $errorMsg = $e;
         }    
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -137,7 +147,7 @@ class CategoriesController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = $proceesMsg;
+            $logIdArr['message'] = $errorMsg;
         }
         $this->updateCatTbl($magento_id,$dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
@@ -235,7 +245,8 @@ class CategoriesController extends Controller
         $this->service = configMagento();
         $this->service->init();
         try {
-            $result = $this->service->call("categories/list?searchCriteria");
+            $result = $this->service->call("categories/list?searchCriteria=1000");
+
             $magentoData = array();
             if(isset($result->total_count) && $result->total_count > 0) {
                 $removeValuesIdsAr = array();
@@ -255,13 +266,14 @@ class CategoriesController extends Controller
             }
             return $magentoData;
         }catch (\Throwable $e) {
+            echo $e;
             Log::info("Failed to retrieve categories from magento");
             Log::info($e);
         }
     }
 
     public function findMagentoParentId($parentContentId){
-        $data = DB::table('category')->where('data_category_id', $parentContentId)->get()->first();
+        $data = DB::table('category')->where('data_category_id', $parentContentId)->get()->last();
         if(!empty((array)$data)){
             return $data->magento_category_id;
         }else{

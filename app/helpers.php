@@ -12,13 +12,10 @@ function configMagento()
     $service->setAccesToken('m998dqcngdsshiau1mdztzdygyp3lp5c');
     $service->setAccesTokenSecret('3z2s6ulyajdy9oir5fo3phksvwy85pea');
 
-
-
     /*$service->setConsumerKey('mfb3a2v63wnn2urt8c8291xophfzr203');
     $service->setConsumerSecret('pa4iqy5ipxr2pz0b52t7mz6e4pi0mgzl');
-    $service->setAccesToken('c3i046u1wwbyfvkwdgcbx5l3gmykznn3');
-    $service->setAccesTokenSecret('s3186ppzwc0qtk8jhd1bce3myiwee6jw');*/
-
+    $service->setAccesToken('emni5xbsode30tuq0p69t87791v5hxdj');
+    $service->setAccesTokenSecret('b7dvh1dbwielvlfkee3ozc5owbwccqyx');*/
     
 
     $service->setUrl('https://magento244.dev-box.me/index.php/rest/%storecode/V1/');

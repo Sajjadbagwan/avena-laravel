@@ -17,16 +17,17 @@ class ProductsController extends Controller
 
     public function syncProduct()
     {
+        /*$file = public_path('file/productFileMainTest.csv');*/
         $file = public_path('file/productFile.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
-        $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
-        $this->magentoAttributesCode = $this->getAttributeFromMagento();
         
+        $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
+        $this->magentoAttributesCode = $this->getAttributeFromMagento(); 
 
         $MagentoProducts = array();
         $MagentoProducts = $this->getAllProductsFromMagento();
-        /*$MagentoProducts = array('2340'=>'1155','2341'=>'1160','2324'=>'1155-2157','2325'=>'1160-2162','2326'=>'1160-10411','2327'=>'1160-5528','2328'=>'1160-20607');*/
 
+        $result = array();
         for ($i = 0; $i < count($productCsvArr); $i ++)
         {
             if($productCsvArr[$i]['productType']=='config'){
@@ -35,12 +36,12 @@ class ProductsController extends Controller
                 $productSku = $productCsvArr[$i]['AssociateID'];
             }
             if (in_array($productSku, $MagentoProducts)){
-                echo "Update process for content id : ".$productCsvArr[$i]['tbl_derivative_DerivativeID'];
+                echo "Update process for content id : ".$productCsvArr[$i]['ContentID'].'-'.$productCsvArr[$i]['tbl_derivative_DerivativeID'];
                 echo '<br>';
                 $magento_id = array_search($productSku, $MagentoProducts);
                 $this->updateProductInMagento($magento_id,$productCsvArr[$i],$productSku);
             }else{
-                echo "Insert process for content id : ".$productCsvArr[$i]['tbl_derivative_DerivativeID'];
+                echo "Insert process for content id : ".$productCsvArr[$i]['ContentID'].'-'.$productCsvArr[$i]['tbl_derivative_DerivativeID'];
                 echo '<br>';
                 $result = $this->insertProductInMagento($productCsvArr[$i]);
                 if(!empty($result)){
@@ -48,6 +49,7 @@ class ProductsController extends Controller
                 }
             }
         }
+
         $this->addConfigurableMainProduct($productCsvArr);
         echo 'All the products has been updated.';
         die();
@@ -56,6 +58,7 @@ class ProductsController extends Controller
     function addConfigurableMainProduct($productCsvArr){
         $MagentoProducts = array();
         $MagentoProducts = $this->getAllProductsFromMagento();
+
         $mainProductArr = array();
         for ($i = 0; $i < count($productCsvArr); $i ++){
             if($productCsvArr[$i]['productType']=='config'){
@@ -75,19 +78,19 @@ class ProductsController extends Controller
                 }
                 $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductId']=$conPro;
                 $mainProductArr[$productCsvArr[$i]['AssociateID']]['productType']='configurable';
-                $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductOpt'][]=$productCsvArr[$i]['tbl_Product_Derivative1'];
-                $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductOpt'][]=$productCsvArr[$i]['tbl_Product_Derivative2'];
+                $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductOpt'][]=strtolower($productCsvArr[$i]['tbl_Product_Derivative1']);
+                $mainProductArr[$productCsvArr[$i]['AssociateID']]['configProductOpt'][]=strtolower($productCsvArr[$i]['tbl_Product_Derivative2']);
             }     
         }
         foreach($mainProductArr as $k => $productArr){
             $productSku = $productArr['AssociateID'];
             if (in_array($productSku, $MagentoProducts)){
-                echo "Update process for content id : ".$productArr['ContentID'];
+                echo "Update process for content id : ".$productArr['ContentID'].'-'.$productArr['AssociateID'];
                 echo '<br>';
                 $magento_id = array_search($productSku, $MagentoProducts);
                 $this->updateProductInMagento($magento_id,$productArr,$productSku);
             }else{
-                echo "Insert process for content id : ".$productArr['ContentID'];
+                echo "Insert process for content id : ".$productArr['ContentID'].'-'.$productArr['AssociateID'];
                 echo '<br>';
                 $result = $this->insertProductInMagento($productArr);
                 if(!empty($result)){
@@ -99,12 +102,20 @@ class ProductsController extends Controller
 
     function insertProductInMagento($csvCatData){
         $resultLogId = '';
-        $resultLogId = $this->generateLog($csvCatData['ContentID'],'product');
+        if($csvCatData['productType']=='config'){ 
+            $updateId=$csvCatData['ContentID'].'-'.$csvCatData['tbl_derivative_DerivativeID'];
+        }else{
+            $updateId=$csvCatData['ContentID'];
+        }
+        $resultLogId = $this->generateLog($updateId,'product');
         $data = $this->getProductData($csvCatData,'insert');
         $result = array();
         $this->service = configMagento();
         $this->service->init();
         $errorMsg= '';
+
+        
+
         try {
             $result = $this->service->call('products', $data, 'POST');
             echo '---------<br/>';
@@ -115,9 +126,13 @@ class ProductsController extends Controller
             Log::info("Failed to insert category to magento");
             Log::info($e);
         }
+
+        /*echo '<pre>'; print_r($data); die();*/
+
+        $msg='';
         if(!empty($result)){
             $sku = $result->sku;
-            $this->addMediaToMagentoProduct($sku,$csvCatData);
+            $msg = $this->addMediaToMagentoProduct($sku,$csvCatData);
         }
         $CurrentTime = date("Y-m-d H:i:s");
         $dataCatTblArr = array();
@@ -144,7 +159,7 @@ class ProductsController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = $errorMsg;
+            $logIdArr['message'] = $errorMsg.$msg;
         }
         $this->insertProductTbl($dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
@@ -153,13 +168,20 @@ class ProductsController extends Controller
 
     function updateProductInMagento($magento_id,$csvCatData,$productSku){
         $resultLogId = '';
-        $resultLogId = $this->generateLog($csvCatData['ContentID'],'product');
+        if($csvCatData['productType']=='config'){ 
+            $updateId=$csvCatData['ContentID'].'-'.$csvCatData['tbl_derivative_DerivativeID'];
+        }else{
+            $updateId=$csvCatData['ContentID'];
+        }
+        $resultLogId = $this->generateLog($updateId,'product');
         $data = $this->getProductData($csvCatData,'update');
 
         $result = array();
         $this->service = configMagento();
         $this->service->init();
         $errorMsg= '';
+
+        
 
         try {
             $restUrl = 'products/'.$productSku;
@@ -171,9 +193,12 @@ class ProductsController extends Controller
             echo $proceesMsg;
         }
 
+        /*echo '<pre>'; print_r($data); die();*/
+
+        $msg = '';
         if(!empty($result)){
             $sku = $result->sku;
-            $this->addMediaToMagentoProduct($sku,$csvCatData);
+            $msg = $this->addMediaToMagentoProduct($sku,$csvCatData);
         }
 
         $CurrentTime = date("Y-m-d H:i:s");
@@ -197,7 +222,7 @@ class ProductsController extends Controller
             $dataCatTblArr['created_at'] = $CurrentTime;
             
             $logIdArr['status'] = 'failed';
-            $logIdArr['message'] = $errorMsg;
+            $logIdArr['message'] = $errorMsg.$msg;
         }
         $this->updateProductTbl($magento_id,$dataCatTblArr);
         $this->updateGeneratedLog($logIdArr);
@@ -237,7 +262,7 @@ class ProductsController extends Controller
             $custom_attributes[] = (object)array("attribute_code" => 'productrank', "value" => $csvCatData['ProductRank']);
             $custom_attributes[] = (object)array("attribute_code" => 'mapping', "value" => $csvCatData['MapID']);
             $status = $csvCatData['Enabled'];
-            $visibility=1;
+            $visibility=4;
         }
 
         if($csvCatData['productType']=='configurable'){
@@ -251,23 +276,50 @@ class ProductsController extends Controller
             $typeId = 'configurable';
         }else{
             if($csvCatData['tbl_Product_Derivative1']!='' && $csvCatData['tbl_Product_Derivative1']!='n/a' && $csvCatData['tbl_derivative_Title']!='' && $csvCatData['tbl_derivative_Title']!='n/a'){
-                $val1 = $this->magentoAttributes[$csvCatData['tbl_Product_Derivative1']][$csvCatData['tbl_derivative_Title']];
-                $custom_attributes[] = (object)array("attribute_code" => $csvCatData['tbl_Product_Derivative1'], "value" => $val1);
+                $val1 = $this->magentoAttributes[strtolower($csvCatData['tbl_Product_Derivative1'])][strtolower(trim($csvCatData['tbl_derivative_Title']))];
+                $custom_attributes[] = (object)array("attribute_code" => strtolower($csvCatData['tbl_Product_Derivative1']), "value" => $val1);
             }
             if($csvCatData['tbl_Product_Derivative2']!='' && $csvCatData['tbl_Product_Derivative2']!='n/a' && $csvCatData['tbl_derivative_Title2']!='' && $csvCatData['tbl_derivative_Title2']!='n/a'){
-                $val2 = $this->magentoAttributes[$csvCatData['tbl_Product_Derivative2']][$csvCatData['tbl_derivative_Title2']];
-                $custom_attributes[] = (object)array("attribute_code" => $csvCatData['tbl_Product_Derivative2'], "value" => $val2);
+                $val2 = $this->magentoAttributes[strtolower($csvCatData['tbl_Product_Derivative2'])][strtolower(trim($csvCatData['tbl_derivative_Title2']))];
+                $custom_attributes[] = (object)array("attribute_code" => strtolower($csvCatData['tbl_Product_Derivative2']), "value" => $val2);
             }
         }
 
         $is_active='false'; if($csvCatData['Enabled']==1){ $is_active='true';}
         $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_title', "value" => $csvCatData['AdditionalPageTitle']);
-        $custom_attributes[] = (object)array("attribute_code" => 'meta_keywords', "value" => $csvCatData['MetaKeywords']);
+        $custom_attributes[] = (object)array("attribute_code" => 'meta_keyword', "value" => $csvCatData['MetaKeywords']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_description', "value" => $csvCatData['MetaDescription']);
-        $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
-        $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
-        $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
+
+        if($csvCatData['productType']=='simple'){
+            if(empty($csvCatData[$prefix.'Code'])){
+                $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData['tbl_derivative_Code']);
+            }else{
+                $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
+            }
+
+            if(empty($csvCatData[$prefix.'Location'])){
+                $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData['tbl_derivative_Location']);
+            }else{
+                $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
+            }
+
+            if(empty($csvCatData[$prefix.'Weight'])){
+                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData['tbl_derivative_Weight']);
+            }else{
+                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+            }
+        }else{
+            $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+            $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
+            $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
+        }
+
+
+        $custom_attributes[] = (object)array("attribute_code" => 'specialnote', "value" => $csvCatData['tbl_Product_SpecialNote']);
+        $custom_attributes[] = (object)array("attribute_code" => 'specialnoteshort', "value" => $csvCatData['tbl_Product_SpecialNoteShort']);
+
+
 
         if(!empty($magentoCategoryIdsArr)){
             $custom_attributes[] = (object)array("attribute_code" => 'category_ids', "value" => $magentoCategoryIdsArr);
@@ -278,7 +330,15 @@ class ProductsController extends Controller
         }else{
             $qty = $csvCatData[$prefix.'TotalStock'];
         }
-        $extension_attributes->stock_item = (object)array("qty" => $qty);
+
+        /*$extension_attributes->stock_item = (object)array("qty" => $qty);*/
+
+        if($qty>0){
+            $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => true);
+        }else{
+            $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => false);
+        }
+
 
         $productData = (object)array(
             "sku" => $sku,
@@ -358,8 +418,8 @@ class ProductsController extends Controller
         $productAttributeValue=array();
 
         foreach($productCsvArr as $key => $value){
-            $der1 = $value['tbl_Product_Derivative1'];
-            $der2 = $value['tbl_Product_Derivative2'];
+            $der1 = strtolower($value['tbl_Product_Derivative1']);
+            $der2 = strtolower($value['tbl_Product_Derivative2']);
             $derTitle1 = $value['tbl_derivative_Title'];
             $derTitle2 = $value['tbl_derivative_Title2'];
 
@@ -378,37 +438,113 @@ class ProductsController extends Controller
         }
 
         $attributesNames = array_unique($attributesNames);
-
         $magentoAttributes = $this->getAllAttributesFromMagento($attributesNames);
-
+        $productAttributeValue = array_unique($productAttributeValue);
 
         foreach($productAttributeValue as $attributeSet => $attribute){
             foreach($attribute as $key => $attributeLabel){
-
-                if(!array_key_exists($attributeLabel, $magentoAttributes[$attributeSet])){
+                if(!array_key_exists(strtolower(trim($attributeLabel)), $magentoAttributes[$attributeSet])){
                     $this->addAttributeOptionsToMagento($attributeSet,$attributeLabel);
                 }
             }
         }
 
         $magentoAttributes = $this->getAllAttributesFromMagento($attributesNames);
-
         return $magentoAttributes;
 
     }
 
+    public function getAttributesFromMagento(){
+        $allAttr = array();
+        $this->service = configMagento();
+        $this->service->init();
+        try{
+            $result = $this->service->call("products/attributes?searchCriteria=100000");
+        } catch (\Throwable $e) {
+            $errorMsg = $e;
+            echo $errorMsg;
+        }
+        foreach($result->items as $k => $v){
+            $allAttr[]=$v->attribute_code;
+        }
+        return $allAttr;
+    }
+
+    public function addAttributeInMagento($attribute){
+
+        $this->service = configMagento();
+        $this->service->init();
+        $attributeData = (object)array(
+            "is_wysiwyg_enabled" => false,
+            "is_html_allowed_on_front" => true,
+            "used_for_sort_by" => false,
+            "is_filterable" => false,
+            "is_filterable_in_search" => false,
+            "is_used_in_grid" => false,
+            "is_visible_in_grid" => true,
+            "is_filterable_in_grid" => true,
+            "position" => 0,
+            "apply_to" => [],
+            "is_searchable" => "1",
+            "is_visible_in_advanced_search" => "1",
+            "is_comparable" => "1",
+            "is_used_for_promo_rules" => "0",
+            "is_visible_on_front" => "1",
+            "used_in_product_listing" => "1",
+            "is_visible" => true,
+            "scope" => "global",
+            "is_required" => false,
+            "is_user_defined" => true,
+            "default_frontend_label" => strtolower($attribute),
+            "frontend_labels" => [],
+            "backend_type" => "int",
+            "source_model" => "Magento\\Eav\\Model\\Entity\\Attribute\\Source\\Table",
+            "default_value" => "",
+            "attribute_code" => strtolower($attribute),
+            "frontend_input" => "select",
+            "default_frontend_label" => strtolower($attribute),
+            "backend_type" => "text"
+        );  
+        $data = (object)array('attribute' => $attributeData);
+
+        try{
+            $result = $this->service->call('products/attributes', $data, 'POST');
+        } catch (\Throwable $e) {
+            $errorMsg = $e;
+            echo $errorMsg;
+        }
+        return;
+    }
+
     public function getAllAttributesFromMagento($attributesNames){
+
+        
+        $allAttr = $this->getAttributesFromMagento();
 
         $magentoAttributes = array();
         foreach($attributesNames as $key => $attribute){
+            $attribute = strtolower($attribute);
             $this->service = configMagento();
             $this->service->init();
-            $result = $this->service->call("products/attributes/{$attribute}/options");
+
+            if(!in_array($attribute,$allAttr)){
+                $this->addAttributeInMagento($attribute);
+            }
+
+            try {
+                $result = $this->service->call("products/attributes/{$attribute}/options");
+            } catch (\Throwable $e) {
+                $errorMsg = $e;
+                echo $errorMsg;
+            }
+
+            /*echo '<pre>'; print_r($result); die();*/
+
             $tempAr = array();
             if(!empty($result)) {
                 foreach ($result as $rKey => $rValue) {
                     if(trim($rValue->label) != '' && trim($rValue->value) != '') {
-                        $tempAr[$rValue->label] = $rValue->value;
+                        $tempAr[strtolower($rValue->label)] = $rValue->value;
                     }
                 }
             }
@@ -429,7 +565,22 @@ class ProductsController extends Controller
                     "value" => $attributeLabel
                 )
             );
-            $result = $this->service->call("products/attributes/{$attribute}/options", $data, 'POST');
+
+            echo $attribute.$attributeLabel;
+            echo '<pre>';
+            print_r($data);
+            try{
+                $result = $this->service->call("products/attributes/{$attribute}/options", $data, 'POST');
+            } catch (\Throwable $e) {
+                $errorMsg = $e;
+                echo $e; 
+            }
+
+            /*echo '<pre>';
+            print_r($result);
+            die();*/
+
+                
             /*$this->getAttributeOptionsFromMagento($attribute);*/
             return true;
         } else {
@@ -488,7 +639,7 @@ class ProductsController extends Controller
         $this->service = configMagento();
         $this->service->init();
         try {
-            $result = $this->service->call("products?searchCriteria");
+            $result = $this->service->call("products?searchCriteria=100000");
             $magentoData = array();
             if(isset($result->total_count) && $result->total_count > 0) {
                 foreach ($result->items as $iKey => $itemAr) {
@@ -497,8 +648,9 @@ class ProductsController extends Controller
             }
             return $magentoData;
         }catch (\Throwable $e) {
-            Log::info("Failed to retrieve categories from magento");
+            Log::info("Failed to retrieve products from magento");
             Log::info($e);
+            echo $e;
         }
     }
 
@@ -515,47 +667,62 @@ class ProductsController extends Controller
     public function addMediaToMagentoProduct($sku,$csvCatData){
 
         $productImage = $csvCatData['tbl_derivative_ProductImage'];
+        $msg = '';
         if(!empty($productImage)){
             $imageContent = array();
             $arrayImage = array();
             $image = explode(",",$productImage);
             foreach($image as $key => $value){
-
                 $name = $value;
+                $ext = pathinfo($name, PATHINFO_EXTENSION);
                 $url = 'file/images/'.$csvCatData['ContentID'].'/';
                 $path = public_path($url.$value);
-                $type = pathinfo($path, PATHINFO_EXTENSION);
-                $data = file_get_contents($path);
-                $base64 = base64_encode($data);
-                $fileType = $this->getImageType($name);
-
-                $imageContent[] = (object) array(
-                    "media_type" => "image",
-                    "label" => $name,
-                    "position" => 1,
-                    "disabled" => false,
-                    "types" => array(
-                        "image",
-                        "small_image",
-                        "thumbnail"
-                    ),
-                    "file" => $name,
-                    "content" => (object) array(
-                        "base64_encoded_data" => $base64,
-                        "type" => $fileType,
-                        "name" => $name
-                    )
-                );
+                if (@getimagesize($path)) {
+                    $type = pathinfo($path, PATHINFO_EXTENSION);
+                    $data = file_get_contents($path);
+                    $base64 = base64_encode($data);
+                    $fileType = $this->getImageType($name);
+                    $imageContent[] = (object) array(
+                        "media_type" => "image",
+                        "label" => $name,
+                        "position" => 1,
+                        "disabled" => false,
+                        "types" => array(
+                            "image",
+                            "small_image",
+                            "thumbnail"
+                        ),
+                        "file" => $name,
+                        "content" => (object) array(
+                            "base64_encoded_data" => $base64,
+                            "type" => $fileType,
+                            "name" => $name
+                        )
+                    );
+                }
             }
 
-            $arrayImage = (object) array(
-                "product" => (object) array(
-                    "media_gallery_entries" => $imageContent
-                )
-            );
-            $route = "products/".$sku;
-            $result = $this->service->call($route, $arrayImage, 'PUT');
+            if(!empty($imageContent)){
+                $arrayImage = (object) array(
+                    "product" => (object) array(
+                        "media_gallery_entries" => $imageContent
+                    )
+                );
+                $route = "products/".$sku;
+                if(!empty($data)){
+
+                    try{
+                        $result = $this->service->call($route, $arrayImage, 'PUT');
+                    } catch (\Throwable $e) {
+                        $errorMsg = $e;
+                        $msg = $errorMsg;
+                    }
+
+                }
+            }
+
         }
+        return $msg;
     }
 
     public function getImageType($name){
