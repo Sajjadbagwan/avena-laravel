@@ -7,7 +7,6 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Log;
 
-
 class ProductsController extends Controller
 {
     public function __construct()
@@ -20,9 +19,9 @@ class ProductsController extends Controller
         /*$file = public_path('file/productFileMainTest.csv');*/
         $file = public_path('file/productFile.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
-        
+
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
-        $this->magentoAttributesCode = $this->getAttributeFromMagento(); 
+        $this->magentoAttributesCode = $this->getAttributeFromMagento();
 
         $MagentoProducts = array();
         $MagentoProducts = $this->getAllProductsFromMagento();
@@ -238,25 +237,33 @@ class ProductsController extends Controller
         $currentCatUrl = current($urlArr);
         $extension_attributes = (object)array();
         $typeId = 'simple';
-        $status=0;
+        $status=2;
+
+        $name = $csvCatData['PageTitle'];
 
         $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
 
         if($csvCatData['productType']=='config'){
             $prefix='tbl_derivative_';
             $sku=$csvCatData['AssociateID'].'-'.$csvCatData[$prefix.'DerivativeID'];
-            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'DerivGTIN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => strval($csvCatData[$prefix.'DerivGTIN']));
             $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'DerivMPN']);
             $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData[$prefix.'DerivRank']);
             $status = $csvCatData[$prefix.'Enabled'];
             $visibility=1;
+
+            if(!empty($csvCatData['tbl_derivative_Title']) && $csvCatData['tbl_derivative_Title']!='n/a' && $csvCatData['tbl_derivative_Title']!='N/A' && $csvCatData['tbl_derivative_Title']!=''){
+                $name = $csvCatData['FileName'].'-'.$csvCatData['tbl_derivative_Title'];
+            }
+            
+
         }else{
             $prefix='tbl_Product_';
             $sku=$csvCatData['AssociateID'];
             $custom_attributes[] = (object)array("attribute_code" => 'special_price', "value" => $csvCatData['tbl_Product_SalePrice']);
             $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_height', "value" => $csvCatData['tbl_Product_Height']);
             $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_width', "value" => $csvCatData['tbl_Product_Width']);
-            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'GTIN']);
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => strval($csvCatData[$prefix.'GTIN']));
             $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'MPN']);
             $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData['Rank']);
             $custom_attributes[] = (object)array("attribute_code" => 'productrank', "value" => $csvCatData['ProductRank']);
@@ -286,12 +293,19 @@ class ProductsController extends Controller
         }
 
         $is_active='false'; if($csvCatData['Enabled']==1){ $is_active='true';}
-        $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+
+        if($csvCatData['productType']=='config'){
+            $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+        }else{
+            $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl);
+        }
+
+
         $custom_attributes[] = (object)array("attribute_code" => 'meta_title', "value" => $csvCatData['AdditionalPageTitle']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_keyword', "value" => $csvCatData['MetaKeywords']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_description', "value" => $csvCatData['MetaDescription']);
 
-        if($csvCatData['productType']=='simple'){
+        if($csvCatData['productType']=='simple' || $csvCatData['productType']=='configurable'){
             if(empty($csvCatData[$prefix.'Code'])){
                 $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData['tbl_derivative_Code']);
             }else{
@@ -333,12 +347,38 @@ class ProductsController extends Controller
 
         /*$extension_attributes->stock_item = (object)array("qty" => $qty);*/
 
-        if($qty>0){
+        /*if($qty>0){
             $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => true);
         }else{
             $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => false);
-        }
+        }*/
 
+        $extension_attributes->stock_item = (object)array("qty" => '100',"is_in_stock" => true);
+
+        $content='';
+        $path = public_path('file/content/'.$csvCatData['ContentID']);
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        $pathFile    = $path.'/'.$entry;
+                        $fileData = file_get_contents($pathFile, false);
+                        if($fileData!='' && !str_contains($fileData, 'error') && !str_contains($fileData, 'Error')){
+                            $content = $content.$fileData;
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+        if(!empty($content)){
+            $custom_attributes[] = (object)array("attribute_code" => 'description', "value" => $content);
+        }
+        
+        if($status==0 || $status==''){
+            $status=2;
+        }
 
         $productData = (object)array(
             "sku" => $sku,
@@ -718,6 +758,90 @@ class ProductsController extends Controller
                         $msg = $errorMsg;
                     }
 
+                }
+            }
+
+        }else{
+            $msg = $this->addMediaToMagentoByFolder($sku,$csvCatData);
+        }
+        return $msg;
+    }
+
+    public function addMediaToMagentoByFolder($sku,$csvCatData){
+
+        $contentId = $csvCatData['ContentID'];
+        $msg = '';
+        $content='';
+        $path = public_path('file/images/'.$contentId);
+        $imageArr = array();
+        $imageContent = array();
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        /*echo $entry.'/n';*/
+                        $ext = pathinfo($entry, PATHINFO_EXTENSION);
+                        if($ext=='jpeg' || $ext=='jpg' || $ext=='png'){
+                            $pathFile    = $path.'/'.$entry;
+                            $img = array();
+                            $img = getimagesize($pathFile);
+                            $imageArr[$pathFile] = $img[0];
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+
+        if(!empty($imageArr)){
+
+            $value = max($imageArr);
+            $key = array_search($value, $imageArr);
+            $path = $key;
+
+            $name = substr($path, strrpos($path, '/') + 1);
+
+            if (@getimagesize($path)) {
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = base64_encode($data);
+                $fileType = $this->getImageType($name);
+                $imageContent[] = (object) array(
+                    "media_type" => "image",
+                    "label" => $name,
+                    "position" => 1,
+                    "disabled" => false,
+                    "types" => array(
+                        "image",
+                        "small_image",
+                        "thumbnail"
+                    ),
+                    "file" => $name,
+                    "content" => (object) array(
+                        "base64_encoded_data" => $base64,
+                        "type" => $fileType,
+                        "name" => $name
+                    )
+                );
+
+            }
+
+            if(!empty($imageContent)){
+                $arrayImage = (object) array(
+                    "product" => (object) array(
+                        "media_gallery_entries" => $imageContent
+                    )
+                );
+                $route = "products/".$sku;
+                if(!empty($data)){
+                    try{
+                        $result = $this->service->call($route, $arrayImage, 'PUT');
+                    } catch (\Throwable $e) {
+                        $errorMsg = $e;
+                        $msg = $errorMsg;
+                    }
                 }
             }
 

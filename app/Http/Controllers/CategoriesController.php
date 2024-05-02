@@ -39,9 +39,9 @@ class CategoriesController extends Controller
                 echo "Insert process for content id : ".$catCsvArr[$i]['ContentID'];;
                 echo '<br>';
                 $result = $this->insertCategoryInMagento($catCsvArr[$i]);
-                /*if(!empty($result)){
+                if(!empty($result)){
                     $MagentoCategories[$result['magento_id']] = $result['magento_url'];
-                }*/
+                }
             }
         }
         echo 'All the categories has been updated.';
@@ -122,7 +122,12 @@ class CategoriesController extends Controller
             echo $proceesMsg;
             $errorMsg = '';
             $errorMsg = $e;
-        }    
+        }  
+
+        /*if(!empty($result)){
+            $id = $result->id;
+            $msg = $this->addMediaToMagentoCategory($id,$csvCatData);
+        }  */
 
         $CurrentTime = date("Y-m-d H:i:s");
         $dataCatTblArr = array();
@@ -153,6 +158,61 @@ class CategoriesController extends Controller
         $this->updateGeneratedLog($logIdArr);
     }
 
+    function insertCategoryImageInMagento($contentId)
+    {
+        $path='';
+
+        $msg = '';
+        $content='';
+        $path = public_path('file/images/'.$contentId);
+        $imageArr = array();
+        $imageContent = array();
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        /*echo $entry.'/n';*/
+                        $ext = pathinfo($entry, PATHINFO_EXTENSION);
+                        if($ext=='jpeg' || $ext=='jpg' || $ext=='png'){
+                            $name = $entry;
+                            $pathFile    = $path.'/'.$entry;
+                            $img = array();
+                            $img = getimagesize($pathFile);
+                            $imageArr[$name] = $img[0];
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+        if(!empty($imageArr)){
+            $value = max($imageArr);
+            $key = array_search($value, $imageArr);
+            $path = $key;
+        }
+        
+        return $path;
+    }
+
+    public function getImageType($name){
+        $ext = pathinfo($name, PATHINFO_EXTENSION);
+        $fileType = "";
+        switch ($ext) {
+            case 'jpg':
+                $fileType = "image/jpeg";
+                break;
+            case 'png':
+                $fileType = "image/png";
+                break;
+            default:
+                $fileType = "image/jpeg";
+                break;
+        }
+        return $fileType;
+    }
+
     public function getCategoryData($csvCatData){
 
         $parentContentId = $csvCatData['ParentContentID'];
@@ -161,6 +221,14 @@ class CategoriesController extends Controller
         $category_url = $csvCatData['FileName'];
         $urlArr = array_filter(explode('/', $category_url));
         $currentCatUrl = end($urlArr);
+
+        $path = $this->insertCategoryImageInMagento($csvCatData['ContentID']);
+        if($path!=''){
+            $custom_attributes[] = (object)array(
+                "attribute_code" => 'image',
+                "value" => $path
+            );
+        }
 
         $is_active='false'; if($csvCatData['Enabled']==1){ $is_active='true';}
         $custom_attributes[] = (object)array(
@@ -180,6 +248,27 @@ class CategoriesController extends Controller
             "value" => $csvCatData['MetaDescription']
         );
 
+        $content='';
+        $path = public_path('file/content/'.$csvCatData['ContentID']);
+        
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        $pathFile    = $path.'/'.$entry;
+                        $fileData = file_get_contents($pathFile, false);
+                        if($fileData!='' && !str_contains($fileData, 'error') && !str_contains($fileData, 'Error')){
+                            $content = $content.$fileData;
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+        if(!empty($content)){
+            $custom_attributes[] = (object)array("attribute_code" => 'description', "value" => $content);
+        }
+
         $categoryData = (object)array(
             "name" => $csvCatData['PageTitle'],
             "parent_id" => $magentoParentId,
@@ -189,6 +278,9 @@ class CategoriesController extends Controller
         );
         $magentoData = (object)array('category' => $categoryData);
         $data = $magentoData;
+
+        /*echo '<pre>'; print_r($data); echo '</pre>';*/
+
         return $data;
     }
 
