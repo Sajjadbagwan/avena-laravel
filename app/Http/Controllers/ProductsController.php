@@ -18,8 +18,11 @@ class ProductsController extends Controller
     public function syncProduct()
     {
         /*$file = public_path('file/productFileMainTest.csv');*/
-        $file = public_path('file/productFile.csv');
+        $file = public_path('file/productFileImg.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
+        
+        $this->countNumberOfProducts($productCsvArr);
+
         
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
         $this->magentoAttributesCode = $this->getAttributeFromMagento();
@@ -232,13 +235,16 @@ class ProductsController extends Controller
 
         $parentContentId = $csvCatData['ParentContentID'];
         $magentoParentId = $this->findMagentoParentId($parentContentId);
+        $urlArrCnt = 1;
 
         $category_url = $csvCatData['FileName'];
         $urlArr = array_filter(explode('/', $category_url));
+        $urlArrCnt = count($urlArr);
         $currentCatUrl = current($urlArr);
         $extension_attributes = (object)array();
         $typeId = 'simple';
         $status=2;
+        $weight = '';
 
         $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
 
@@ -291,6 +297,9 @@ class ProductsController extends Controller
             $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
         }else{
             $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl);
+            if($urlArrCnt>1){
+                $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+            }
         }
 
 
@@ -312,12 +321,12 @@ class ProductsController extends Controller
             }
 
             if(empty($csvCatData[$prefix.'Weight'])){
-                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData['tbl_derivative_Weight']);
+                $weight = $csvCatData['tbl_derivative_Weight'];
             }else{
-                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+                $weight = $csvCatData[$prefix.'Weight'];
             }
         }else{
-            $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+            $weight = $csvCatData[$prefix.'Weight'];
             $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
             $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
         }
@@ -378,6 +387,7 @@ class ProductsController extends Controller
             "name" => $csvCatData['PageTitle'],
             "price" => $csvCatData[$prefix.'Price'],
             "status" => $status,
+            "weight" => $weight,
             "visibility" => $visibility,
             "type_id" => $typeId,
             "attribute_set_id" => 4,
@@ -710,6 +720,7 @@ class ProductsController extends Controller
                 $ext = pathinfo($name, PATHINFO_EXTENSION);
                 $url = 'file/images/'.$csvCatData['ContentID'].'/';
                 $path = public_path($url.$value);
+                $name = $this->clean($name);
                 if (@getimagesize($path)) {
                     $type = pathinfo($path, PATHINFO_EXTENSION);
                     $data = file_get_contents($path);
@@ -795,6 +806,7 @@ class ProductsController extends Controller
             $path = $key;
 
             $name = substr($path, strrpos($path, '/') + 1);
+            $name = $this->clean($name);
 
             if (@getimagesize($path)) {
                 $type = pathinfo($path, PATHINFO_EXTENSION);
@@ -837,7 +849,6 @@ class ProductsController extends Controller
                     }
                 }
             }
-
         }
         return $msg;
     }
@@ -858,16 +869,30 @@ class ProductsController extends Controller
         }
         return $fileType;
     }
+    
+    function clean($string) {
+       $ext = substr($string, strrpos($string, '.') + 1);
+        $string = substr($string, 0, strrpos( $string, '.'));
+        $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+        $string = preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+        $name = $string.'.'.$ext;
+        return $name;
+    }
 
     public function countNumberOfProducts($productCsvArr)
     {
         $j=0;
+        $k=0;
         for ($i = 0; $i < count($productCsvArr); $i ++)
         {   
             if($productCsvArr[$i]['productType']=='simple'){
                 $j = $j+1;
             }
+            if($productCsvArr[$i]['productType']=='config'){
+                $k = $k+1;
+            }
         }
+        
         $mainProductArr = array();
         for ($i = 0; $i < count($productCsvArr); $i ++){
             if($productCsvArr[$i]['productType']=='config'){
@@ -876,6 +901,8 @@ class ProductsController extends Controller
         }
 
         echo 'Number of Simple Product : '.$j;
+        echo '<br/>';
+        echo 'Number of Simple (Child) Product : '.$k;
         echo '<br/>';
         echo 'Number of configurable Main Product : '.count($mainProductArr);
     }
