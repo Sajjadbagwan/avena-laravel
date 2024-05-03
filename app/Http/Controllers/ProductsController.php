@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Log;
 
+
 class ProductsController extends Controller
 {
     public function __construct()
@@ -19,7 +20,7 @@ class ProductsController extends Controller
         /*$file = public_path('file/productFileMainTest.csv');*/
         $file = public_path('file/productFile.csv');
         $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
-
+        
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
         $this->magentoAttributesCode = $this->getAttributeFromMagento();
 
@@ -239,31 +240,23 @@ class ProductsController extends Controller
         $typeId = 'simple';
         $status=2;
 
-        $name = $csvCatData['PageTitle'];
-
         $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
 
         if($csvCatData['productType']=='config'){
             $prefix='tbl_derivative_';
             $sku=$csvCatData['AssociateID'].'-'.$csvCatData[$prefix.'DerivativeID'];
-            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => strval($csvCatData[$prefix.'DerivGTIN']));
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'DerivGTIN']);
             $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'DerivMPN']);
             $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData[$prefix.'DerivRank']);
             $status = $csvCatData[$prefix.'Enabled'];
             $visibility=1;
-
-            if(!empty($csvCatData['tbl_derivative_Title']) && $csvCatData['tbl_derivative_Title']!='n/a' && $csvCatData['tbl_derivative_Title']!='N/A' && $csvCatData['tbl_derivative_Title']!=''){
-                $name = $csvCatData['FileName'].'-'.$csvCatData['tbl_derivative_Title'];
-            }
-            
-
         }else{
             $prefix='tbl_Product_';
             $sku=$csvCatData['AssociateID'];
             $custom_attributes[] = (object)array("attribute_code" => 'special_price', "value" => $csvCatData['tbl_Product_SalePrice']);
             $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_height', "value" => $csvCatData['tbl_Product_Height']);
             $custom_attributes[] = (object)array("attribute_code" => 'ts_dimensions_width', "value" => $csvCatData['tbl_Product_Width']);
-            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => strval($csvCatData[$prefix.'GTIN']));
+            $custom_attributes[] = (object)array("attribute_code" => 'gtin', "value" => $csvCatData[$prefix.'GTIN']);
             $custom_attributes[] = (object)array("attribute_code" => 'mpn', "value" => $csvCatData[$prefix.'MPN']);
             $custom_attributes[] = (object)array("attribute_code" => 'rank', "value" => $csvCatData['Rank']);
             $custom_attributes[] = (object)array("attribute_code" => 'productrank', "value" => $csvCatData['ProductRank']);
@@ -864,6 +857,27 @@ class ProductsController extends Controller
                 break;
         }
         return $fileType;
+    }
+
+    public function countNumberOfProducts($productCsvArr)
+    {
+        $j=0;
+        for ($i = 0; $i < count($productCsvArr); $i ++)
+        {   
+            if($productCsvArr[$i]['productType']=='simple'){
+                $j = $j+1;
+            }
+        }
+        $mainProductArr = array();
+        for ($i = 0; $i < count($productCsvArr); $i ++){
+            if($productCsvArr[$i]['productType']=='config'){
+                $mainProductArr[$productCsvArr[$i]['AssociateID']] = $productCsvArr[$i];
+            }     
+        }
+
+        echo 'Number of Simple Product : '.$j;
+        echo '<br/>';
+        echo 'Number of configurable Main Product : '.count($mainProductArr);
     }
     
 }
