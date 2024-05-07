@@ -163,13 +163,15 @@ class RowDataToCsvController extends Controller
             if(count($configtempArr)>0){
                 foreach ($configtempArr as $key => $derProds) {
                     $final_product[$cnt] = $prodArr;
-                    
 
-                    if((strtolower($derProds['Title'])=='n/a' || $derProds['Title']=='') && (strtolower($derProds['Title2'])=='n/a' || $derProds['Title2']=='')){
-                        $type = 'simple';
-                    }else{
-                        $type = 'config';
+                    if($type == 'config'){
+                        if((strtolower($derProds['Title'])=='n/a' || $derProds['Title']=='') && (strtolower($derProds['Title2'])=='n/a' || $derProds['Title2']=='')){
+                            $type = 'simple';
+                        }else{
+                            $type = 'config';
+                        }
                     }
+                        
                     $final_product[$cnt]['productType'] = $type;
 
                     foreach ($derProds as $key => $value) {

@@ -18,10 +18,9 @@ class ProductsController extends Controller
     public function syncProduct()
     {
         /*$file = public_path('file/productFileMainTest.csv');*/
-        $file = public_path('file/productFileImg.csv');
-        $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
-        
-        $this->countNumberOfProducts($productCsvArr);
+        $file = public_path('file/productFile.csv');
+        $productCsvArr = $this->rowDataToCsvController->csvToArray($file);        
+        /*$this->countNumberOfProducts($productCsvArr);*/
 
         
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
@@ -906,5 +905,40 @@ class ProductsController extends Controller
         echo '<br/>';
         echo 'Number of configurable Main Product : '.count($mainProductArr);
     }
+
+    public function findDiff($productCsvArr)
+    {
+        $skuA = array();
+        for ($i = 0; $i < count($productCsvArr); $i ++)
+        {
+            if($productCsvArr[$i]['productType']=='config'){
+                $productSku = $productCsvArr[$i]['AssociateID'].'-'.$productCsvArr[$i]['tbl_derivative_DerivativeID'];
+                $skuA['configSimple'][] = $productSku;
+            }else{
+                $productSku = $productCsvArr[$i]['AssociateID'];
+                $skuA['simple'][] = $productSku;
+            }
+        }
+
+
+
+        for ($i = 0; $i < count($productCsvArr); $i ++){
+            if($productCsvArr[$i]['productType']=='config'){
+                $mainProductArr[$productCsvArr[$i]['AssociateID']] = $productCsvArr[$i];
+            }     
+        }
+        foreach($mainProductArr as $k => $productArr){
+            $productSku = $productArr['AssociateID'];
+            $skuA['configMain'][] = $productSku;
+        }
+
+        echo 'Number of config main products : '.count($skuA['configMain']);
+        echo 'Number of simple products : '.count($skuA['simple']);
+        echo 'Number of config simple products : '.count($skuA['configSimple']);
+        echo 'Number of Total products : ' . (count($skuA['configMain']) + count($skuA['simple']) + count($skuA['configSimple']));
+  
+    }
     
 }
+
+
