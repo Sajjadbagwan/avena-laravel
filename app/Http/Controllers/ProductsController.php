@@ -19,10 +19,12 @@ class ProductsController extends Controller
     {
         /*$file = public_path('file/productFileMainTest.csv');*/
         $file = public_path('file/productFile.csv');
-        $productCsvArr = $this->rowDataToCsvController->csvToArray($file);
+        $productCsvArr = $this->rowDataToCsvController->csvToArray($file);        
+        /*$this->countNumberOfProducts($productCsvArr);*/
+
         
         $this->magentoAttributes = $this->getAttributeOptionsFromMagento($productCsvArr);
-        $this->magentoAttributesCode = $this->getAttributeFromMagento(); 
+        $this->magentoAttributesCode = $this->getAttributeFromMagento();
 
         $MagentoProducts = array();
         $MagentoProducts = $this->getAllProductsFromMagento();
@@ -232,13 +234,16 @@ class ProductsController extends Controller
 
         $parentContentId = $csvCatData['ParentContentID'];
         $magentoParentId = $this->findMagentoParentId($parentContentId);
+        $urlArrCnt = 1;
 
         $category_url = $csvCatData['FileName'];
         $urlArr = array_filter(explode('/', $category_url));
+        $urlArrCnt = count($urlArr);
         $currentCatUrl = current($urlArr);
         $extension_attributes = (object)array();
         $typeId = 'simple';
-        $status=0;
+        $status=2;
+        $weight = '';
 
         $magentoCategoryIdsArr = $this->getCategoryMagentoIdfromCategoryContentId($csvCatData['category_content_id']);
 
@@ -286,12 +291,22 @@ class ProductsController extends Controller
         }
 
         $is_active='false'; if($csvCatData['Enabled']==1){ $is_active='true';}
-        $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+
+        if($csvCatData['productType']=='config'){
+            $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+        }else{
+            $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl);
+            if($urlArrCnt>1){
+                $custom_attributes[] = (object)array("attribute_code" => 'url_key', "value" => $currentCatUrl.'-'.$sku);
+            }
+        }
+
+
         $custom_attributes[] = (object)array("attribute_code" => 'meta_title', "value" => $csvCatData['AdditionalPageTitle']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_keyword', "value" => $csvCatData['MetaKeywords']);
         $custom_attributes[] = (object)array("attribute_code" => 'meta_description', "value" => $csvCatData['MetaDescription']);
 
-        if($csvCatData['productType']=='simple'){
+        if($csvCatData['productType']=='simple' || $csvCatData['productType']=='configurable'){
             if(empty($csvCatData[$prefix.'Code'])){
                 $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData['tbl_derivative_Code']);
             }else{
@@ -305,12 +320,12 @@ class ProductsController extends Controller
             }
 
             if(empty($csvCatData[$prefix.'Weight'])){
-                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData['tbl_derivative_Weight']);
+                $weight = $csvCatData['tbl_derivative_Weight'];
             }else{
-                $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+                $weight = $csvCatData[$prefix.'Weight'];
             }
         }else{
-            $custom_attributes[] = (object)array("attribute_code" => 'weight', "value" => $csvCatData[$prefix.'Weight']);
+            $weight = $csvCatData[$prefix.'Weight'];
             $custom_attributes[] = (object)array("attribute_code" => 'locationstock', "value" => $csvCatData[$prefix.'Location']);
             $custom_attributes[] = (object)array("attribute_code" => 'code', "value" => $csvCatData[$prefix.'Code']);
         }
@@ -333,18 +348,45 @@ class ProductsController extends Controller
 
         /*$extension_attributes->stock_item = (object)array("qty" => $qty);*/
 
-        if($qty>0){
+        /*if($qty>0){
             $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => true);
         }else{
             $extension_attributes->stock_item = (object)array("qty" => $qty,"is_in_stock" => false);
-        }
+        }*/
 
+        $extension_attributes->stock_item = (object)array("qty" => '100',"is_in_stock" => true);
+
+        $content='';
+        $path = public_path('file/content/'.$csvCatData['ContentID']);
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        $pathFile    = $path.'/'.$entry;
+                        $fileData = file_get_contents($pathFile, false);
+                        if($fileData!='' && !str_contains($fileData, 'error') && !str_contains($fileData, 'Error')){
+                            $content = $content.$fileData;
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+        if(!empty($content)){
+            $custom_attributes[] = (object)array("attribute_code" => 'description', "value" => $content);
+        }
+        
+        if($status==0 || $status==''){
+            $status=2;
+        }
 
         $productData = (object)array(
             "sku" => $sku,
             "name" => $csvCatData['PageTitle'],
             "price" => $csvCatData[$prefix.'Price'],
             "status" => $status,
+            "weight" => $weight,
             "visibility" => $visibility,
             "type_id" => $typeId,
             "attribute_set_id" => 4,
@@ -677,6 +719,7 @@ class ProductsController extends Controller
                 $ext = pathinfo($name, PATHINFO_EXTENSION);
                 $url = 'file/images/'.$csvCatData['ContentID'].'/';
                 $path = public_path($url.$value);
+                $name = $this->clean($name);
                 if (@getimagesize($path)) {
                     $type = pathinfo($path, PATHINFO_EXTENSION);
                     $data = file_get_contents($path);
@@ -721,6 +764,90 @@ class ProductsController extends Controller
                 }
             }
 
+        }else{
+            $msg = $this->addMediaToMagentoByFolder($sku,$csvCatData);
+        }
+        return $msg;
+    }
+
+    public function addMediaToMagentoByFolder($sku,$csvCatData){
+
+        $contentId = $csvCatData['ContentID'];
+        $msg = '';
+        $content='';
+        $path = public_path('file/images/'.$contentId);
+        $imageArr = array();
+        $imageContent = array();
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        /*echo $entry.'/n';*/
+                        $ext = pathinfo($entry, PATHINFO_EXTENSION);
+                        if($ext=='jpeg' || $ext=='jpg' || $ext=='png'){
+                            $pathFile    = $path.'/'.$entry;
+                            $img = array();
+                            $img = getimagesize($pathFile);
+                            $imageArr[$pathFile] = $img[0];
+                        }
+                    }
+                }
+                closedir($handle);
+            }
+        }
+
+        if(!empty($imageArr)){
+
+            $value = max($imageArr);
+            $key = array_search($value, $imageArr);
+            $path = $key;
+
+            $name = substr($path, strrpos($path, '/') + 1);
+            $name = $this->clean($name);
+
+            if (@getimagesize($path)) {
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = base64_encode($data);
+                $fileType = $this->getImageType($name);
+                $imageContent[] = (object) array(
+                    "media_type" => "image",
+                    "label" => $name,
+                    "position" => 1,
+                    "disabled" => false,
+                    "types" => array(
+                        "image",
+                        "small_image",
+                        "thumbnail"
+                    ),
+                    "file" => $name,
+                    "content" => (object) array(
+                        "base64_encoded_data" => $base64,
+                        "type" => $fileType,
+                        "name" => $name
+                    )
+                );
+
+            }
+
+            if(!empty($imageContent)){
+                $arrayImage = (object) array(
+                    "product" => (object) array(
+                        "media_gallery_entries" => $imageContent
+                    )
+                );
+                $route = "products/".$sku;
+                if(!empty($data)){
+                    try{
+                        $result = $this->service->call($route, $arrayImage, 'PUT');
+                    } catch (\Throwable $e) {
+                        $errorMsg = $e;
+                        $msg = $errorMsg;
+                    }
+                }
+            }
         }
         return $msg;
     }
@@ -742,4 +869,76 @@ class ProductsController extends Controller
         return $fileType;
     }
     
+    function clean($string) {
+       $ext = substr($string, strrpos($string, '.') + 1);
+        $string = substr($string, 0, strrpos( $string, '.'));
+        $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+        $string = preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+        $name = $string.'.'.$ext;
+        return $name;
+    }
+
+    public function countNumberOfProducts($productCsvArr)
+    {
+        $j=0;
+        $k=0;
+        for ($i = 0; $i < count($productCsvArr); $i ++)
+        {   
+            if($productCsvArr[$i]['productType']=='simple'){
+                $j = $j+1;
+            }
+            if($productCsvArr[$i]['productType']=='config'){
+                $k = $k+1;
+            }
+        }
+        
+        $mainProductArr = array();
+        for ($i = 0; $i < count($productCsvArr); $i ++){
+            if($productCsvArr[$i]['productType']=='config'){
+                $mainProductArr[$productCsvArr[$i]['AssociateID']] = $productCsvArr[$i];
+            }     
+        }
+
+        echo 'Number of Simple Product : '.$j;
+        echo '<br/>';
+        echo 'Number of Simple (Child) Product : '.$k;
+        echo '<br/>';
+        echo 'Number of configurable Main Product : '.count($mainProductArr);
+    }
+
+    public function findDiff($productCsvArr)
+    {
+        $skuA = array();
+        for ($i = 0; $i < count($productCsvArr); $i ++)
+        {
+            if($productCsvArr[$i]['productType']=='config'){
+                $productSku = $productCsvArr[$i]['AssociateID'].'-'.$productCsvArr[$i]['tbl_derivative_DerivativeID'];
+                $skuA['configSimple'][] = $productSku;
+            }else{
+                $productSku = $productCsvArr[$i]['AssociateID'];
+                $skuA['simple'][] = $productSku;
+            }
+        }
+
+
+
+        for ($i = 0; $i < count($productCsvArr); $i ++){
+            if($productCsvArr[$i]['productType']=='config'){
+                $mainProductArr[$productCsvArr[$i]['AssociateID']] = $productCsvArr[$i];
+            }     
+        }
+        foreach($mainProductArr as $k => $productArr){
+            $productSku = $productArr['AssociateID'];
+            $skuA['configMain'][] = $productSku;
+        }
+
+        echo 'Number of config main products : '.count($skuA['configMain']);
+        echo 'Number of simple products : '.count($skuA['simple']);
+        echo 'Number of config simple products : '.count($skuA['configSimple']);
+        echo 'Number of Total products : ' . (count($skuA['configMain']) + count($skuA['simple']) + count($skuA['configSimple']));
+  
+    }
+    
 }
+
+

@@ -655,6 +655,8 @@ class ProductsController extends Controller
     public function addMediaToMagentoProduct($sku,$csvCatData){
 
         $productImage = $csvCatData['tbl_derivative_ProductImage'];
+
+        echo 'tttttt'.$productImage'tttttt';
         $msg = '';
         if(!empty($productImage)){
             $imageContent = array();
@@ -706,6 +708,91 @@ class ProductsController extends Controller
                         $msg = $errorMsg;
                     }
 
+                }
+            }
+
+        }else{
+            echo 'hello'; die();
+            $msg = $this->addMediaToMagentoByFolder($sku,$csvCatData);
+        }
+        return $msg;
+    }
+
+    public function addMediaToMagentoByFolder($sku,$csvCatData){
+
+        echo 'aaaaa';
+        die();
+
+        $contentId = $csvCatData['ContentID'];
+        $msg = '';
+        $content='';
+        $path = public_path('file/images/'.$csvCatData['ContentID']);
+        $imageArr = array();
+        $imageContent = array();
+
+        if(is_dir($path)){
+            if ($handle = opendir($path)) {
+
+                while (false !== ($entry = readdir($handle))) {
+                    if($entry!='.' && $entry!='..'){
+                        /*echo $entry.'/n';*/
+                        $pathFile    = $path.'/'.$entry;
+                        $img = array();
+                        $img = getimagesize($pathFile);
+                        $imageArr[$pathFile] = $img[0];
+                    }
+                }
+                closedir($handle);
+            }
+        }
+
+        if(!empty($imageArr)){
+
+            $value = max($imageArr);
+            $key = array_search($value, $imageArr);
+            $path = $key;
+
+            $name = substr($path, strrpos($path, '/') + 1);
+
+            if (@getimagesize($path)) {
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = base64_encode($data);
+                $fileType = $this->getImageType($name);
+                $imageContent[] = (object) array(
+                    "media_type" => "image",
+                    "label" => $name,
+                    "position" => 1,
+                    "disabled" => false,
+                    "types" => array(
+                        "image",
+                        "small_image",
+                        "thumbnail"
+                    ),
+                    "file" => $name,
+                    "content" => (object) array(
+                        "base64_encoded_data" => $base64,
+                        "type" => $fileType,
+                        "name" => $name
+                    )
+                );
+
+            }
+
+            if(!empty($imageContent)){
+                $arrayImage = (object) array(
+                    "product" => (object) array(
+                        "media_gallery_entries" => $imageContent
+                    )
+                );
+                $route = "products/".$sku;
+                if(!empty($data)){
+                    try{
+                        $result = $this->service->call($route, $arrayImage, 'PUT');
+                    } catch (\Throwable $e) {
+                        $errorMsg = $e;
+                        $msg = $errorMsg;
+                    }
                 }
             }
 
